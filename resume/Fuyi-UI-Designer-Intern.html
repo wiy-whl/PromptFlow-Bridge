@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>傅怡 - UI设计师 - 2027届实习</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 13mm 15mm 13mm 15mm;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+      color: #222;
+      font-size: 10pt;
+      line-height: 1.55;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 178mm;
+      margin: 0 auto;
+    }
+
+    /* ===== Header ===== */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 14px;
+      padding-bottom: 2px;
+    }
+
+    .header-main { flex: 1; }
+
+    h1 {
+      font-size: 26pt;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: 3px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .basic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 24px;
+      row-gap: 5px;
+      font-size: 10pt;
+      color: #333;
+      max-width: 430px;
+    }
+
+    .basic-grid div span.label {
+      color: #555;
+    }
+
+    .photo {
+      width: 84px;
+      height: 108px;
+      border: 1px solid #d0d5dd;
+      background: #f5f7fa;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #98a2b3;
+      font-size: 8.5pt;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* ===== Section ===== */
+    section {
+      margin-bottom: 12px;
+    }
+
+    .sec-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .sec-title .icon {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+      color: #444;
+    }
+
+    .sec-title h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #111;
+      white-space: nowrap;
+      letter-spacing: 1px;
+    }
+
+    .sec-title .line {
+      flex: 1;
+      height: 1px;
+      background: #cfd6e0;
+      margin-left: 4px;
+    }
+
+    /* ===== Rows ===== */
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 1px;
+    }
+
+    .row .left {
+      color: #333;
+      white-space: nowrap;
+    }
+
+    .row .right {
+      font-weight: 700;
+      color: #111;
+      text-align: right;
+    }
+
+    .sub {
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .block {
+      margin-bottom: 10px;
+    }
+
+    .block:last-child {
+      margin-bottom: 0;
+    }
+
+    p, .para {
+      text-align: justify;
+      color: #222;
+      margin-bottom: 3px;
+    }
+
+    .em {
+      color: #2f6fed;
+      font-weight: 600;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .overview {
+      margin-bottom: 4px;
+    }
+
+    .point {
+      margin-bottom: 3px;
+      text-align: justify;
+    }
+
+    .point .tag {
+      font-weight: 700;
+    }
+
+    .skills .point {
+      margin-bottom: 6px;
+    }
+
+    .portfolio {
+      margin-top: 3px;
+      color: #444;
+      font-size: 9.5pt;
+    }
+
+    @media screen {
+      body {
+        background: #e8eaed;
+        padding: 28px 12px;
+      }
+      .page {
+        background: #fff;
+        padding: 16mm 18mm;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="header-main">
+        <h1>傅怡</h1>
+        <div class="basic-grid">
+          <div><span class="label">求职：</span>UI / 视觉设计师（C端）</div>
+          <div><span class="label">城市：</span>深圳</div>
+          <div><span class="label">电话：</span>13177850203</div>
+          <div><span class="label">邮箱：</span>3528544024@qq.com</div>
+          <div><span class="label">届别：</span>2027届（可实习）</div>
+          <div><span class="label">作品集：</span>制作中，可索取</div>
+        </div>
+      </div>
+      <div class="photo">一寸照<br/>可替换</div>
+    </div>
+
+    <section>
+      <div class="sec-title">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 17V9h3v8"/><path d="M13 17v-5h3v5"/></svg>
+        <h2>教育经历</h2>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="left">2023.09 – 2027.07</div>
+        <div class="right">豫章师范学院</div>
+      </div>
+      <div class="sub">视觉传达设计｜本科</div>
+    </section>
+
+    <section>
+      <div class="sec-title">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 18v3"/></svg>
+        <h2>专业技能</h2>
+        <div class="line"></div>
+      </div>
+      <div class="skills">
+        <p class="point"><span class="tag">【界面设计】</span>熟练使用 <span class="em">Figma</span> 完成 C 端界面设计，掌握 Auto Layout、组件化与基础设计规范（色彩 / 字体 / 间距），能输出便于标注与还原的界面稿。</p>
+        <p class="point"><span class="tag">【视觉执行】</span>熟练使用 <span class="em">Photoshop、Illustrator</span>，具备主 KV、图标、运营物料与样机呈现能力；具备品牌 IP / 角色视觉延展经验。</p>
+        <p class="point"><span class="tag">【AI 设计工具】</span>熟练使用 <span class="em">ChatGPT、Gemini、即梦、哩布哩布</span> 等主流 AI：用大模型辅助信息架构与文案梳理，用图像生成做风格探索与素材发散，再回到设计工具完成筛选、规范统一与界面落地。</p>
+        <p class="point"><span class="tag">【产品协作意识】</span>能梳理首页到核心功能的信息层级，关注状态表达与多屏一致性，适配互联网团队协作节奏。</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-title">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/><circle cx="18" cy="17" r="3"/></svg>
+        <h2>项目经历</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="block">
+        <div class="row">
+          <div class="left">2025</div>
+          <div class="right">大理·文化信息体验小程序 / Web</div>
+        </div>
+        <div class="sub">界面与视觉设计（课程项目 / 独立完成）</div>
+        <p class="overview"><span class="bold">项目概述：</span>面向年轻游客的大理文旅数字化体验，独立完成微信小程序核心界面与 Web 专题页，从文化符号提取到多端界面落地形成完整闭环。</p>
+        <p class="point"><span class="tag">【信息架构与主路径】</span>梳理文化 / 景点 / 文创 / 攻略等模块，完成引导进入到内容详情的主路径设计，降低信息查找成本。</p>
+        <p class="point"><span class="tag">【视觉体系与规范】</span>提取扎染、瓦猫等符号落地 Logo、图标与蓝白视觉语言；结合 <span class="em">ChatGPT / 即梦 / 哩布哩布</span> 辅助结构梳理与风格探索，并在设计工具中完成规范统一与落地。</p>
+      </div>
+
+      <div class="block">
+        <div class="row">
+          <div class="left">2025</div>
+          <div class="right">娃哈哈 AD 钙 · 品牌年轻化数字体验</div>
+        </div>
+        <div class="sub">品牌视觉 / 界面视觉（个人练习，非官方项目）</div>
+        <p class="overview"><span class="bold">项目概述：</span>围绕儿童营养与亲子场景，完成品牌年轻化方向的视觉探索，输出品牌调性、图标体系与 App 核心界面视觉，强化 IP 与情感化表达。</p>
+        <p class="point"><span class="tag">【品牌与 IP 表达】</span>建立色板与 <span class="em">3D 图标</span> 体系，产出主视觉 KV 与功能展示页，突出年轻化、亲和的品牌气质。</p>
+        <p class="point"><span class="tag">【界面转化】</span>结合竞品与信息层级整理，将产品展示、营养教育、会员互动等模块转化为可落地的首页及核心功能布局。</p>
+      </div>
+
+      <div class="block">
+        <div class="row">
+          <div class="left">2025</div>
+          <div class="right">查件 · 快递查询工具 App UI</div>
+        </div>
+        <div class="sub">UI 设计（个人项目 / 独立完成）</div>
+        <p class="overview"><span class="bold">项目概述：</span>面向高频查件场景，独立完成工具类 App 核心界面与精简设计规范，强调清晰、克制、可开发还原的产品视觉。</p>
+        <p class="point"><span class="tag">【核心界面】</span>设计包裹列表、物流详情时间轴、添加快递、个人中心等页面，针对在途 / 派送 / 签收等状态区分信息层级。</p>
+        <p class="point"><span class="tag">【组件一致性】</span>建立列表卡片、状态标签、时间轴等组件，统一多屏视觉语言，提升界面完整度与落地效率。</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-title">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+        <h2>自我评价</h2>
+        <div class="line"></div>
+      </div>
+      <p class="para">
+        视觉传达专业在读，具备排版、色彩与品牌视觉基础，并持续向 <span class="em">C 端 UI / 产品视觉</span> 转化；能将 <span class="em">ChatGPT、Gemini、即梦、哩布哩布</span> 融入设计工作流，重视规范与信息层级，能以完整项目呈现作品。求职方向为互联网 UI / 视觉设计（含 2027 届实习），可快速融入团队协作。
+      </p>
+    </section>
+  </div>
+</body>
+</html>
