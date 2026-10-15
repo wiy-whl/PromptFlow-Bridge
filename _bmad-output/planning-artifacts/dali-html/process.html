@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>大理 · 设计过程</title>
+  <style>
+    :root {
+      --ink: #1d2551;
+      --text: #3a3f55;
+      --mute: #7a8194;
+      --line: #d9dee8;
+      --paper: #f7fafe;
+      --card: #fff;
+      --wire: #c5cad3;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--paper);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 24px 80px; }
+    h1 { color: var(--ink); font-size: 32px; letter-spacing: 2px; }
+    .lead { color: var(--mute); margin: 8px 0 28px; font-size: 14px; }
+    h2 {
+      color: var(--ink);
+      font-size: 20px;
+      margin: 40px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    h3 { font-size: 15px; color: var(--ink); margin: 18px 0 8px; }
+    p, li { font-size: 14px; }
+    .note {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: var(--mute);
+      margin-bottom: 20px;
+    }
+    .grid { display: grid; gap: 12px; }
+    .g2 { grid-template-columns: 1fr 1fr; }
+    .g3 { grid-template-columns: 1fr 1fr 1fr; }
+    .g4 { grid-template-columns: repeat(4, 1fr); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .card b { color: var(--ink); display: block; margin-bottom: 4px; }
+    .card small { color: var(--mute); }
+    .in { border-color: #c9d6ea; }
+    .out { opacity: 0.72; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; background: #fff; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #eef3f9; color: var(--ink); font-weight: 600; }
+    .flow {
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+      background: #fff; border: 1px dashed var(--line); border-radius: 12px; padding: 14px;
+      font-size: 13px;
+    }
+    .flow span {
+      background: var(--ink); color: #fff; border-radius: 8px; padding: 6px 10px;
+    }
+    .flow i { font-style: normal; color: var(--mute); }
+    .phones { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+    .phone {
+      width: 100%;
+      aspect-ratio: 375 / 812;
+      background: #eceff4;
+      border: 2px solid #9aa3b2;
+      border-radius: 18px;
+      padding: 8px 6px 6px;
+      position: relative;
+      overflow: hidden;
+    }
+    .phone em {
+      display: block; text-align: center; font-size: 11px; color: var(--ink);
+      font-style: normal; font-weight: 600; margin-bottom: 4px;
+    }
+    .bar, .box, .row, .cta { background: var(--wire); border-radius: 3px; }
+    .bar { height: 8px; margin-bottom: 4px; }
+    .bar.s { width: 40%; }
+    .hero { height: 22%; background: #b7bec9; border-radius: 4px; margin: 4px 0; }
+    .row { height: 14%; margin-bottom: 4px; }
+    .cols { display: flex; gap: 3px; height: 16%; margin: 4px 0; }
+    .cols i { flex: 1; background: var(--wire); border-radius: 3px; }
+    .cta { height: 10%; margin-top: 6px; background: #8b93a3; }
+    .tab {
+      position: absolute; left: 6px; right: 6px; bottom: 6px; height: 10%;
+      background: #d5dae3; border-radius: 4px;
+    }
+    .story { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .story article {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    }
+    .story .shot {
+      height: 110px; background: #d8dee8;
+      display: grid; place-items: center; color: var(--mute); font-size: 12px;
+    }
+    .story p { padding: 10px 12px 12px; font-size: 13px; }
+    .story b { display: block; color: var(--ink); margin-bottom: 4px; }
+    a { color: var(--ink); }
+    @media (max-width: 860px) {
+      .g2, .g3, .g4, .phones, .story { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) {
+      .g2, .g3, .g4, .phones, .story { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>大理 · 设计过程</h1>
+    <p class="lead">用户 → 筛选 → 收敛 → 测试 → 架构 / 流程 → 低保真 → 高保真 → 故事板。不编商业数据。</p>
+    <p class="note">课程项目。主用户是周末第一次来的年轻人。本期只解：打开手机时不知道先看哪一面。高保真可点：<a href="./index.html">index.html</a></p>
+
+    <h2>1. 用户：圈进 / 圈出</h2>
+    <div class="grid g2">
+      <div class="card in">
+        <b>圈进</b>
+        18–30，第一次来或只来周末。<br />
+        已经到大理或出发前一晚。<br />
+        对文化有一点兴趣，但不是研究者。
+      </div>
+      <div class="card out">
+        <b>圈出</b>
+        向导 / 徒步 / 摄影团（要地图机位）。<br />
+        亲子长线（节奏不同）。<br />
+        要买票下单的人（课程不做支付）。
+      </div>
+    </div>
+    <h3>他们问的只有三句</h3>
+    <div class="grid g3">
+      <div class="card"><b>今天先去哪？</b><small>要可比较的短卡片</small></div>
+      <div class="card"><b>大概要多久？</b><small>详情里三格信息</small></div>
+      <div class="card"><b>看完去哪？</b><small>相关推荐，不死胡同</small></div>
+    </div>
+
+    <h2>2. 需求筛选：只解一个场景</h2>
+    <p class="note">核心场景：到达当天上午，在客栈用 2 分钟决定先看哪一面。不做三日行程、导航、购票。</p>
+    <table>
+      <tr><th>Must</th><td>启动能跳过 · 首屏三入口 · 列表能比 · 详情有时长/怎么去 · 看完有下一站</td></tr>
+      <tr><th>Should</th><td>想去 + 空状态 · 加载 / 失败</td></tr>
+      <tr><th>Could</th><td>搜索、筛选（不作为主路径）</td></tr>
+      <tr><th>Won't</th><td>登录、支付、地图、UGC、行程算法、满屏扎染底</td></tr>
+    </table>
+
+    <h2>3. 方案：留下导览卡片，砍掉另外四条</h2>
+    <div class="grid g4">
+      <div class="card out"><b>A 数字展览</b><small>好看，完不成「先去哪」</small></div>
+      <div class="card out"><b>B 攻略社区</b><small>没有内容运营</small></div>
+      <div class="card out"><b>C 行程生成</b><small>数据是编的</small></div>
+      <div class="card out"><b>D 假电商</b><small>没有真货库存</small></div>
+    </div>
+    <div class="card in" style="margin-top:12px">
+      <b>E 留下：导览卡片</b>
+      分发 → 列表 → 详情 → 想去。同一套结构走景点 / 文化。
+    </div>
+
+    <h2>4. 原型测试（5 人，测任务不测好看）</h2>
+    <table>
+      <tr><th>#</th><th>任务</th><th>怎样算过</th></tr>
+      <tr><td>T1</td><td>这是干什么的？一句话说</td><td>能说「大理导览」</td></tr>
+      <tr><td>T2</td><td>下午想先看湖，点进去</td><td>≤2 次到洱海详情</td></tr>
+      <tr><td>T3</td><td>去洱海要多久、怎么去</td><td>看见三格，不找很久</td></tr>
+      <tr><td>T4</td><td>收入想去，从「我的」找回</td><td>能原路找回</td></tr>
+      <tr><td>T5</td><td>想看懂扎染，点哪</td><td>走进文化，不进假商店</td></tr>
+    </table>
+    <p class="note" style="margin-top:12px">测完只记原话。没有 5 人表之前，作品集不写效率百分比。</p>
+
+    <h2>5. User Flow</h2>
+    <div class="flow">
+      <span>打开</span><i>→</i>
+      <span>启动 跳过/开始逛</span><i>→</i>
+      <span>首页三入口</span><i>→</i>
+      <span>列表</span><i>→</i>
+      <span>详情三格</span><i>→</i>
+      <span>想去</span><i>→</i>
+      <span>我的</span>
+    </div>
+
+    <h2>6. 低保真 · 页关系与页内骨架</h2>
+    <p class="note">灰度只看结构。首屏必须看见三个入口。详情页结构复用。</p>
+    <div class="phones">
+      <div class="phone"><em>S01 启动</em><div class="bar s"></div><div class="hero" style="height:70%"></div><div class="cta"></div></div>
+      <div class="phone"><em>S02 首页</em><div class="bar"></div><div class="hero"></div><div class="cols"><i></i><i></i><i></i></div><div class="row"></div><div class="tab"></div></div>
+      <div class="phone"><em>S03 列表</em><div class="bar"></div><div class="box" style="height:8%;margin-bottom:4px"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="tab"></div></div>
+      <div class="phone"><em>S04 详情</em><div class="hero" style="height:28%"></div><div class="bar s"></div><div class="row" style="height:18%"></div><div class="cols"><i></i><i></i><i></i></div><div class="cta"></div></div>
+      <div class="phone"><em>S08 我的</em><div class="hero" style="height:22%"></div><div class="row"></div><div class="row"></div><div class="cols"><i></i><i></i><i></i></div><div class="tab"></div></div>
+    </div>
+    <p class="lead" style="margin-top:12px">S05/S06 复用列表+详情；带走收在文化详情里，不另开入口；S09 空状态；S10 叠在列表上。</p>
+
+    <h2>7. 故事板</h2>
+    <div class="story">
+      <article><div class="shot">客栈 · 刷手机</div><p><b>01 卡住</b>收藏了三十篇，仍不知道今天下午去哪。</p></article>
+      <article><div class="shot">航拍水面</div><p><b>02 定位</b>这是导览。可以跳过，不必看完开场。</p></article>
+      <article><div class="shot">三张入口</div><p><b>03 分发</b>先看湖，还是先看懂当地。</p></article>
+      <article><div class="shot">三格信息</div><p><b>04 决策</b>3–4 小时，东门约 20 分钟。去得成。</p></article>
+      <article><div class="shot">Toast</div><p><b>05 收着</b>加入想去。不用现在出发。</p></article>
+      <article><div class="shot">我的列表</div><p><b>06 找回</b>回来找得到。空页也不像坏了。</p></article>
+    </div>
+
+    <h2>8. 高保真接到哪</h2>
+    <p>视觉与真图在可点原型里：<a href="./index.html">打开界面</a>。过程底稿：上一级 <code>design-process-dali.md</code>。</p>
+  </div>
+</body>
+</html>

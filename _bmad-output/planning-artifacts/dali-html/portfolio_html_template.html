@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>大理文旅小程序 · 作品集 | 傅怡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --ink:#1d2551; --blue:#2f4a7c; --sky:#7fa1ba; --mist:#acc7e4; --terra:#71322d;
+  --paper:#f5f8fd; --card:#ffffff; --line:#e4ebf5; --muted:#6b7690;
+  --serif:'Noto Serif SC','Songti SC',serif; --sans:'Noto Sans SC','PingFang SC',sans-serif; --deco:'ZCOOL XiaoWei',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.kicker{font-size:13px;letter-spacing:5px;color:var(--sky);font-weight:700;text-transform:uppercase}
+h2.title{font-family:var(--serif);font-size:clamp(30px,4vw,46px);font-weight:900;line-height:1.2;margin:10px 0 6px}
+.lead{color:var(--muted);max-width:760px;font-size:16px}
+.section{padding:96px 0;border-bottom:1px solid var(--line)}
+.snum{font-family:var(--serif);font-size:18px;font-weight:900;color:var(--terra);letter-spacing:2px}
+.shead{display:flex;align-items:flex-end;gap:18px;margin-bottom:46px;flex-wrap:wrap}
+.shead .big{font-family:var(--serif);font-size:clamp(34px,5vw,60px);font-weight:900;color:var(--ink);line-height:1}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:1px}
+.tag.ink{background:var(--ink);color:#fff}
+.tag.sky{background:rgba(127,161,186,.18);color:var(--blue)}
+.tag.terra{background:rgba(113,50,45,.12);color:var(--terra)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(245,248,253,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-family:var(--serif);font-weight:900;font-size:19px;letter-spacing:1px}
+.brand span{color:var(--terra)}
+.nav-links{display:flex;gap:26px;font-size:14px;font-weight:500}
+.nav-links a{color:var(--muted);transition:.2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--ink);color:#fff;padding:9px 18px;border-radius:999px;font-size:13px;font-weight:700}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;color:#fff}
+.hero .bg{position:absolute;inset:0;background:url('data:image/jpeg;base64,{{HERO_BG}}') center/cover;transform:scale(1.05)}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(105deg,rgba(15,22,55,.92) 0%,rgba(15,22,55,.62) 45%,rgba(15,22,55,.30) 100%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:90px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(44px,6.5vw,84px);line-height:1.06;letter-spacing:2px}
+.hero h1 .ac{color:var(--mist)}
+.hero .zh{font-family:var(--deco);font-size:clamp(20px,2.4vw,30px);color:var(--mist);margin-top:14px;letter-spacing:6px}
+.hero p.sub{margin-top:22px;max-width:520px;color:rgba(255,255,255,.82);font-size:16px}
+.metaline{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.meta{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:8px 15px;border-radius:10px;font-size:13px;backdrop-filter:blur(4px)}
+.floatphone{justify-self:center}
+.scrolltip{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.7);font-size:12px;letter-spacing:3px}
+
+/* PHONE */
+.phone{width:262px;background:#0b1030;border-radius:38px;padding:10px;box-shadow:0 30px 60px rgba(12,20,60,.45),0 8px 18px rgba(0,0,0,.25);position:relative;cursor:zoom-in;transition:transform .3s}
+.phone:hover{transform:translateY(-6px)}
+.phone .scr{width:100%;border-radius:29px;overflow:hidden;display:block;background:#0b1030}
+.phone .cam{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:#1c2350;z-index:3}
+
+/* CARDS GRID */
+.grid{display:grid;gap:22px}
+.c3{grid-template-columns:repeat(3,1fr)}
+.c2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 10px 30px rgba(29,37,81,.05)}
+.card h3{font-family:var(--serif);font-size:21px;font-weight:700;margin-bottom:10px}
+.card p{color:#4b5572;font-size:14.5px}
+.card .pin{font-family:var(--deco);font-size:30px;color:var(--sky);line-height:1}
+.solved{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.solved .row{display:flex;gap:10px;font-size:13.5px;align-items:flex-start}
+.solved .lab{flex:0 0 56px;font-weight:700;font-size:12px;padding:3px 0;border-radius:6px;text-align:center}
+.lab.p{background:rgba(113,50,45,.12);color:var(--terra)}
+.lab.d{background:rgba(47,74,124,.12);color:var(--blue)}
+.lab.s{background:rgba(29,37,81,.10);color:var(--ink)}
+
+/* STRATEGY */
+.strat-center{background:linear-gradient(135deg,var(--ink),var(--blue));color:#fff;border-radius:22px;padding:44px;font-family:var(--serif);font-size:clamp(22px,2.6vw,32px);font-weight:700;line-height:1.5;margin-bottom:26px;position:relative;overflow:hidden}
+.strat-center::after{content:'策略';position:absolute;right:-10px;bottom:-30px;font-family:var(--serif);font-size:160px;color:rgba(255,255,255,.05);font-weight:900}
+.pillar{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(29,37,81,.05)}
+.pillar .no{font-family:var(--serif);font-size:34px;font-weight:900;color:var(--mist)}
+.pillar h3{font-family:var(--serif);font-size:20px;margin:8px 0 10px}
+.pillar p{color:#4b5572;font-size:14.5px}
+
+/* ARCHITECTURE */
+.arch{background:#0e1440;color:#fff;border-radius:22px;padding:40px;font-family:var(--sans)}
+.arch .root{font-family:var(--serif);font-size:24px;font-weight:700;display:inline-block;background:var(--mist);color:var(--ink);padding:10px 22px;border-radius:12px}
+.arch .branches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.arch .branch{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px}
+.arch .branch b{color:var(--mist);font-size:15px}
+.arch .branch ul{list-style:none;margin-top:10px}
+.arch .branch li{font-size:13px;color:rgba(255,255,255,.82);padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.12)}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;position:relative}
+.step .n{font-family:var(--serif);font-weight:900;font-size:26px;color:var(--sky)}
+.step h4{font-size:15px;margin:6px 0 6px}
+.step p{font-size:13px;color:var(--muted)}
+
+/* DECISION BLOCK */
+.decision{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-bottom:60px}
+.decision.rev{grid-template-columns:1fr 1fr;direction:rtl}
+.decision.rev>*{direction:ltr}
+.decision .txt .dno{font-family:var(--serif);font-size:15px;font-weight:900;color:var(--terra);letter-spacing:2px}
+.decision .txt h3{font-family:var(--serif);font-size:26px;margin:6px 0 14px}
+.decision .txt p{color:#4b5572;font-size:15px;margin-bottom:16px}
+.phone-row{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+
+/* WALKTHROUGH */
+.strip{display:flex;gap:18px;overflow-x:auto;padding:10px 4px 24px;scroll-snap-type:x mandatory}
+.strip .phone{scroll-snap-align:center;flex:0 0 auto}
+.cap{text-align:center;font-size:12px;color:var(--muted);margin-top:8px}
+
+/* RESULT DATA */
+.bignum{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px 26px;text-align:center;box-shadow:0 12px 34px rgba(29,37,81,.06)}
+.bignum .v{font-family:var(--serif);font-weight:900;font-size:clamp(38px,4.5vw,58px);color:var(--ink);line-height:1}
+.bignum .v small{font-size:22px;color:var(--sky)}
+.bignum .k{margin-top:10px;color:var(--muted);font-size:14px}
+.note{background:rgba(127,161,186,.10);border-left:4px solid var(--sky);padding:18px 22px;border-radius:0 12px 12px 0;color:#3c4a6b;font-size:14.5px;margin-top:22px}
+.verify{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}
+.verify .card h3{color:var(--blue)}
+.reflect{background:var(--ink);color:#fff;border-radius:20px;padding:38px;margin-top:26px}
+.reflect h3{font-family:var(--serif);font-size:22px;margin-bottom:14px;color:var(--mist)}
+.reflect p{color:rgba(255,255,255,.82);font-size:15px;margin-bottom:10px}
+.reflect .hl{color:var(--mist);font-weight:700}
+
+/* COLOR SYSTEM */
+.swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:10px}
+.sw{height:120px;border-radius:14px;position:relative;overflow:hidden;box-shadow:0 8px 20px rgba(29,37,81,.08)}
+.sw .meta{position:absolute;left:0;right:0;bottom:0;background:rgba(255,255,255,.9);padding:8px 10px;font-size:12px}
+.sw .meta b{display:block;font-family:var(--sans);font-size:13px;color:var(--ink)}
+.comps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.comp{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+.comp .chip{width:54px;height:54px;border-radius:14px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:900;color:#fff;font-size:20px}
+.comp p{font-size:13px;color:var(--muted)}
+
+/* FOOTER */
+footer{background:#0b1030;color:#fff;padding:70px 0 50px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+footer h2{font-family:var(--serif);font-size:34px;font-weight:900}
+footer p{color:rgba(255,255,255,.7);margin-top:12px}
+.foot-btn{display:inline-block;margin-top:22px;background:var(--mist);color:var(--ink);padding:14px 28px;border-radius:999px;font-weight:700;font-size:15px}
+.foot-meta{font-size:13px;color:rgba(255,255,255,.55);line-height:2}
+.foot-meta b{color:var(--mist)}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;background:rgba(8,12,35,.92);z-index:99;display:none;align-items:center;justify-content:center;flex-direction:column;padding:30px}
+.lb.on{display:flex}
+.lb img{max-height:82vh;max-width:92vw;border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb .x{position:absolute;top:24px;right:30px;color:#fff;font-size:34px;cursor:pointer}
+.lb .cap{color:rgba(255,255,255,.7);margin-top:16px;font-size:14px}
+
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:110px}
+  .floatphone{display:none}
+  .c3,.c2,.verify,.decision,.decision.rev,.foot-grid{grid-template-columns:1fr}
+  .decision.rev{direction:ltr}
+  .arch .branches,.process,.swatches,.comps{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <div class="brand">大理文旅 <span>·</span> 作品集</div>
+    <div class="nav-links">
+      <a href="#p1">问题层</a>
+      <a href="#p2">方案层</a>
+      <a href="#p3">主路径</a>
+      <a href="#p4">结果层</a>
+      <a href="#p5">视觉系统</a>
+    </div>
+    <a class="nav-cta" href="index.html" target="_blank">打开可交互原型 ↗</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bg"></div>
+  <div class="veil"></div>
+  <div class="wrap">
+    <div>
+      <div class="kicker" style="color:var(--mist)">UI / UX DESIGN PORTFOLIO</div>
+      <h1>风花雪月<br><span class="ac">大理</span>文旅小程序</h1>
+      <div class="zh">把“逛大理”装进一次行程</div>
+      <p class="sub">一个面向自由行游客的小程序：用「可计算的行程」串起散落的景点与非遗，让文化从“看到”变成“体验到”。</p>
+      <div class="metaline">
+        <span class="meta">类型 · 文旅小程序 + Web 专题</span>
+        <span class="meta">角色 · 独立设计（洞察→原型→复盘）</span>
+        <span class="meta">工具 · Figma · Photoshop · Illustrator</span>
+        <span class="meta">交付 · 24 屏可交互原型</span>
+      </div>
+    </div>
+    <div class="floatphone">
+      <div class="phone" onclick="openLb(this)">
+        <span class="cam"></span>
+        <img class="scr" src="data:image/jpeg;base64,{{PH_HOME}}" alt="首页" />
+      </div>
+    </div>
+  </div>
+  <div class="scrolltip">SCROLL ↓</div>
+</header>
+
+<!-- 01 问题层 -->
+<section class="section" id="p1">
+  <div class="wrap">
+    <div class="shead">
+      <span class="big">01</span>
+      <div>
+        <div class="snum">PROBLEM · 问题层</div>
+        <h2 class="title">先讲清楚：用户在哪、卡在哪</h2>
+      </div>
+    </div>
+
+    <div class="grid c2" style="margin-bottom:24px">
+      <div class="card">
+        <div class="pin">背</div>
+        <h3>行业背景</h3>
+        <p>大理是高频自由行目的地，但信息极度分散——景点攻略在一处、非遗体验在另一处、交通与排程又靠游客自己算。游客在做行前规划时往往要在 3 个以上工具间反复横跳。</p>
+      </div>
+      <div class="card" style="background:linear-gradient(135deg,#1d2551,#2f4a7c);color:#fff;border:none">
+        <div class="pin" style="color:var(--mist)">题</div>
+        <h3 style="color:#fff">设计命题</h3>
+        <p style="color:rgba(255,255,255,.85)">如何把“洱海、喜洲、双廊、苍山、三塔”这些散点，和“扎染、制茶、白族菜”这些非遗，<b style="color:var(--mist)">统一成一条用户真的能走完的行程</b>？——让规划从“负担”变成“被安排好的安心”。</p>
+      </div>
+    </div>
+
+    <div class="kicker" style="margin:8px 0 16px">三个真实痛点</div>
+    <div class="grid c3">
+      <div class="card">
+        <div class="pin">01</div>
+        <h3>信息分散，决策累</h3>
+        <p>景点、非遗、交通各在不同平台，游客做规划要在多个 App 间反复横跳，行前焦虑重。</p>
+        <div class="solved"><div class="row"><span class="lab p">痛点</span><span>跨 3+ 工具拼凑攻略，决策成本高。</span></div></div>
+      </div>
+      <div class="card">
+        <div class="pin">02</div>
+        <h3>文化只看不体验</h3>
+        <p>白族扎染、制茶、白族菜多为“介绍页”，缺少可加入行程的体验入口，文化停在浏览层。</p>
+        <div class="solved"><div class="row"><span class="lab p">痛点</span><span>非遗内容无行动出口，转化率极低。</span></div></div>
+      </div>
+      <div class="card">
+        <div class="pin">03</div>
+        <h3>行程靠手排，算不清</h3>
+        <p>景点间路途、开放时间、天数限制都要人肉估算，新手极易排崩或漏掉关键动线。</p>
+        <div class="solved"><div class="row"><span class="lab p">痛点</span><span>路途/时间靠脑算，行程可行性差。</span></div></div>
+      </div>
+    </div>
+
+    <div class="kicker" style="margin:42px 0 16px">目标 & 用户</div>
+    <div class="grid c3">
+      <div class="card" style="border-top:4px solid var(--terra)">
+        <h3>目标一 · 一站收敛</h3>
+        <p>景点 + 非遗 + 交通在一个产品内闭环，减少跨工具切换。</p>
+      </div>
+      <div class="card" style="border-top:4px solid var(--blue)">
+        <h3>目标二 · 文化可执行</h3>
+        <p>每个非遗都能“加入行程”，从内容变成可预约的体验。</p>
+      </div>
+      <div class="card" style="border-top:4px solid var(--ink)">
+        <h3>目标三 · 排程可计算</h3>
+        <p>选好景点与天数，系统给出可行的时间轴与交通建议。</p>
+      </div>
+    </div>
+    <div class="grid c2" style="margin-top:22px">
+      <div class="card"><h3>用户画像 · 自由行新手</h3><p>首次到大理、信息焦虑、希望被“安排好”，愿意为省心买单。</p></div>
+      <div class="card"><h3>用户画像 · 文化体验者</h3><p>冲着非遗与在地生活而来，要的是“能参与”而非“能围观”。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 方案层 -->
+<section class="section" id="p2">
+  <div class="wrap">
+    <div class="shead">
+      <span class="big">02</span>
+      <div>
+        <div class="snum">SOLUTION · 方案层</div>
+        <h2 class="title">两句话讲清策略，再放关键页面</h2>
+      </div>
+    </div>
+
+    <div class="strat-center">把分散的大理“收口”成一个产品：<br>内容给<strong style="color:var(--mist)">逛法</strong>，文化给<strong style="color:var(--mist)">出口</strong>，行程给<strong style="color:var(--mist)">算法</strong>。</div>
+
+    <div class="grid c3">
+      <div class="pillar"><div class="no">A</div><h3>内容 · 有逛法</h3><p>每个景点不再只是图集，而是“可以这样逛 / 现场 / 接下来去”，把信息变成动线。</p></div>
+      <div class="pillar"><div class="no">B</div><h3>文化 · 可执行</h3><p>非遗从介绍页升级为可加入行程的体验单元，一键进入规划，文化真正落地。</p></div>
+      <div class="pillar"><div class="no">C</div><h3>行程 · 可计算</h3><p>规则引擎按距离/天数/开放时间自动排程，给出逐小时时间轴与交通建议。</p></div>
+    </div>
+
+    <div class="kicker" style="margin:46px 0 16px">信息架构 & 设计过程</div>
+    <div class="arch">
+      <span class="root">大理文旅小程序</span>
+      <div class="branches">
+        <div class="branch"><b>逛 · 内容</b><ul><li>首页 / 探索</li><li>景点详情（6）</li><li>非遗文化（6）</li><li>特展详情</li></ul></div>
+        <div class="branch"><b>排 · 行程</b><ul><li>想去清单</li><li>行程规划面板</li><li>自动排程结果</li><li>行程时间轴</li></ul></div>
+        <div class="branch"><b>我 · 账户</b><ul><li>我的行程</li><li>收藏 / 设置</li><li>加载 / 空 / 失败</li><li>状态完整性</li></ul></div>
+      </div>
+    </div>
+    <div class="process">
+      <div class="step"><div class="n">01</div><h4>洞察</h4><p>从游客访谈与竞品梳理出三个核心痛点。</p></div>
+      <div class="step"><div class="n">02</div><h4>架构</h4><p>以“逛 / 排 / 我”三支柱重组信息架构。</p></div>
+      <div class="step"><div class="n">03</div><h4>原型</h4><p>24 屏高保真，含行程规则引擎交互。</p></div>
+      <div class="step"><div class="n">04</div><h4>复盘</h4><p>补齐非理想状态，沉淀可验证产出。</p></div>
+    </div>
+
+    <div class="kicker" style="margin:50px 0 18px">关键决策 · 每个都标注“这里解决了什么”</div>
+
+    <!-- 决策01 -->
+    <div class="decision">
+      <div class="txt">
+        <div class="dno">决策 01 · 内容有“逛法”</div>
+        <h3>景点详情页：从图集到动线</h3>
+        <p>传统详情页是图片+文字堆砌。我们给每个景点三段式结构——“可以这样逛 / 现场 / 接下来去”，把浏览转成行动。</p>
+        <div class="solved">
+          <div class="row"><span class="lab p">痛点</span><span>信息分散、不知怎么玩。</span></div>
+          <div class="row"><span class="lab d">做法</span><span>三段式动线 + 顺路推荐。</span></div>
+          <div class="row"><span class="lab s">解决</span><span>一页内完成“看→决定→接续”。</span></div>
+        </div>
+      </div>
+      <div class="phone-row">
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_SPOT_ERHAI}}" alt="洱海详情"/></div>
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_SPOT_XIZHOU}}" alt="喜洲详情"/></div>
+      </div>
+    </div>
+
+    <!-- 决策02 -->
+    <div class="decision rev">
+      <div class="txt">
+        <div class="dno">决策 02 · 文化有“出口”</div>
+        <h3>非遗文化页：从围观到加入</h3>
+        <p>扎染、制茶、白族菜不再是静态介绍，每个体验都有「加入行程」入口，文化单元直接汇入规划器。</p>
+        <div class="solved">
+          <div class="row"><span class="lab p">痛点</span><span>文化只看不体验。</span></div>
+          <div class="row"><span class="lab d">做法</span><span>体验单元 + 一键加入行程。</span></div>
+          <div class="row"><span class="lab s">解决</span><span>非遗成为行程的一部分。</span></div>
+        </div>
+      </div>
+      <div class="phone-row">
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_CULTURE}}" alt="文化页"/></div>
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_CULTURE_ADDED}}" alt="已加入"/></div>
+      </div>
+    </div>
+
+    <!-- 决策03+04 行程 -->
+    <div class="decision">
+      <div class="txt">
+        <div class="dno">决策 03+04 · 行程可计算（核心）</div>
+        <h3>规则引擎：选景点→自动排一天</h3>
+        <p>用户在清单勾选景点与天数，引擎按就近原则排序、判定交通方式（步行/包车），生成逐小时时间轴；排不下的会诚实提示“这几天排不下”。</p>
+        <div class="solved">
+          <div class="row"><span class="lab p">痛点</span><span>路途/时间靠脑算，易排崩。</span></div>
+          <div class="row"><span class="lab d">做法</span><span>距离+天数+开放时间规则排程。</span></div>
+          <div class="row"><span class="lab s">解决</span><span>一键得到可行行程，含交通建议。</span></div>
+        </div>
+      </div>
+      <div class="phone-row">
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_TRIP_SHEET}}" alt="规划面板"/></div>
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_TRIP_PLAN}}" alt="排程结果"/></div>
+      </div>
+    </div>
+
+    <!-- 决策05 状态 -->
+    <div class="decision rev">
+      <div class="txt">
+        <div class="dno">决策 05 · 状态完整性</div>
+        <h3>把“出错”也设计进去</h3>
+        <p>加载、空状态、失败——三类非理想路径都给出明确引导，而不是白屏或死等，保证全流程可用。</p>
+        <div class="solved">
+          <div class="row"><span class="lab p">痛点</span><span>异常态无引导，体验断裂。</span></div>
+          <div class="row"><span class="lab d">做法</span><span>统一空/加载/失败三态文案与出口。</span></div>
+          <div class="row"><span class="lab s">解决</span><span>任何状态用户都知道“下一步”。</span></div>
+        </div>
+      </div>
+      <div class="phone-row">
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_EMPTY}}" alt="空状态"/></div>
+        <div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_FAIL}}" alt="失败态"/></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 主路径走查 -->
+<section class="section" id="p3">
+  <div class="wrap">
+    <div class="shead">
+      <span class="big">03</span>
+      <div>
+        <div class="snum">FLOW · 主路径走查</div>
+        <h2 class="title">一条真实走通的主路径</h2>
+        <p class="lead">启动 → 探索清单 → 景点详情 → 加入收藏 → 自动排程 → 我的行程。横向滑动查看真实原型截图。</p>
+      </div>
+    </div>
+    <div class="strip">
+      <div><div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_SPLASH}}" alt="启动"/></div><div class="cap">启动页</div></div>
+      <div><div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_SPOTS}}" alt="探索"/></div><div class="cap">探索清单</div></div>
+      <div><div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_EXHIBIT}}" alt="特展"/></div><div class="cap">特展详情</div></div>
+      <div><div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_FAVLIST}}" alt="收藏"/></div><div class="cap">想去清单</div></div>
+      <div><div class="phone" onclick="openLb(this)"><span class="cam"></span><img class="scr" src="data:image/jpeg;base64,{{PH_MINE}}" alt="我的"/></div><div class="cap">我的行程</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 结果层 -->
+<section class="section" id="p4">
+  <div class="wrap">
+    <div class="shead">
+      <span class="big">04</span>
+      <div>
+        <div class="snum">RESULT · 结果层</div>
+        <h2 class="title">用可验证的产出说话</h2>
+      </div>
+    </div>
+
+    <div class="grid c3">
+      <div class="bignum"><div class="v">24<small> 屏</small></div><div class="k">高保真可交互原型</div></div>
+      <div class="bignum"><div class="v">6+6</div><div class="k">景点 + 非遗内容单元</div></div>
+      <div class="bignum"><div class="v">8.5<small>h</small></div><div class="k">单日容量规则排程</div></div>
+    </div>
+    <div class="note">说明：以上为<b>可验证的设计产出</b>（已交付的界面规模与规则逻辑），非线上运营数据。项目为设计原型阶段，尚未上线，故无转化率/留存等真实指标——作品集里我们如实标注，不编造数据。</div>
+
+    <div class="verify">
+      <div class="card">
+        <h3>设计预期（待验证）</h3>
+        <p>· 跨工具切换次数：预期从 3+ 降到 1 内<br>· 非遗体验转化：从“仅浏览”到有明确行动入口<br>· 行程可行性：规则排程替代人工脑算，降低排崩率</p>
+      </div>
+      <div class="card">
+        <h3>下一步验证计划</h3>
+        <p>· 招募 5 名自由行用户做可用性测试<br>· 埋点：加入行程率 / 排程完成率 / 跳出点<br>· 与业务方对齐“自动排程”命名与能力边界</p>
+      </div>
+    </div>
+
+    <div class="reflect">
+      <h3>设计反思 · 诚实比好看更重要</h3>
+      <p>原型里「AI 推荐行程」按钮命名超出了当前规则引擎的实际能力——它本质是<b class="hl">确定性排程</b>而非模型推理。我已在复盘里建议改名为「自动排一天」，避免对业务方与用户产生能力预期偏差。</p>
+      <p>另一个反思：状态完整性常被忽略。我专门补齐了加载 / 空 / 失败三态，因为<b class="hl">“出错也被设计过”</b>才是完整产品。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 视觉系统 -->
+<section class="section" id="p5">
+  <div class="wrap">
+    <div class="shead">
+      <span class="big">05</span>
+      <div>
+        <div class="snum">SYSTEM · 视觉系统</div>
+        <h2 class="title">扎染蓝白，贯穿全集</h2>
+        <p class="lead">以大理扎染的蓝白为母题，深靛为骨、月白为气，赭石点缀温度——从封面到每一屏保持同一套语言。</p>
+      </div>
+    </div>
+    <div class="swatches">
+      <div class="sw" style="background:#1d2551"><div class="meta"><b>靛骨 Ink</b>#1d2551</div></div>
+      <div class="sw" style="background:#2f4a7c"><div class="meta"><b>深蓝 Blue</b>#2f4a7c</div></div>
+      <div class="sw" style="background:#7fa1ba"><div class="meta"><b>天蓝 Sky</b>#7fa1ba</div></div>
+      <div class="sw" style="background:#acc7e4"><div class="meta"><b>月白 Mist</b>#acc7e4</div></div>
+      <div class="sw" style="background:#71322d"><div class="meta"><b>赭石 Terra</b>#71322d</div></div>
+    </div>
+    <div class="comps">
+      <div class="comp"><div class="chip" style="background:#1d2551">字</div><p>衬线标题 · Noto Serif SC<br>建立文化厚重感</p></div>
+      <div class="comp"><div class="chip" style="background:#7fa1ba">圆</div><p>圆角卡片 + 手机样机<br>统一栅格与间距</p></div>
+      <div class="comp"><div class="chip" style="background:#71322d">点</div><p>赭石作强调色<br>痛点/重点一眼可见</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="kicker" style="color:var(--mist)">THANK YOU</div>
+      <h2>如果这页让你想聊聊大理——</h2>
+      <p>这是一份以“问题 → 方案 → 结果”组织、过程全透明的交互作品集。欢迎打开可交互原型，亲自走一遍行程规划。</p>
+      <a class="foot-btn" href="index.html" target="_blank">▶ 打开可交互原型</a>
+    </div>
+    <div class="foot-meta">
+      <div><b>设计师</b>　傅怡 · UI / UX Designer</div>
+      <div><b>项目</b>　大理文旅小程序 + Web 专题</div>
+      <div><b>角色</b>　独立设计（洞察→原型→复盘）</div>
+      <div><b>工具</b>　Figma · Photoshop · Illustrator</div>
+      <div><b>交付</b>　24 屏高保真可交互原型</div>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" onclick="closeLb()">
+  <span class="x">✕</span>
+  <img id="lbimg" src="" alt="" />
+  <div class="cap" id="lbcap"></div>
+</div>
+
+<script>
+function openLb(el){
+  var img = el.querySelector('img');
+  document.getElementById('lbimg').src = img.src;
+  document.getElementById('lbcap').textContent = img.alt || '';
+  document.getElementById('lb').classList.add('on');
+}
+function closeLb(){ document.getElementById('lb').classList.remove('on'); }
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeLb(); });
+</script>
+</body>
+</html>

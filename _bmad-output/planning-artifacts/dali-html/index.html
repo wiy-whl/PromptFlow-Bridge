@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="ze6Kdo18jUtUVeq134AvCB">
+<head data-page-node-id="K70cOClDHgAfxGY7FALvAp">
+  <meta charset="UTF-8" data-page-node-id="wneHVzPuybJTA4NynR0XPO" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" data-page-node-id="L1vUUdcvPPh41U5L0kwuf8" />
+  <title>大理 · 文化信息体验</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" data-page-node-id="h19JJWHB1j5LrOd5HR4kVj" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-page-node-id="HrAV4TemsEB12kkHqz04oC" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@500;600;700;800&display=swap" rel="stylesheet" data-page-node-id="RoMveSshUoViUwWk3T42TJ" />
+  <link rel="stylesheet" href="./styles.css" data-page-node-id="kwC5Co1CxSMOnbXoVZfOVf" />
+</head>
+<body data-page-node-id="haWnOdrARyIYZxKdu4P5Oh">
+  <div class="stage" data-page-node-id="RDTxqASoSJtPyR8TocAsDb">
+    <aside class="legend" data-page-node-id="l9j6IU0lrMw7GGqqnuYJ3H">
+      <h1 data-page-node-id="CJE6pWPpxfiBlFY9Q0q3Ro">大理小程序 UI</h1>
+      <p class="sub" data-page-node-id="4Qfb4S1OKNOc0McrhwXOyg">真图原型 · TDesign · 可点击截图</p>
+      <div class="nav-list" id="screen-nav" data-page-node-id="KGvt87sfd5YgAQdoP2qvAE"></div>
+      <p class="hint" data-page-node-id="jDnRwMkiQ4zb2plHlHzTTa">右侧真机框可直接截进作品集。底栏、列表、详情已串成主路径。</p>
+    </aside>
+
+    <div class="phone" data-page-node-id="0ZBoBBrbl5Q1fGDlcCAE4h">
+      <div class="notch" data-page-node-id="RYQvPEYKYcZpbIAI4kzdnM"></div>
+
+      <!-- S01 启动 -->
+      <section class="screen splash no-tab" id="splash" data-name="S01 启动" data-page-node-id="ZlwJ0FkGQbeTISGIkVGO2q">
+        <div class="splash-bg" data-page-node-id="rovtJncWI0AUv5BkFCJgv2"><img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="PxNmCr0JINfctSi5aJl3HA" /></div>
+        <div class="splash-top" data-page-node-id="9HwD7nPKyYvXIEnYhp3uAt">
+          <button class="skip" type="button" data-go="home" data-page-node-id="3xpkgSUPxOuzD1n0vmUD5V">跳过</button>
+        </div>
+        <div class="splash-body" data-page-node-id="OOCFDwueYdvDNrrS8jpf66">
+          <div class="logo" data-page-node-id="1jA5FUQ4vBufH47fWu2dri"><img src="./assets/wamao.svg" alt="" data-page-node-id="LmlomIDeCbineECe5k2cu5" /></div>
+          <em class="kicker" data-page-node-id="36rxXTCACKWdKtIVySjXeE">Erhai · Cangshan</em>
+          <h2 data-page-node-id="T07iHXEjIg4j4z99kHqTvK">大理</h2>
+          <i class="rule" data-page-node-id="6gbal4q8JzATAOzDRsPMNx"></i>
+          <p data-page-node-id="PYcedb5kaHM1hBt8eG8Q0y">苍洱之间，慢慢逛</p>
+        </div>
+        <div class="splash-cta" data-page-node-id="HMFq9CQwHpflK5gRDLSVCV">
+          <button class="btn-ghost" type="button" data-go="home" data-page-node-id="lp4AgY5AjQTbj41BzFKyEU">开始逛</button>
+        </div>
+      </section>
+
+      <!-- S02 首页 -->
+      <section class="screen" id="home" data-name="S02 首页" data-page-node-id="gLqNUNOJjPrG9S6sVk8mMG">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="pluIANisPh7ZnG61pEdG1u">9:41<span data-page-node-id="TxJJ55buF5fqM6NhAKpuZh">▮▮▮</span></div>
+        <header class="nav overlay home-nav" data-page-node-id="DK0IVpNoAKPSxB3W1G8SOt">
+          <div class="brand" data-page-node-id="sWUWG6AzvDEx9kqLGtffq6">
+            <span class="mark" aria-hidden="true" data-page-node-id="mx3m7GJiuSsGiJQmwg1Gfz"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true" data-page-node-id="BGSgBwWTzE7sFwUr91F5GG"><path d="M5 19.5 10.2 9.8 14.8 14.2 18.6 8.5 27 19.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="PpHPbA5YcsYs6Ff6hC7qef"/><path d="M5 22.2c2.4-1.6 4.8-1.6 7.2 0s4.8 1.6 7.2 0 4.8-1.6 7.6 0" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" opacity=".88" data-page-node-id="znBCMHaEXcBBsp8IB82d1C"/><path d="M5 25.2c2.2-1.2 4.4-1.2 6.6 0s4.4 1.2 6.6 0 4.4-1.2 7.3 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".5" data-page-node-id="Dhl6AMEiY8nOl1F3IudfUD"/></svg></span>
+            <span class="brand-type" data-page-node-id="zXmYSFwZyjSH5R8Eb4owTO"><b class="brand-wordmark" data-page-node-id="c6t1AeDG1KKRiUmCSr1ABR">大理</b><em data-page-node-id="MHr7o5iezvhWaN0CmADcBI">DALI</em></span>
+          </div>
+          <button class="icon-btn" type="button" data-go="search" aria-label="搜索" data-page-node-id="LafG15eH0XYKIDJLXjQA3R"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" data-page-node-id="mkjlmn90BI4Evyyw4bvkZ9"><circle cx="11" cy="11" r="6.2" data-page-node-id="weFEG4AzFdHvH5P2bCpAS0"/><path d="m15.6 15.6 4.4 4.4" data-page-node-id="75GX6VMuY6xXLYioNfC6en"/><path d="M8.4 12.2c1.1-.7 2.3-.4 3.2.3" data-page-node-id="qW3tUYfiITkK0ffwXmDRPA"/></svg></button>
+        </header>
+        <div class="hero tall home-poster" data-page-node-id="X2tmV89foi8OO92NurYdPL">
+          <img src="./assets/hero-erhai-aerial.jpg" alt="航拍双廊：白墙村落伸进洱海，岸边是秋天的红杉" data-page-node-id="k68OavcEEvwFbTf9A4pMTH" />
+          <div class="poster-title" data-page-node-id="mho5cA2qLpy9o33UCBorAD">
+            <span class="poster-slogan" data-page-node-id="w18La6bxR02DYX7S9rneiu">风起的时候</span>
+          </div>
+        </div>
+        <div class="home-board" data-page-node-id="oU7b8NEqxSUqukdKV7a5B8">
+          <div class="entry-row" data-page-node-id="phinMbFjX0MKHxy2v2uxTs">
+            <button type="button" data-go="spots" data-page-node-id="v6aaM6Kg51vhcEq37elHAG"><i aria-hidden="true" data-page-node-id="AiFl2q3cJcWBQwhjbMFOeR">景</i><span data-page-node-id="gh7a5g4RQfX3WBfTOTpgja"><b data-page-node-id="pi8KtMM5piwrzxB6Pl1dAF">景点</b><small data-page-node-id="BMQA4uE67EgjtweKpRGDkz">去哪逛</small></span></button>
+            <button type="button" data-go="culture" data-page-node-id="5AsWoKDByqtCmU2EEcSNab"><i aria-hidden="true" data-page-node-id="G5Gu2Ea4ERf4Y585aRXfkH">文</i><span data-page-node-id="lNfgLEIawJPCkE07tGWGTT"><b data-page-node-id="2rWAlxV5mZzONsPwfWjCCa">文化</b><small data-page-node-id="cEkhTgy30hjF3WVr63TOj4">看懂，带走</small></span></button>
+          </div>
+          <div class="strip-head" data-page-node-id="b2lgTD3BVChcaMjZPEWjSu">
+            <b data-page-node-id="E39JcQWv6IEcdTePNsgZkP">值得先看</b>
+            <span data-go="exhibit" style="cursor:pointer" data-page-node-id="pCDnQWqI97KZD6sb3mSpvh">更多</span>
+          </div>
+          <div class="strip" data-page-node-id="W3HBrn4dRPqqdQ7h3WLKHm">
+            <button class="strip-card" type="button" data-go="exhibit" data-page-node-id="rRXlQuksi3hoUNWGe8ZQve">
+              <img src="./assets/exhibit-tower.jpg" alt="云上大理城：暮色里亮灯的古城楼阁" data-page-node-id="FgOrCJwF0yrZg9zVbktiEO" />
+              <span data-page-node-id="hWlBdkqoCPFrF3HcqXZZGK"><b data-page-node-id="M46MacLOEKUqx4J4nP8FAM">云上大理城</b><small data-page-node-id="vvazcaPA22T31bU5i2zZ2E">云上特展</small></span>
+            </button>
+            <button class="strip-card" type="button" data-go="spot-erhai" data-page-node-id="4riFrpTBUf2JCHGLrSzuG7">
+              <img src="./assets/spot-erhai.jpg" alt="苍山下的洱海与白云" data-page-node-id="HsH4izyUpqUIAXJ3kQBv90" />
+              <span data-page-node-id="CrGOG6b3NdFWh6WcqkxVPW"><b data-page-node-id="Qf96OsX3gYrH5QqG5MSfTs">洱海</b><small data-page-node-id="D8cMVOZGeYwwy7GEjAsJUv">半日足够</small></span>
+            </button>
+            <button class="strip-card" type="button" data-go="spot-xizhou" data-page-node-id="Lny4FSDrM6aTAJ6RsTiAV8">
+              <img src="./assets/spot-xizhou.jpg" alt="喜洲古镇街巷" data-page-node-id="BIenuKnf6k0dVhOJ795XhI" />
+              <span data-page-node-id="Qk6HBwH2GEhh8rwSaR1Mtl"><b data-page-node-id="lNfXErZOimsEbyQKcMK87b">喜洲</b><small data-page-node-id="Rks244PZwOY8HyiAzCIVjQ">慢下来走</small></span>
+            </button>
+            <button class="strip-card" type="button" data-go="spot-shuanglang" data-page-node-id="FgCAoDRl40bgNZ3QgqZBH1">
+              <img src="./assets/spot-shuanglang.jpg" alt="双廊湖岸" data-page-node-id="SELGMpjeQI1XUpBfWPZjVI" />
+              <span data-page-node-id="tM1wKJExgcyMFdzX0anBUJ"><b data-page-node-id="zwHkEgo4tU7MjvbiAfovu3">双廊</b><small data-page-node-id="fvAp8N8pT0tdTP7ypnXhQo">岸边拍照</small></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 搜索 -->
+      <section class="screen no-tab" id="search" data-name="搜索" data-page-node-id="sXXu4hUQukxqT60vwqFbaJ">
+        <div class="status" data-page-node-id="zfhjQ441W9XUyZkHfsDwG1">9:41<span data-page-node-id="oijAry69bkP2Pg8YIW2ZIU">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="ka7jSVhV4HZBJr18eJrfN3">
+          <button class="back" type="button" data-go="home" data-page-node-id="NPFMSxK7L2Cu6mY4u8k0p4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="TJ795Cijd9gwnMcDT85Tpk"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="ThF7bVBK20RMFx7YkPlBB0"/><path d="M8 12h10" opacity=".35" data-page-node-id="9yDIxnxYeKVzKHLNFcaVh3"/></svg></button>
+          <div class="nav-title" data-page-node-id="KBnXfFIO2iTuvO3aojew3d"><em data-page-node-id="ebaDyV8qqsfWEfpWrQTvht">Search</em><b data-page-node-id="bDIvdJZA4PkbasRPH7Bi6x">搜索</b></div>
+          <span class="nav-slot" data-page-node-id="JApbH3s6H40X9PM7Nn3WiH"></span>
+        </header>
+        <div class="search-box" data-page-node-id="7zVOOfxN8K43U4EuacV21A">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="18" height="18" data-page-node-id="W32QUtEKR0Hp4Y3bTcUBzA"><circle cx="11" cy="11" r="6.2" data-page-node-id="YXRdjVObTvljq9pYIcExM8"/><path d="m15.6 15.6 4.4 4.4" data-page-node-id="PYc5BsCfIDJZH93LEmjCvA"/></svg>
+          <input id="search-input" type="search" placeholder="搜洱海、扎染、喜洲" data-page-node-id="f4qTiXJZb0rcKtU5C5oq28" />
+        </div>
+        <div class="list" id="search-result" data-page-node-id="i0v7ofdoCVGTChIOaBqYi3">
+          <button class="row" type="button" data-go="spot-erhai" data-page-node-id="Xx7vJ3drWe9OzRgkEaUNa3">
+            <img src="./assets/spot-erhai.jpg" alt="" data-page-node-id="iC5RNgjVB2hxlqD7NLfAXo" />
+            <div class="grow" data-page-node-id="JNCHm7tsd58WP71WcgktKO"><b data-page-node-id="wIAcn0R5RDfNuwsjDC2mXK">洱海</b><p data-page-node-id="cUMpjR8r2ZD31P77lOnBce">景点 · 半日足够</p></div>
+            <span class="arrow" data-page-node-id="3f5VFFFVPtrEyWu5IKEqQ6">›</span>
+          </button>
+          <button class="row" type="button" data-go="spot-xizhou" data-page-node-id="h6q3S3SU2QElqREDIVWddL">
+            <img src="./assets/spot-xizhou.jpg" alt="" data-page-node-id="P0QviK26SqhnbRIVYMCUjS" />
+            <div class="grow" data-page-node-id="VonIJFZVvaEjk5lhjw71vN"><b data-page-node-id="WGERE9DJ5AsQq53ZkP3y6m">喜洲古镇</b><p data-page-node-id="PtcEXfoAefWsUAYKuwr48j">景点 · 慢逛</p></div>
+            <span class="arrow" data-page-node-id="BZhWOTFbFuih9CLqpmMSxI">›</span>
+          </button>
+          <button class="row" type="button" data-go="culture-dye" data-page-node-id="VT9iDBXOS8xkZOYaNQOthv">
+            <img src="./assets/craft-dye.jpg" alt="" data-page-node-id="PKsXGOQiZ0aE5U1d7Qzmy4" />
+            <div class="grow" data-page-node-id="TbKFpPAZwl8FDFWQ4CBhZE"><b data-page-node-id="tXOpaOj7WZKVFHelF1rNso">扎染</b><p data-page-node-id="iiNbj4Fi0pGnBAliXuA37z">文化 · 可体验</p></div>
+            <span class="arrow" data-page-node-id="hcY9A2AhiH6JarT4dytDfK">›</span>
+          </button>
+          <button class="row" type="button" data-go="culture-wamao" data-page-node-id="Q88Q1udlbYk8dwiVdwbrBX">
+            <img src="./assets/craft-shelf.jpg" alt="" data-page-node-id="kl1nrhuWNfbwrWK3Ll74CG" />
+            <div class="grow" data-page-node-id="CmLXt7CygNuDUPRdLN8uPb"><b data-page-node-id="0Gj9ejDxgIETU5WWg4zodo">瓦猫</b><p data-page-node-id="auXIuSEz27I2BfubvfEGF7">文化 · 屋顶守护</p></div>
+            <span class="arrow" data-page-node-id="HpvBl32SqWpRaJ8jKJycjK">›</span>
+          </button>
+          <button class="row" type="button" data-go="culture-tea" data-page-node-id="vb2Uh8lbhX4WrnlLLMa8ui">
+            <img src="./assets/craft-tea.jpg" alt="" data-page-node-id="tkrtnCRcQD1oFXofC5Aaa2" />
+            <div class="grow" data-page-node-id="npG3deBh8e5V4SHYCVOfIz"><b data-page-node-id="tGCDYt9JrC85XfDzndGD9Z">三道茶</b><p data-page-node-id="AhOx37z679OnAEZwgksM31">文化 · 一苦二甜</p></div>
+            <span class="arrow" data-page-node-id="k5R7zx42fnKd0TIGKPh847">›</span>
+          </button>
+          <button class="row" type="button" data-go="spot-pagoda" data-page-node-id="6792cGyJA0qB50sFVbhU0k">
+            <img src="./assets/spot-pagoda.jpg" alt="" data-page-node-id="7jixI72KAGHJmO21X3xGLu" />
+            <div class="grow" data-page-node-id="2FmqOuTGhsUgea5zwwz9nK"><b data-page-node-id="x0E1h1w4gYuzGS37TlRyFj">崇圣寺三塔</b><p data-page-node-id="fWDqPjht2I3DeKX61jYZ9k">景点 · 半日</p></div>
+            <span class="arrow" data-page-node-id="G5ODBJBB1KN9ArFntKWlSj">›</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- S03 景点 -->
+      <section class="screen" id="spots" data-name="S03 景点列表" data-page-node-id="p8agxd8vVlKHdkw0oE6zOJ">
+        <div class="status" data-page-node-id="GDW7xJ45NGqtd9kR7Ft5vG">9:41<span data-page-node-id="P6fnE4RAYEqYxT37j0TV2d">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="oqRnAqz8I9zjByjIjdtn6K">
+          <button class="back" type="button" data-go="home" data-page-node-id="L52WW5Z3m1DDhCW56qQxsB"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="F8baKkWsHg8JAa3UIK5vwv"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="6uD1ldhWAaH1uCYgsDhsoM"/><path d="M8 12h10" opacity=".35" data-page-node-id="rOH0hFWgwYWNrFsIEFISLq"/></svg></button>
+          <div class="nav-title" data-page-node-id="tTyBpSzzRjmPzUSIO60IQl"><b data-page-node-id="7NahhyBijYVM05LU9GZGVL">景点</b></div>
+          <span class="nav-slot" data-page-node-id="LxTBSTA6KAy9OfKMDsmApg"></span>
+        </header>
+        <button class="search" type="button" data-go="search" data-page-node-id="HWeW2duPUOtAtesJQVwjAG">搜洱海、喜洲、双廊</button>
+        <button class="spot-promo" type="button" data-go="spot-erhai" data-page-node-id="qeH3okdsqEL9CYOeC3zhI6">
+          <img src="./assets/hero-erhai-aerial.jpg" alt="航拍洱海与岸上白墙" data-page-node-id="HVGmQCoXSGdK9N94ARGvvv" />
+          <div data-page-node-id="iudASUnYQ5ynmAD2mQPkpc">
+            <small data-page-node-id="2yTRLz5GUCdQ9wj9oiuMJw">第一次来</small>
+            <b data-page-node-id="VV0zVblzouMw770WSTQO1r">先去才村看湖</b>
+            <span data-page-node-id="wmxN9pvUFipvT4b1IGSSRf">三四公里廊道，下午回古城</span>
+          </div>
+          <em data-page-node-id="eqAtVmmWKpYZbTWGZu8XSx">去看</em>
+        </button>
+        <div class="zone-head" data-page-node-id="OglZjUiJnBsQ1JRcFT604o">
+          <b data-page-node-id="KIvpgtEg74v9AB0ELlOuBy">按片区看</b>
+          <button type="button" id="zone-more" data-page-node-id="z4NGPbBTuNNNwLwGWYQzho">更多</button>
+        </div>
+        <div class="zone-row" data-page-node-id="iQDMlvS3KWKbqrU4FcGSdY">
+          <button class="zone-card" type="button" data-go="spot-erhai" style="--zone:#8eb3c8" data-page-node-id="zIP8JutGhgRKueAk8Gr60Q">
+            <img src="./assets/hero-erhai-aerial.jpg" alt="东岸洱海" data-page-node-id="ecVPRq3ajGUpMiejedpDGU" />
+            <b data-page-node-id="61EBdXi8lCbuzmndQf88OZ">东岸</b>
+          </button>
+          <button class="zone-card" type="button" data-go="spot-xizhou" style="--zone:#c4b08f" data-page-node-id="Exarthn518vnF1byQv9bHZ">
+            <img src="./assets/spot-xizhou.jpg" alt="城北喜洲" data-page-node-id="k1mUf2dtIXCbSMlNVnUAjk" />
+            <b data-page-node-id="Mi9Ab7towb7v1o8fPLx0Q0">城北</b>
+          </button>
+          <button class="zone-card" type="button" data-go="spot-pagoda" style="--zone:#a3b59a" data-page-node-id="VFtgnHpKKdKG86lNAf0uWQ">
+            <img src="./assets/spot-pagoda.jpg" alt="城西三塔" data-page-node-id="UFZw5RcVtq8diUjWOK02U7" />
+            <b data-page-node-id="Ft8atRy1XkH2RVfjThdS2J">城西</b>
+          </button>
+          <button class="zone-card" type="button" data-go="spot-shuanglang" style="--zone:#8fb8b2" data-page-node-id="Rk2ejAVleds9aFQGWJ58zo">
+            <img src="./assets/spot-shuanglang.jpg" alt="北段双廊" class="pos-r" data-page-node-id="vwC9hgirL6Ha5QtE5cFJh4" />
+            <b data-page-node-id="KgbZt66ACUByjK0tfdXcK2">北段</b>
+          </button>
+        </div>
+        <div class="tags" data-filter="spots" data-page-node-id="5C502YhsgT9TlHvxz8Kt30">
+          <button class="on" type="button" data-tag="all" data-page-node-id="WRiXcLSNWwAjbFnJMLsxhb">全部</button>
+          <button type="button" data-tag="半日" data-page-node-id="yRgfbn9goHfY36xJ51i1U4">半日</button>
+          <button type="button" data-tag="湖岸" data-page-node-id="3grjTLxBOpDHM9MOUNx4t4">湖岸</button>
+          <button type="button" data-tag="古镇" data-page-node-id="8MVNUVMeeUiLfcmClKmg1r">古镇</button>
+          <button type="button" data-tag="第一次" data-page-node-id="n90ro0vWd9VEDUhYEbAR7M">第一次</button>
+        </div>
+        <p class="list-note" data-page-node-id="n8Db6S2gtkFPA2ZwFJxANb">六处景点，右下角加号收进行程</p>
+        <div class="place-list" id="spot-list" data-page-node-id="XrLOsCgwNU2eDnFcUqYXJ4">
+          <article class="place" data-zone="east" data-tags="半日 湖岸 第一次" data-page-node-id="Dwew9a5niKU1wZ4xYqFsR6">
+            <button class="place-go" type="button" data-go="spot-erhai" data-page-node-id="GOWxbgT3sb6XPqPwP1ubTr">
+              <img src="./assets/hero-erhai-aerial.jpg" alt="航拍洱海与岸上白墙" data-page-node-id="F9O6Yk6ZhZ13vM4f7ZJ44V" />
+              <div data-page-node-id="AaGZ8rYpVRJF53jWVy58HV">
+                <header data-page-node-id="B41LtkMf6KNf2bwzZxHDmo">
+                  <span class="mark" aria-hidden="true" data-page-node-id="ec1Xw9kibkHQyrJaGy1OTa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-page-node-id="jY1wUuMJ0ntvCJULQNcu3f"><path d="M3 9.5c2.2 0 2.2-2.2 4.4-2.2S9.6 9.5 11.8 9.5s2.2-2.2 4.4-2.2 2.2 2.2 4.4 2.2" data-page-node-id="IPAtnGuikVzFjwlO0iJkT9"/><path d="M3 15.5c2.2 0 2.2-2.2 4.4-2.2s2.2 2.2 4.4 2.2 2.2-2.2 4.4-2.2 2.2 2.2 4.4 2.2" data-page-node-id="wQDApHwbiF8DiycKtvTUy8"/></svg></span>
+                  <b data-page-node-id="HWzHl1C2gD4bNrolkPIL3F">洱海</b><em data-page-node-id="Ogl2cwkW8YOAwIU8GIahS5">首选</em>
+                </header>
+                <p data-page-node-id="sNnomeutI8bEXl0yNFBZiL">到才村看水色。廊道走三四公里就回。</p>
+                <div class="place-meta" data-page-node-id="YzXOfq10wD7Z7sT206D8sj"><span data-page-node-id="s95EDHEpOrVvBnfNYtiQit">3–4 小时</span><span data-page-node-id="CU9oMIwj3Pd46Qh0n5T3Jm">东岸</span></div>
+              </div>
+            </button>
+            <button class="place-add" type="button" data-add="spot-erhai" aria-label="把洱海加入行程" data-page-node-id="VGLw5oZz6KEQ1di90HBGW9">+</button>
+          </article>
+          <article class="place" data-zone="north" data-tags="半日 古镇" data-page-node-id="G2F9LNqH99PX28bS5ZB1vh">
+            <button class="place-go" type="button" data-go="spot-xizhou" data-page-node-id="YB7KCQ1583hSfvQAEqqNRv">
+              <img src="./assets/spot-xizhou.jpg" alt="喜洲古镇街巷" data-page-node-id="UBj5hgSkwWdj01R1SPPYCJ" />
+              <div data-page-node-id="TNEcsjATfznvM4pUmAY6Iz">
+                <header data-page-node-id="OwzO5sgrzLNslgcjknZmzl">
+                  <span class="mark" aria-hidden="true" data-page-node-id="jCSrMpwBNcRGpRtxa2Sml9"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="Mg5ox5uCBGUwLuWaCoBivE"><path d="M4 11.5 12 5l8 6.5" data-page-node-id="tpZgKwSudQ0ZG0ZkpR290T"/><path d="M7 10.8V19h10v-8.2" data-page-node-id="aSCs4WHaA9buGPEBexgV5Y"/></svg></span>
+                  <b data-page-node-id="kTBW6BiuNjQ1ntx5nzJGQW">喜洲古镇</b>
+                </header>
+                <p data-page-node-id="aKmsfvtr2qRndJuweWmdOg">院子和扎染都在市户街，村口坐小火车。</p>
+                <div class="place-meta" data-page-node-id="HDmHtG8hdFaEGr0DCUxgJi"><span data-page-node-id="40oTofVTxprYXHZcKvAFsH">4 小时</span><span data-page-node-id="tt3YM76n9nFShZNl1k2Iig">城北</span></div>
+              </div>
+            </button>
+            <button class="place-add" type="button" data-add="spot-xizhou" aria-label="把喜洲加入行程" data-page-node-id="srq2Zpnumxq9h6G76b2VHT">+</button>
+          </article>
+          <article class="place" data-zone="far" data-tags="湖岸 古镇" data-page-node-id="cbQ4mysdtGSUd304fKyCWS">
+            <button class="place-go" type="button" data-go="spot-shuanglang" data-page-node-id="9QhZ09rhZFQAYU99P8gdZC">
+              <img src="./assets/spot-shuanglang.jpg" alt="双廊湖岸" class="pos-r" data-page-node-id="M2jhTjEu83zeyZYLgxosTQ" />
+              <div data-page-node-id="2JT8qKq5BllaOLsbEMl9bd">
+                <header data-page-node-id="mQhDDLs3KensOvOGOvQvjm">
+                  <span class="mark" aria-hidden="true" data-page-node-id="4gSJGA7EVxcmBJIW3ZhX6l"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-page-node-id="kHMWunGAI7RwgHxKzf4hrk"><circle cx="15" cy="8" r="2.4" data-page-node-id="cec2cXRDRYCs28B90wAMm1"/><path d="M3 17.5c2.4-3.2 5.2-4.8 9-4.8s6.6 1.6 9 4.8" data-page-node-id="nnvNyZGJPoUzpoOF1tA5oD"/></svg></span>
+                  <b data-page-node-id="t503YUshlJpGvi6C0K0XOv">双廊</b>
+                </header>
+                <p data-page-node-id="9morcqTNuaGklBBdknsiQ8">村子贴着湖北段，从古城要单留车程。</p>
+                <div class="place-meta" data-page-node-id="MtA5vIv2gw1Hrx3q8eciDg"><span data-page-node-id="AJKCjTSdnAC7iVcvi0si0k">3 小时</span><span data-page-node-id="uH0E8Zz6TtcEWmq8cRV3e2">北段</span></div>
+              </div>
+            </button>
+            <button class="place-add" type="button" data-add="spot-shuanglang" aria-label="把双廊加入行程" data-page-node-id="m88Cq4uKZzNCLxXl3wH1jD">+</button>
+          </article>
+          <article class="place" data-zone="west" data-tags="半日 第一次" data-page-node-id="csOOfYzHe7FmEArVBrOuAG">
+            <button class="place-go" type="button" data-go="spot-pagoda" data-page-node-id="3mbHD591RBwSIeddtA40el">
+              <img src="./assets/spot-pagoda.jpg" alt="崇圣寺三塔" data-page-node-id="FMcBkmw62RodcZ3yRulURD" />
+              <div data-page-node-id="8PmR1ZAP84Xs8gjmeENfF9">
+                <header data-page-node-id="Uf9eAkQTnP4eugfl1R4Hs2">
+                  <span class="mark" aria-hidden="true" data-page-node-id="pCWVW8MskggHvF4SB71u0v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="m1A53hxZrx825eHAPalROH"><path d="M12 3 7.5 8h9L12 3z" data-page-node-id="7GcVZRhfQKvannUpjMfwCD"/><path d="M12 8 6 13h12L12 8z" data-page-node-id="Eobyj9TAYyCrcO8kW7YE8l"/><path d="M12 13 4.5 18.5h15L12 13z" data-page-node-id="VVXwY1OQLnqH7REEs9g7I7"/><path d="M12 18.5V21" data-page-node-id="YJlllvpDMHCDJMxEAcINg9"/></svg></span>
+                  <b data-page-node-id="0JAbsD1aOfo8f8t3vGOxL5">崇圣寺三塔</b>
+                </header>
+                <p data-page-node-id="XysrSRwsuZTmnZtEvW4VFh">远处看清三座塔即可，不必走完寺院。</p>
+                <div class="place-meta" data-page-node-id="xRAC18gX2g4xE1e1MrtWUo"><span data-page-node-id="NBomWsJbQgQGYpf1GGvrfE">1.5 小时</span><span data-page-node-id="tsWV3OtSTQKqFhwHjJnB4B">城西北</span></div>
+              </div>
+            </button>
+            <button class="place-add" type="button" data-add="spot-pagoda" aria-label="把三塔加入行程" data-page-node-id="oztlcSEfH802zxoT7YDToN">+</button>
+          </article>
+          <article class="place" data-zone="west" data-tags="半日" data-page-node-id="VEK5y3sS08RfuAKGQf1U5i">
+            <button class="place-go" type="button" data-go="spot-cangshan" data-page-node-id="jjnhPEFnzlu1BvUOHQARYy">
+              <img src="./assets/spot-cangshan.jpg" alt="苍山" class="pos-r" data-page-node-id="rl47AkZ1sc8wE5z61zgkso" />
+              <div data-page-node-id="Rf3T7xtWsTPIrH7i7dB491">
+                <header data-page-node-id="TGXZVCYFbuDrd58XXVqE2F">
+                  <span class="mark" aria-hidden="true" data-page-node-id="MQSE7qnrSle5FkX1L4ySDo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="CW9Non9gheujyDkOw9Odhl"><path d="m3 18 6.2-9 3.1 4.4L15.8 8 21 18H3z" data-page-node-id="XHbLaYagLBlXe2WGSN5mo7"/></svg></span>
+                  <b data-page-node-id="S6d3sGQSeQCfEfLupNocct">苍山</b>
+                </header>
+                <p data-page-node-id="1NL4457lFf8EW6Z9IyjZZV">先在海边看山形，想上去再坐索道。</p>
+                <div class="place-meta" data-page-node-id="wmgLkxAAyVAEn3pwinJfYV"><span data-page-node-id="LMxPr4YJmgJZRSYaxyN6Av">半天</span><span data-page-node-id="YA3iuOvj4TlHetSNd4uCV3">城西</span></div>
+              </div>
+            </button>
+            <button class="place-add" type="button" data-add="spot-cangshan" aria-label="把苍山加入行程" data-page-node-id="8K0TVHlnUoEueqDVPQUVGg">+</button>
+          </article>
+          <article class="place" data-zone="far" data-tags="湖岸" data-page-node-id="Kc6kA0MiZcsaybk5pKCT80">
+            <button class="place-go" type="button" data-go="spot-bridge" data-page-node-id="nPTh0GaIGRguAhkg1ZEeIj">
+              <img src="./assets/spot-bridge.jpg" alt="湖上拱桥" data-page-node-id="EnznqgPTBRaHROq3Ot9zYb" />
+              <div data-page-node-id="6OHaR31ijNey6gzsJZUYgm">
+                <header data-page-node-id="ljUb6fPvVI38C3mJIFgMUI">
+                  <span class="mark" aria-hidden="true" data-page-node-id="UYhaB1ZOrNkBCX5OKugBNm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-page-node-id="eDNfg8BN1AjkEyOoszcDd4"><path d="M3 15.5c2.4-4 5.2-6 9-6s6.6 2 9 6" data-page-node-id="mO3JMQH4O3ccpNbmwYGOyZ"/><path d="M4 16.2h16M8 16.2V19M12 16.2V19M16 16.2V19" data-page-node-id="Ws1iFSEAdZtrMbK1DoBZtt"/></svg></span>
+                  <b data-page-node-id="boXm2kBjHYfw4zZlM5j4DH">湖上拱桥</b>
+                </header>
+                <p data-page-node-id="vECIHAblN8DQ6LBYWBcf1k">双廊岸边的对称桥，拍完倒影就走。</p>
+                <div class="place-meta" data-page-node-id="bSlfvTaQyuJWHeSEDDYDJT"><span data-page-node-id="HVJwJETOJkNtFg78QQ1wes">30 分钟</span><span data-page-node-id="W6LTEDB5XdykQnasHUYswc">跟双廊</span></div>
+              </div>
+            </button>
+            <button class="place-add" type="button" data-add="spot-bridge" aria-label="把拱桥加入行程" data-page-node-id="IkposwxesXiSNx1pqMhZCr">+</button>
+          </article>
+        </div>
+        <div class="also" data-page-node-id="oGPmsG3gPjqpzjr38wdRcy">
+          <p data-page-node-id="HGg11OzlGjjo40mCAjOWPz">不只是景点</p>
+          <div data-page-node-id="Hlw8VSiO4LVHbkJ5XONbj1">
+            <button type="button" data-go="culture-dye" data-page-node-id="E1uVxCvP5htfMeGMU9JAWL">
+              <img src="./assets/craft-dye.jpg" alt="" data-page-node-id="zdqf507H0nxi0YFL3cR35a" />
+              <b data-page-node-id="36HHqc8GbFrwu8zumNBvtF">扎染</b>
+              <span data-page-node-id="DAgBWQBphmLmdxpwCeXxjJ">文化 · 可体验</span>
+            </button>
+            <button type="button" data-go="exhibit" data-page-node-id="VmZvAPHhIrFcvDueeOfHIO">
+              <img src="./assets/exhibit-tower.jpg" alt="" data-page-node-id="HCX1JLXPPBHoB07OhFk6QD" />
+              <b data-page-node-id="4NwMZUysJNIPu57u08AQZ0">云上大理城</b>
+              <span data-page-node-id="CsZsoMatSiT9PNEmyShd6Q">特展 · 先看气质</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- S04 洱海详情 -->
+      <section class="screen no-tab spot-page" id="spot-erhai" data-name="S04 洱海详情" data-page-node-id="hV5akj4hnlIYBx6xCFViHF">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="YeIg5J2ggMaphy6DVT8LGT">9:41<span data-page-node-id="bZM98iHotSvMH22Z9aq2Gz">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="wQjXEGsKTFvoZsQVnQ5Vka">
+          <button class="back" type="button" data-go="spots" data-page-node-id="JrfBlDN8ofUMBZW5fOpVhj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="8eA358PQ3DlLVF0aNRIyZD"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="5elK80Fh8Db1M9XQmLtdBa"/><path d="M8 12h10" opacity=".35" data-page-node-id="upyyru9ldaMoSVIImFGuuz"/></svg></button>
+          <span class="spot-actions" data-page-node-id="cOhpcHODEHwOgpjaq9a8l3">
+            <button class="icon-btn" type="button" aria-label="分享" data-page-node-id="79MFTqH83Hklq10WRZxjKF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="3deBMiIWNdIPyXp5DdFHL1"><circle cx="18" cy="5.5" r="2.2" data-page-node-id="7PKAyyGG5NhTCHbsiPFSCx"/><circle cx="6" cy="12" r="2.2" data-page-node-id="LlNVCExK2Zps5b4GMrKxD5"/><circle cx="18" cy="18.5" r="2.2" data-page-node-id="NNyMkr5Fg2nr7Z2LYXnyE1"/><path d="m8 10.8 6.2-3.4M8 13.2l6.2 3.4" data-page-node-id="8sDKYKloQJGpHS2I1FBdJH"/></svg></button>
+            <button class="icon-btn fav-btn" type="button" data-fav="洱海" aria-label="收藏" data-page-node-id="LB4P6EexRY2NOvMrEBDeel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" data-page-node-id="MtVBCLKAuWWRJBEELLoxGg"><path d="M12 19.4S5 14.2 5 9.8A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 1.8c0 4.4-7 9.6-7 9.6z" data-page-node-id="dGk3j8rGSRnHoRUnwHmiVG"/></svg></button>
+          </span>
+        </header>
+        <div class="spot-cover" data-page-node-id="cardaGNBXafgcs1o8Budf8">
+          <img src="./assets/hero-erhai-aerial.jpg" alt="航拍洱海：白墙村子伸进湖里" data-page-node-id="TbKQtJ4qGPz5vM2ErrUQVp" />
+        </div>
+        <div class="spot-sheet" data-page-node-id="Smp3fGOTQvYOjAKfv73kXd">
+          <div class="spot-head" data-page-node-id="9O0MtIcAPl8qL9Plpr4PlJ">
+            <h1 data-page-node-id="GFBv8EKgtvCTj6WT28INbF">洱海</h1>
+            <p data-page-node-id="bkbv2jG2KwHQCqu2FSXDgV">第一次来，用半天把这片湖看懂，不必骑完全圈。</p>
+            <div class="mini" data-page-node-id="h4QMq2eG3xulXE3RD2EaZh"><em data-page-node-id="VccQ518y7PuRDmaqufydPc">半日</em><em data-page-node-id="X1KZEmZNUpGHqeZzaACuYc">湖岸</em><em data-page-node-id="ddLbpbauIsgWc0L4NGC0nQ">新手友好</em></div>
+          </div>
+          <div class="facts" data-page-node-id="LpzUXMB7ABCaDD3LgaM7IH">
+            <div data-page-node-id="5SpFjAM3h7pgDAKzjnQD2V"><small data-page-node-id="bhcKy9cts2DGR0S5oYYhBl">建议时长</small><b data-page-node-id="Oq8nws95MJQRl6IInKEo0i">3–4 小时</b></div>
+            <div data-page-node-id="B9tLnIrBzoRcOmQaVqv9Zp"><small data-page-node-id="NOmn7F7EracBUQzAPSRNYL">怎么去</small><b data-page-node-id="PKDnOh1xyx2Q9wD3H9iTHi">东门 20 分钟</b></div>
+            <div data-page-node-id="aWRTiovEfXKbtEkHBOQeHl"><small data-page-node-id="sSYCyIGcXuEFd2Flyaf88T">适合</small><b data-page-node-id="KQw7ZzO7oxpDJz0lsGNMro">第一次来</b></div>
+          </div>
+          <section class="spot-block" data-page-node-id="Rr2wHKfqFbRLI7ZYvrlxF5">
+            <h2 data-page-node-id="8RsqR1HsVXuXDKpsCrFEFE">可以这样逛</h2>
+            <ol class="route" data-page-node-id="Nh7NLJEnwmkpDIGgfBDS3Q">
+              <li data-page-node-id="m4CDJefs6vIrmTw43bOTjE"><i data-page-node-id="PXt0fSaiSBcT4wFfVt3XE7">1</i><div data-page-node-id="yS6h1LCZCglFGgnzWlGUQ5"><b data-page-node-id="dv8VQa9DClx422dVnlny8i">先到岸边看水色</b><span data-page-node-id="w1jC3K1tVS5XoT2aasvELI">才村或龙龛都行，到了先站 10 分钟，别急着骑行。</span></div></li>
+              <li data-page-node-id="NBVeKG0DDCMaDO8cT7lzCh"><i data-page-node-id="DlAiRkOjgZ8VkfIjFvJvrw">2</i><div data-page-node-id="DqUEGmlX5xFadq4roiWgni"><b data-page-node-id="P7vMkbTCC8bALQBfgYheYG">沿生态廊道走一段</b><span data-page-node-id="hU9XM84zN4wHBefoARmLg2">走 3–4 公里足够。全湖一圈要一天，第一次来不划算。</span></div></li>
+              <li data-page-node-id="rVwSyHnYge8sbIlGCB3orH"><i data-page-node-id="SBFujtDKEXMqRtvwh6n6LN">3</i><div data-page-node-id="6gr2NhsCrgQHVEcWWSbpQc"><b data-page-node-id="JOfAnyauDdswaI3Gi5ec6y">下午回古城吃饭</b><span data-page-node-id="UKVgrMb9IcqcwwcLtXd2R4">西边看山、东边看湖，选一边即可。</span></div></li>
+            </ol>
+          </section>
+          <section class="spot-block" data-page-node-id="5afFfmQqh3LU1A1aSZITBi">
+            <h2 data-page-node-id="oxACmWarKwzYQWU8vEKcUK">现场</h2>
+            <div class="pics" data-page-node-id="NgiwDi3TfGTehtIaCI8Dl4">
+              <img src="./assets/spot-erhai.jpg" alt="洱海与白云" data-page-node-id="tqliCQS1tOEtLsv1Qezp8N" />
+              <img src="./assets/spot-bridge.jpg" alt="湖上拱桥" data-page-node-id="TujHiXH6MQ9NCgOOQQOSqc" />
+              <img src="./assets/hero-erhai.jpg" alt="洱海岸线" data-page-node-id="DMPtUbcscHNx9ot1HpURE9" />
+            </div>
+          </section>
+          <section class="spot-block" data-page-node-id="AaFGm90xaMBQFlUKqpTlc4">
+            <h2 data-page-node-id="v9AAIVa4RyolzcZI2SaSfK">接下来去</h2>
+            <div class="related" data-page-node-id="wbqYwxMhWOBM3zuLB4Xnzx">
+              <button type="button" data-go="spot-shuanglang" data-page-node-id="4VKt6DML5ipFRj6DXeCMKw"><img src="./assets/spot-shuanglang.jpg" alt="" data-page-node-id="RisbCEnXOH4zMKsbuSbpaE" /><b data-page-node-id="crpFaxNfSZXQNdLBh8wRPG">双廊</b><small data-page-node-id="VtEyFyWVbX6N8yBI6cHGn1">拍照、贴湖的村子</small></button>
+              <button type="button" data-go="spot-xizhou" data-page-node-id="KyjjIiG8j6EdF4qjMezqMZ"><img src="./assets/spot-xizhou.jpg" alt="" data-page-node-id="fA8iXdlYM0PfjrQofI29aw" /><b data-page-node-id="PPWIdOabAL2KCG1EwnuEAH">喜洲</b><small data-page-node-id="CuAJ227F8ynzxkwgxiXHWd">慢半日看民居</small></button>
+            </div>
+          </section>
+        </div>
+        <div class="spot-dock" data-page-node-id="7HglSc0jvDbFpeIBRpd3qG">
+          <button class="btn-primary add-fav" type="button" data-fav="洱海" data-page-node-id="xnkV2YjXRL2JuVahAYEi38">加入想去</button>
+        </div>
+      </section>
+
+      <section class="screen no-tab spot-page" id="spot-xizhou" data-name="喜洲详情" data-page-node-id="Xl2TC04an6hMNKveJ2UNtF">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="3IbJpBVRrhC0IvTRItCwfK">9:41<span data-page-node-id="T3ngx9TzEc3gLGPkHmYROt">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="fAQF2NJckCKCU9D9Aclgl9">
+          <button class="back" type="button" data-go="spots" data-page-node-id="DvKhY85NlVsHCdoDSWPcf1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="IMejqM5wrMkxavvLsbRikF"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="XHgCL9EkgU9oDHhR66Mq8U"/><path d="M8 12h10" opacity=".35" data-page-node-id="LyVxdudQjtTfgN8Vxo40hC"/></svg></button>
+          <span class="spot-actions" data-page-node-id="plmAnsIfzNhtdLHmVI5ZGa">
+            <button class="icon-btn" type="button" aria-label="分享" data-page-node-id="yjDi8sqSFiPLaqYlaVI0jj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="hy54iFMu9dWiUbXwyuhlZb"><circle cx="18" cy="5.5" r="2.2" data-page-node-id="4DOfxMYOFTPYBvtxMEPqLQ"/><circle cx="6" cy="12" r="2.2" data-page-node-id="j8wOcmfcbtogNZuDY6mOb5"/><circle cx="18" cy="18.5" r="2.2" data-page-node-id="B7BHgpcHa325mNGAcA6zfq"/><path d="m8 10.8 6.2-3.4M8 13.2l6.2 3.4" data-page-node-id="Vbtlz6jb5pv4HlHC4RbA84"/></svg></button>
+            <button class="icon-btn fav-btn" type="button" data-fav="喜洲古镇" aria-label="收藏" data-page-node-id="oQpjVdB8DwC5DLCwQQNgtQ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" data-page-node-id="TEfOfmPKKp6dOlpdfVZe4J"><path d="M12 19.4S5 14.2 5 9.8A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 1.8c0 4.4-7 9.6-7 9.6z" data-page-node-id="nE3AF1bo44snaNCeiGCaDI"/></svg></button>
+          </span>
+        </header>
+        <div class="spot-cover" data-page-node-id="4IonxB4WcdFdQDlACaCY7B">
+          <img src="./assets/spot-xizhou.jpg" alt="喜洲古镇" data-page-node-id="khjl6AJnYpCzP2paDliqcp" />
+        </div>
+        <div class="spot-sheet" data-page-node-id="vlt0U2bhBS94ROA79eFhTb">
+          <div class="spot-head" data-page-node-id="SagdcPEmVnCpHRLriC8xer">
+            <h1 data-page-node-id="qykPWoXtr07je6y5xC4HPt">喜洲古镇</h1>
+            <p data-page-node-id="NtG9RYMXBgJTHIvYR97NTL">看白族院子和扎染，中午可以坐下来喝杯三道茶。</p>
+            <div class="mini" data-page-node-id="sXSU8RxpmAEU2CtQS6w0EI"><em data-page-node-id="AsO3Cw7G9ox7yJgmfQNDUw">古镇</em><em data-page-node-id="mIJHcusGqufQKYpZuOqRTC">半天</em><em data-page-node-id="8buJVMBrWMwCmWTZjlpIx7">慢逛</em></div>
+          </div>
+          <div class="facts" data-page-node-id="r50JKMOHgB1TXQL5X0bFkE">
+            <div data-page-node-id="HKC0bx1AS2fSiA1FkrA9nc"><small data-page-node-id="smEFA5naqyb5deOsdesYsW">建议时长</small><b data-page-node-id="LaY9FUs874isDCqI62mjzV">4 小时</b></div>
+            <div data-page-node-id="ZursSeIsRRXuW5NRKjQfj9"><small data-page-node-id="oB0JEMP8DLHXUdIRDxhnw1">怎么去</small><b data-page-node-id="V4FfGJfmmHfvO0kKZa78JK">古城约 40 分钟</b></div>
+            <div data-page-node-id="J5JL5bvKpXBJGFQfC5EFB3"><small data-page-node-id="6HXbzv5Ig86aN6wyXyBiaz">适合</small><b data-page-node-id="Q8AZrZimrrarLEAT4160ot">看当地生活</b></div>
+          </div>
+          <section class="spot-block" data-page-node-id="d6EHmoG1jXOxP1PliQ616w">
+            <h2 data-page-node-id="kB7YQtUe4km3hlQnJ9r5jO">可以这样逛</h2>
+            <ol class="route" data-page-node-id="f8yE3fNNveRQcwspF9eoIA">
+              <li data-page-node-id="KOI9DfRw96Z8vjSnDybzaW"><i data-page-node-id="5U2i2BRFVc4Op6XstIACGd">1</i><div data-page-node-id="SsGiiuFtaQYojC7JKgyI8L"><b data-page-node-id="gSftRpPcF3FJaLGZ8H6s4B">严家大院看民居</b><span data-page-node-id="J5rpaXFp4CKcsoJEG4wC29">三坊一照壁进院子里看，比在街上拍墙有用。</span></div></li>
+              <li data-page-node-id="yQ2JQiRHCkNGH4kRaV6T2i"><i data-page-node-id="qZMwvjzfeqkajV96eJnB3f">2</i><div data-page-node-id="AERFzyceztJ4HXEkFIVBIQ"><b data-page-node-id="xFFxg6rZNLGFdrYzD692Fk">转进作坊看扎染</b><span data-page-node-id="ejnClw4DxDYTq0NroACkwU">能看见蓝白怎么一层层浸出来，不必报整日体验。</span></div></li>
+              <li data-page-node-id="a0nmSySzlPeeZ0ywTThEOo"><i data-page-node-id="zWSbxXQJbCsQ1nqTfUDYkz">3</i><div data-page-node-id="LqBn83ydGU5hKhrzzC3FFF"><b data-page-node-id="9kZeiewCNmt9EEfeHgZCq6">田园小火车绕一圈</b><span data-page-node-id="SyRKzfbc6MO15paktJEbqP">坐 20 分钟看田和村子，当作收尾。</span></div></li>
+            </ol>
+          </section>
+          <section class="spot-block" data-page-node-id="oO7Y1zCWqfuxnxE9G7nz29">
+            <h2 data-page-node-id="1bXU8LnD73yXYYcr4YW3YE">现场</h2>
+            <div class="pics" data-page-node-id="pSn9szQctl40cUO48cb4AO">
+              <img src="./assets/culture-town.jpg" alt="" data-page-node-id="AaXkDyzW927NxfgfeZ3pUG" />
+              <img src="./assets/culture-room.jpg" alt="" data-page-node-id="xzFnzS5TvVSHRZpGGaBo8w" />
+              <img src="./assets/craft-dye.jpg" alt="" data-page-node-id="i8PVUjSCb2oHyMTzj7F3rs" />
+            </div>
+          </section>
+          <section class="spot-block" data-page-node-id="OLpsRiaOiC4JETJlfhHjqf">
+            <h2 data-page-node-id="hJxpVtYBgt5xZINuNh0znJ">接下来去</h2>
+            <div class="related" data-page-node-id="gaJoVR9hnvP9zOgt6eu3LN">
+              <button type="button" data-go="spot-erhai" data-page-node-id="zOdkx2jn5B6pzgBfrAsZsS"><img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="Vq8FelhgOe2RFOQRh78vlL" /><b data-page-node-id="iGBmUDt82FzLk72iJfD0CC">洱海</b><small data-page-node-id="Z7vA6eU2lyLEfR30KKR1ZP">回城路上可停</small></button>
+              <button type="button" data-go="spot-pagoda" data-page-node-id="15WVGsyfuLF2VhJLoNW5AA"><img src="./assets/spot-pagoda.jpg" alt="" data-page-node-id="nhRiI08I8J6rfyATVAFOIw" /><b data-page-node-id="4PtD2T8viQDBK5wQT5Psgy">三塔</b><small data-page-node-id="BuuZXYxkD41ALGSy9mHyQ4">古城标志</small></button>
+            </div>
+          </section>
+        </div>
+        <div class="spot-dock" data-page-node-id="iEPQErGRTCA2EAgRdvddZD">
+          <button class="btn-primary add-fav" type="button" data-fav="喜洲古镇" data-page-node-id="aDDdZCdSQG7zAbkj1xjIFP">加入想去</button>
+        </div>
+      </section>
+
+      <section class="screen no-tab spot-page" id="spot-shuanglang" data-name="双廊详情" data-page-node-id="og08Oyf7stHPK2C614hmGA">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="ILf7RKwJZXMQ1D7rZQ81Ws">9:41<span data-page-node-id="jEzYd59g7Z0sKwAfSTarab">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="eg98P4YdWzaSFPjhF9OawJ">
+          <button class="back" type="button" data-go="spots" data-page-node-id="Mp7EciyA8gKWYYv7baWYiU"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="cslLmQEWHCKYURqCyUYXxg"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="c3Q0kUi0B5fypIRnf7054G"/><path d="M8 12h10" opacity=".35" data-page-node-id="7sfTduCACnQe5sGeNFUtVe"/></svg></button>
+          <span class="spot-actions" data-page-node-id="IZOzcyH0XZSREz7zGUl4Ut">
+            <button class="icon-btn" type="button" aria-label="分享" data-page-node-id="jvN0GZHitTnPIpPRhMK8eu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="JaJg4ACC92Qm1qXY4yaCvK"><circle cx="18" cy="5.5" r="2.2" data-page-node-id="wmrYQ9e8DWYu2eOylvCI8T"/><circle cx="6" cy="12" r="2.2" data-page-node-id="palfwRVft22RSXRqvZCavt"/><circle cx="18" cy="18.5" r="2.2" data-page-node-id="1B4zHYoTeCRYXAzVVVsMvq"/><path d="m8 10.8 6.2-3.4M8 13.2l6.2 3.4" data-page-node-id="zmGa14BRR1stigBVSZzVVv"/></svg></button>
+            <button class="icon-btn fav-btn" type="button" data-fav="双廊" aria-label="收藏" data-page-node-id="vZGw7pA71NWnzXw6mAjZY9"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" data-page-node-id="u3oWONpgJXZ1s9WiMz2wEi"><path d="M12 19.4S5 14.2 5 9.8A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 1.8c0 4.4-7 9.6-7 9.6z" data-page-node-id="CAElSdoffehoJqAF7w0OXP"/></svg></button>
+          </span>
+        </header>
+        <div class="spot-cover" data-page-node-id="5zjDd2vDgLuwKjeIAuOYdC">
+          <img src="./assets/spot-shuanglang.jpg" alt="双廊" class="pos-r" data-page-node-id="UBJCfVkDrNDiMDh2xs1R3b" />
+        </div>
+        <div class="spot-sheet" data-page-node-id="A6SMaCHAWkIxOyQdCZgmI0">
+          <div class="spot-head" data-page-node-id="xW0xwLiH8cMG9KBv1wbjNj">
+            <h1 data-page-node-id="NKbbYhbgd1y5mKKuebb1m3">双廊</h1>
+            <p data-page-node-id="DSAQ4iBEJmrgBKi046Jb82">村子贴着湖岸长，适合慢慢拍，车程要单独留出来。</p>
+            <div class="mini" data-page-node-id="1CS2bcljBKtfGgojAvc4MY"><em data-page-node-id="CMOkWlHaGkCC5foq1gGvEx">湖岸</em><em data-page-node-id="7zg7QSef8FnOSLEDDkBz2w">拍照</em><em data-page-node-id="i0BkPtG26mCsGDcHKcp6H6">半日含车</em></div>
+          </div>
+          <div class="facts" data-page-node-id="6NpSFtkqWO1Yuij7YMeoJf">
+            <div data-page-node-id="ms3YvkFzM8tGbKZgH4Rc7w"><small data-page-node-id="EOpxT5E6BHwDJEUdlCbGGE">建议时长</small><b data-page-node-id="smQkeDkA0eE3ervo5fJeFw">3 小时</b></div>
+            <div data-page-node-id="nwVAP9Mb49DVDlgEJ1hrsE"><small data-page-node-id="7HH2BzeFn9IRBH0KSYVXiP">怎么去</small><b data-page-node-id="EVFJM4p39Dv7mUYc15ZIEH">环海东路</b></div>
+            <div data-page-node-id="KuHcLkcNC8xnUPBxf5CNGT"><small data-page-node-id="veHN6ra9SgGHQOchxJ5aig">适合</small><b data-page-node-id="MLhJMOYSwmPS8BQGE3YPVn">拍海景</b></div>
+          </div>
+          <section class="spot-block" data-page-node-id="VywedgJU95RpYnrew6hWbJ">
+            <h2 data-page-node-id="RHeF77J6BJAvcWL4aAZ9kW">可以这样逛</h2>
+            <ol class="route" data-page-node-id="pApAqkWAyXAcNhRhj7cLIL">
+              <li data-page-node-id="5myKENw0SL07yoHBpG1aVE"><i data-page-node-id="DnykFiEjLhmj9xTF5x04PV">1</i><div data-page-node-id="P9Hb3lLAVZm7EvKhm0S3DD"><b data-page-node-id="vihIqo736ufSeSC0Sj9fld">南门码头下看湖</b><span data-page-node-id="FVDv68TD2vbkB65lL5vYwp">先确认水色和风，再决定往北走多远。</span></div></li>
+              <li data-page-node-id="gmGTz8JULtmeFAqPZSYPx0"><i data-page-node-id="vYyfEXXiFL8kXbvcyEC9Ms">2</i><div data-page-node-id="1j8ESIOBzx7DBHtmfOYUfx"><b data-page-node-id="Gg6Fzs7pbVtNxrZeMeQIa6">沿岸走到玉几岛一带</b><span data-page-node-id="EKDfQ8Xkl5vEV2BPtCavLq">白墙、栈道、远山叠在一条线上，是主要拍照段。</span></div></li>
+              <li data-page-node-id="rXRw1SeHpFtpEMiH3dnAGA"><i data-page-node-id="MvJ2L62ndAaGKYQJZCA1U5">3</i><div data-page-node-id="2h2hfzGhysyks86Doz1jiA"><b data-page-node-id="gKrnH6OUQtkp3HUeqfoahw">拱桥打卡后返程</b><span data-page-node-id="NVeESNKmYgIkQmdmedz4GM">不必住下来。当天来回，和洱海不要排在同一上午。</span></div></li>
+            </ol>
+          </section>
+          <section class="spot-block" data-page-node-id="r0iJ0GElLNBzTiMl3Tczqh">
+            <h2 data-page-node-id="o4tqw26OqpBlQlMVVK2b3v">现场</h2>
+            <div class="pics" data-page-node-id="AbW3XkL0eF2wqZZcXy9R5F">
+              <img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="Aks0K49osLZ8b7e7UGj6qS" />
+              <img src="./assets/spot-bridge.jpg" alt="" data-page-node-id="revsMQlDRu3MgBxhQCcmYA" />
+              <img src="./assets/spot-shuanglang.jpg" alt="" data-page-node-id="mcPkZ72R6OWe4NMTAuFrAz" />
+            </div>
+          </section>
+          <section class="spot-block" data-page-node-id="DaGhCquR64HOKOuSCxZheg">
+            <h2 data-page-node-id="jlwqsclJDhHVu6ORGMxBK3">接下来去</h2>
+            <div class="related" data-page-node-id="yxSA8mqdz9WsvgI9Uw0BqQ">
+              <button type="button" data-go="spot-bridge" data-page-node-id="WSFqGMmwGio4xBziAiOmrr"><img src="./assets/spot-bridge.jpg" alt="" data-page-node-id="94liylCs0B76AuUAJFgc26" /><b data-page-node-id="t7CmoFItnKDXWx9q4YR16D">湖上拱桥</b><small data-page-node-id="eSDKhktTOfZcDVGOxXOKvE">顺路 30 分钟</small></button>
+              <button type="button" data-go="spot-erhai" data-page-node-id="9skAzcLewHnGbyFwTKsei5"><img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="FiTq4GsWxKDIJ2APVpwlmv" /><b data-page-node-id="hl5rOLHee77WuCFBg5lfVj">洱海</b><small data-page-node-id="QrsmGdEEFV0vP0b7F1laEA">西岸看山</small></button>
+            </div>
+          </section>
+        </div>
+        <div class="spot-dock" data-page-node-id="lNOI7R8SygvJ1OjTM0zioS">
+          <button class="btn-primary add-fav" type="button" data-fav="双廊" data-page-node-id="dSdFFdhcQ8V0yDB7Me4n5O">加入想去</button>
+        </div>
+      </section>
+
+      <section class="screen no-tab spot-page" id="spot-cangshan" data-name="苍山详情" data-page-node-id="eaMk2K8o61D2ofpxnSSJth">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="DXWZBnbOM9BZjkDV1dGJG2">9:41<span data-page-node-id="Z3RviEfS5CIGBbTHAMIx41">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="LpAxVgEJIP61aQjQHfCq1Y">
+          <button class="back" type="button" data-go="spots" data-page-node-id="0SBFbKRW2VJu7sHYtFXfSX"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="ipkFqS96g0SGZ4Y7Y7mnby"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="9uwVfBKu44EeHXmh5UjStQ"/><path d="M8 12h10" opacity=".35" data-page-node-id="FAJvrlE1u6AnEuTkwjycIt"/></svg></button>
+          <span class="spot-actions" data-page-node-id="21NnUjZq19Y7CHbH9R0lXO">
+            <button class="icon-btn" type="button" aria-label="分享" data-page-node-id="0kU0WdwGnYFLJZgmEY7vvR"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="7Lqnl6HNcFzEb64Py3OCep"><circle cx="18" cy="5.5" r="2.2" data-page-node-id="zClDMjX5vcc7zUA3VUmTxI"/><circle cx="6" cy="12" r="2.2" data-page-node-id="39LYVCcuxeTcvxfrMj7JRn"/><circle cx="18" cy="18.5" r="2.2" data-page-node-id="DyznsUdEyjD4QcJfg93chp"/><path d="m8 10.8 6.2-3.4M8 13.2l6.2 3.4" data-page-node-id="gfF8WZfrTeu1Y6bDFqFxV7"/></svg></button>
+            <button class="icon-btn fav-btn" type="button" data-fav="苍山" aria-label="收藏" data-page-node-id="Xp4JtHOEWl4yvhkp9cvDvo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" data-page-node-id="UiRmfIWK47CdMiPNbXp5gG"><path d="M12 19.4S5 14.2 5 9.8A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 1.8c0 4.4-7 9.6-7 9.6z" data-page-node-id="EXTY4RBeOmVPfTwd0Pfr97"/></svg></button>
+          </span>
+        </header>
+        <div class="spot-cover" data-page-node-id="x2UGT3gDsAS2CLfA6YYtK1">
+          <img src="./assets/spot-cangshan.jpg" alt="苍山" class="pos-r" data-page-node-id="pvZyzCztaFoxlBM0avYZKs" />
+        </div>
+        <div class="spot-sheet" data-page-node-id="Tm937so63y4TFMosutCWbU">
+          <div class="spot-head" data-page-node-id="BEskHrcaXouiCBYdP21IC6">
+            <h1 data-page-node-id="KO7zSYjOhppOF3fWrQP4zG">苍山</h1>
+            <p data-page-node-id="RTgjXU58CbR1wFEyYwFvdh">雪线落在湖对面。第一次来，海边看山通常比上山更值。</p>
+            <div class="mini" data-page-node-id="DWe8sON7XROI2YTHyAu9cl"><em data-page-node-id="HjpbsuLwbNCSDCNSACnJBE">看山</em><em data-page-node-id="pRE0ygrCnqfHyNsl05kBVr">半天+</em></div>
+          </div>
+          <div class="facts" data-page-node-id="OdRGh59xccqg6J6LPilxpv">
+            <div data-page-node-id="JyQqQ6V8rttXTpTNVmoV60"><small data-page-node-id="jNTnABRlh7hH7YaN3QG3bK">建议时长</small><b data-page-node-id="isClybeFa7nYbVVC9abNXf">半天到一天</b></div>
+            <div data-page-node-id="Av00RSLW51sYPqnQ3WaHXo"><small data-page-node-id="wgML62GCRNVBsSTBgbYG0e">怎么去</small><b data-page-node-id="h1AYmAprvLGHlFQxBGK2qe">城西索道</b></div>
+            <div data-page-node-id="YfZCQWMm7n7fuXp0AACfEc"><small data-page-node-id="IIf8x68X778fugWdihB55r">适合</small><b data-page-node-id="P0L0pECDrD03OjXvbJX5Jn">有体力再上</b></div>
+          </div>
+          <section class="spot-block" data-page-node-id="kVAeQNReHhqTyizYfdTBve">
+            <h2 data-page-node-id="3eJYs8m10NnBELotMRRdak">可以这样逛</h2>
+            <ol class="route" data-page-node-id="xU9D7mUOQleULWKR8EDd8f">
+              <li data-page-node-id="F83LEZNpFT4SnGH8RY8DJe"><i data-page-node-id="AWIpdIzuoFY3TXotoorA62">1</i><div data-page-node-id="dJKWFXRXqxRfjLSe8HnlEi"><b data-page-node-id="qjj72meZ4aTYcitVYo13aC">先在洱海西岸看山</b><span data-page-node-id="DfZIcA5Ey3fD9ECuG0WFF3">确认当天有没有云。云封顶时不必硬上。</span></div></li>
+              <li data-page-node-id="2tl35y3koeE2aEIJ44vBnP"><i data-page-node-id="GBXkesUCdTB6rlreCxCsjT">2</i><div data-page-node-id="Jb1kbzS8AFsJGyL6Nv0T8s"><b data-page-node-id="ggOHtImFDgcvTvwNRk429y">再决定要不要坐索道</b><span data-page-node-id="YCbHEMftZDbDm6uCHVE10a">感通索道半日足够。徒步洗马潭要一整天。</span></div></li>
+              <li data-page-node-id="D8AGQOvapQWYyKXX6WO2pT"><i data-page-node-id="pNIVCI9hOcXonSA8bmIlXs">3</i><div data-page-node-id="mjhzr68kBd6j8LedJqCKWg"><b data-page-node-id="T7V20zU601OXoEmMp3u6kY">下午下山回城</b><span data-page-node-id="sYRmm377CcCAu3UHvhmgzL">别和双廊排同一天，车程会把行程吃掉。</span></div></li>
+            </ol>
+          </section>
+          <section class="spot-block" data-page-node-id="13S0scw2dHpJK4lADObB9B">
+            <h2 data-page-node-id="boR1YXKnfCPet3ZXPSdVrJ">接下来去</h2>
+            <div class="related" data-page-node-id="mS8WISokbqL8UvlYzQDPhu">
+              <button type="button" data-go="spot-erhai" data-page-node-id="WxChEFYaWeHuvPcYbSRYHH"><img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="JwoWVplCTg6YqZPqeJufPy" /><b data-page-node-id="X9HeCuOOpFjNkCeHmhnFEI">洱海</b><small data-page-node-id="m8xnkMzLK8wpRiaKGcSh8V">山下看倒影</small></button>
+              <button type="button" data-go="spot-pagoda" data-page-node-id="GOhE8H6YY6UBHKAMNwd92H"><img src="./assets/spot-pagoda.jpg" alt="" data-page-node-id="bHpgHEOQcCo0GGEKpmaVAz" /><b data-page-node-id="IHziLTtoOpObmRZf0MCAXk">三塔</b><small data-page-node-id="Nq9l1RHx5wiMRgXRdkmO8e">回城可停</small></button>
+            </div>
+          </section>
+        </div>
+        <div class="spot-dock" data-page-node-id="STxA8ivqCRSAQ1FYSTZLLm">
+          <button class="btn-primary add-fav" type="button" data-fav="苍山" data-page-node-id="A5le102FNRP0wnXQx6dBBF">加入想去</button>
+        </div>
+      </section>
+
+      <section class="screen no-tab spot-page" id="spot-pagoda" data-name="三塔详情" data-page-node-id="4dLAu3J9KJOIS04Vvwv5Ya">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="4jA7k6OfzPT7W3viNffX2K">9:41<span data-page-node-id="SaosCqj7pK78JDfVhHF8KO">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="2Cc2LYNnCCUmFZCCHkHcbJ">
+          <button class="back" type="button" data-go="spots" data-page-node-id="d3A78h74tnOY0twHX1iDvw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="6emkGcGHPKM8ABREUnzPLU"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="a3KU4KDXornyWSlRa4I1dy"/><path d="M8 12h10" opacity=".35" data-page-node-id="ZOi8asmgCFG9PYb9c1ocFX"/></svg></button>
+          <span class="spot-actions" data-page-node-id="Hl5jWqoEgdAKUEsFCf2tij">
+            <button class="icon-btn" type="button" aria-label="分享" data-page-node-id="AsxJ676P1ppGNIoTJW4U6k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="gq9XzZzVvCV0r6Zj5cWR4u"><circle cx="18" cy="5.5" r="2.2" data-page-node-id="nADjO3OmxMgj9JBgODl2r1"/><circle cx="6" cy="12" r="2.2" data-page-node-id="F0hgo2BcvJFTrQfmNcmAjm"/><circle cx="18" cy="18.5" r="2.2" data-page-node-id="bztnD4LPuLeBrwEIRRCVRs"/><path d="m8 10.8 6.2-3.4M8 13.2l6.2 3.4" data-page-node-id="hA0WCqAHUHdJPrDfA760hl"/></svg></button>
+            <button class="icon-btn fav-btn" type="button" data-fav="崇圣寺三塔" aria-label="收藏" data-page-node-id="Li63yo1do41vSkHEQ4LgQM"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" data-page-node-id="4DSnocqguclYcvrFBtnIVb"><path d="M12 19.4S5 14.2 5 9.8A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 1.8c0 4.4-7 9.6-7 9.6z" data-page-node-id="5qNuVnmnGNFkqOAHalrp5B"/></svg></button>
+          </span>
+        </header>
+        <div class="spot-cover" data-page-node-id="32kREVlFMUdHLcda21sG4G">
+          <img src="./assets/spot-pagoda.jpg" alt="崇圣寺三塔" data-page-node-id="joFATqXOo1wUiu0bn9Jmls" />
+        </div>
+        <div class="spot-sheet" data-page-node-id="uQ6h6FNHnMM5ZlIb0Hlzo1">
+          <div class="spot-head" data-page-node-id="DGIzVictyp7QXrfJwfRivw">
+            <h1 data-page-node-id="KRsV63wRibi4DWLbiym6zv">崇圣寺三塔</h1>
+            <p data-page-node-id="aZedXSm3bRfEHdTvBCopM4">大理的天际线。不用走完全寺，把三座塔的比例看清即可。</p>
+            <div class="mini" data-page-node-id="ibJMW7NI7g5B8kzvccIrno"><em data-page-node-id="ICVcvcQSM3slpaT0mB47wa">古城</em><em data-page-node-id="Bqyic24ETYZn7GmmuTX2bY">半日</em><em data-page-node-id="sv8RFcMqDgBZMNsmu46DqB">标志</em></div>
+          </div>
+          <div class="facts" data-page-node-id="5EoLeUqmSqaz7rIip8Utpw">
+            <div data-page-node-id="TuTLxQTSKfRu6k7uaLeZHK"><small data-page-node-id="rPyDjmCQeK7F5QBANCeVoR">建议时长</small><b data-page-node-id="DAPZFsn4pSuWvCyagGOFw7">1.5–2 小时</b></div>
+            <div data-page-node-id="3s5YuMMybgiquBaC83wSYr"><small data-page-node-id="CsB1z4MFqaEGXPUJ0JXTnc">怎么去</small><b data-page-node-id="8ru5k6cZmBKb2lSbX6d87F">城西北可到</b></div>
+            <div data-page-node-id="Tb0XkAJ5OHV8FzVamyFnCV"><small data-page-node-id="LOoN2S3Fl55IC9V8EUKdMV">适合</small><b data-page-node-id="iTq69w9KPXrB4MG2Mthud0">看标志建筑</b></div>
+          </div>
+          <section class="spot-block" data-page-node-id="Pf05iBD8aeL6mV1zUe9zCA">
+            <h2 data-page-node-id="MrPzs2irYwWhR47lPiefXc">可以这样逛</h2>
+            <ol class="route" data-page-node-id="M90s60dac6RA0zsT947gLz">
+              <li data-page-node-id="tfFalSdeIrDzS9wqygX1S6"><i data-page-node-id="5GFlGeOD1fjRspCbAzxMvv">1</i><div data-page-node-id="focU6fhZe10pkTiMC3CKEz"><b data-page-node-id="dbv092QRepK7H0nvLPEGDm">先在门外看全景</b><span data-page-node-id="YBc4FRre132cMxRpWIF1oL">三塔和苍山叠在一起，是最清楚的构图。</span></div></li>
+              <li data-page-node-id="WwlP8S8SNBgdEkcpLxeJGL"><i data-page-node-id="GJ5ee2OA4lan7sj6cDPQuz">2</i><div data-page-node-id="uGZxMqPQvVpGJOwkEKeXUE"><b data-page-node-id="B7P7oHSBx7xXld8SkZLCGD">进寺走到主塔前</b><span data-page-node-id="WOdeo7uJQTvNrJExwsjyVX">不用逐殿转。主塔前站 15 分钟够用。</span></div></li>
+              <li data-page-node-id="c8Mtp7eBNkwn2CO6PqvowV"><i data-page-node-id="0rC5bElW62enaEal7y7RkI">3</i><div data-page-node-id="2pEUrNkiWxyeFoyXVWK7i0"><b data-page-node-id="MWibQhI06jszfV2Ga6GCFb">出寺回古城</b><span data-page-node-id="wv2QOFM1Ew06n6UHP8BTGt">和喜洲不要排同一上午，会赶。</span></div></li>
+            </ol>
+          </section>
+          <section class="spot-block" data-page-node-id="5mgA6mjYk6Bh9G9zDAuIYv">
+            <h2 data-page-node-id="dZsVVlCMs3SgPQjQzZGU0a">现场</h2>
+            <div class="pics" data-page-node-id="m9FjsxPZ5RSRLfzSq72Nze">
+              <img src="./assets/spot-pagoda.jpg" alt="" data-page-node-id="Kp1yM6HiQsoXKnrom0ChpY" />
+              <img src="./assets/culture-temple.jpg" alt="" data-page-node-id="EhQPfvEFBpxRgzOAZmB2eA" />
+              <img src="./assets/exhibit-tower.jpg" alt="" data-page-node-id="Plm1DJbSvMLWQtp2bpRPIL" />
+            </div>
+          </section>
+          <section class="spot-block" data-page-node-id="xzlZzT9nIkCnkgMq2O81RD">
+            <h2 data-page-node-id="xWVzVea7U8UyS56wR1EDOL">接下来去</h2>
+            <div class="related" data-page-node-id="8xsABQ1DT0cVmIJ0ZNdk3J">
+              <button type="button" data-go="spot-xizhou" data-page-node-id="3e4OoWPZAcdTI7DQeLJE6m"><img src="./assets/spot-xizhou.jpg" alt="" data-page-node-id="SSQd7s30H04p3Iqj7PNmma" /><b data-page-node-id="EyBDwAhgryA2kQPAkN279b">喜洲</b><small data-page-node-id="jrm2KDK8lZvwt1TzlITBQQ">往北看民居</small></button>
+              <button type="button" data-go="spot-erhai" data-page-node-id="BK7M2CRoesRdhEIg3eVtD6"><img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="NXSGElE6OaZTPho1BqxFuj" /><b data-page-node-id="bkOzBTVr0ewx5ZQIMfENnx">洱海</b><small data-page-node-id="U3B4GXrfXEEoLgYLYsaX3p">出城看湖</small></button>
+            </div>
+          </section>
+        </div>
+        <div class="spot-dock" data-page-node-id="Dsayk49WrultbprWwNG4vK">
+          <button class="btn-primary add-fav" type="button" data-fav="崇圣寺三塔" data-page-node-id="9RBM6Nsx5XyZGyb9pXE0W2">加入想去</button>
+        </div>
+      </section>
+
+      <section class="screen no-tab spot-page" id="spot-bridge" data-name="拱桥详情" data-page-node-id="5PxM3V9deBcKckGbTk35bL">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="BIFJE40e6gF0176rKZ8hIu">9:41<span data-page-node-id="pXqOL1CeQeXFdtk3jTCZVh">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="TxOQryNEoSAc5q8USgMxKB">
+          <button class="back" type="button" data-go="spots" data-page-node-id="poaYLvaCZnrTwxiX52Jdrz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="PGy5CXwl9EL8ZeIB4fWcRB"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="x3W2JeBRTCIeoSyBIZFeP4"/><path d="M8 12h10" opacity=".35" data-page-node-id="itZOPcQvoAWTLCI00YUy5Q"/></svg></button>
+          <span class="spot-actions" data-page-node-id="qeSa7IUiRpDHjtiGGmms1g">
+            <button class="icon-btn" type="button" aria-label="分享" data-page-node-id="srCwA1wet9KDbPZMiu6LqC"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="WhVboVzMYgNtzBv0JMK9nz"><circle cx="18" cy="5.5" r="2.2" data-page-node-id="Xg0fI0gek9yjSzya2LpMD5"/><circle cx="6" cy="12" r="2.2" data-page-node-id="G70Mf0by0Gjmt3CzR56IKj"/><circle cx="18" cy="18.5" r="2.2" data-page-node-id="iR2DuhKVm0CqWWKRVGIvpq"/><path d="m8 10.8 6.2-3.4M8 13.2l6.2 3.4" data-page-node-id="90fgQPH5L0s76fzSkpZNo5"/></svg></button>
+            <button class="icon-btn fav-btn" type="button" data-fav="湖上拱桥" aria-label="收藏" data-page-node-id="oxdeplWHXJW6RCOEFmYG8U"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" data-page-node-id="GqCH8nXSNTvnajnmbKJq1z"><path d="M12 19.4S5 14.2 5 9.8A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 1.8c0 4.4-7 9.6-7 9.6z" data-page-node-id="zeqlJNPqtK1aMHkOCCONVM"/></svg></button>
+          </span>
+        </header>
+        <div class="spot-cover" data-page-node-id="Qbq6DMREbHjG4FQSLlwjzE">
+          <img src="./assets/spot-bridge.jpg" alt="湖上拱桥" data-page-node-id="FC1fC8PDPaFKpEoDF5DmSL" />
+        </div>
+        <div class="spot-sheet" data-page-node-id="EmrEoi719mCsnyWEfKYEd8">
+          <div class="spot-head" data-page-node-id="WNsNAWp4KnZABIU7IUEOqd">
+            <h1 data-page-node-id="xZgLXBcW8lErmb3RKO19Fj">湖上拱桥</h1>
+            <p data-page-node-id="FvaQvvCrQX7gVhRnCerdL7">双廊岸边的打卡点。拍完对称倒影就可以走，不必单独排半天。</p>
+            <div class="mini" data-page-node-id="qE6BP7pfLwtZlpoI2DhgWQ"><em data-page-node-id="Ua13I7mM65dytUMaFB0Gah">顺路</em><em data-page-node-id="HcSFAbrYjP3W0GShFUGY2m">拍照</em><em data-page-node-id="dVokYWWP09dv7dEb4S4sLt">30 分钟</em></div>
+          </div>
+          <div class="facts" data-page-node-id="B7NFeAO3NoCi3kC7oOplOl">
+            <div data-page-node-id="FBIWQQW50NDhy1EU3pe0v4"><small data-page-node-id="1VFBwY9q5IKwRDs6gQimOd">建议时长</small><b data-page-node-id="X96pgKTh5xEvjQ65wBVZKZ">30 分钟</b></div>
+            <div data-page-node-id="nEDEaSr2Nq0CZc8MsqGr1M"><small data-page-node-id="KqWzLXxfov6JOrGL1EuCwX">怎么去</small><b data-page-node-id="jvzPjZlTWEjridPg0o6Wqs">并进双廊</b></div>
+            <div data-page-node-id="dbgNX7CnTEQjwOjhMb0RSQ"><small data-page-node-id="etzJRHe0lnok4MUhX5acPp">适合</small><b data-page-node-id="LfXA9A47y5miPzPFFOUIHv">拍干净构图</b></div>
+          </div>
+          <section class="spot-block" data-page-node-id="VyCmpc7JKSZHDTmyAoEDYX">
+            <h2 data-page-node-id="WhgGUeHuZWB9OTKT7uswd5">可以这样逛</h2>
+            <ol class="route" data-page-node-id="Be1xETZOABpRfDHnaUFEaE">
+              <li data-page-node-id="PhTRE3D6M9BjbD5j11MMkT"><i data-page-node-id="vtFG7CjfBhpMM34IIGg691">1</i><div data-page-node-id="lOJCajnHSQIwKwOdHLh7Cp"><b data-page-node-id="VU7lntwjiRjjofGancA8bd">桥头看倒影</b><span data-page-node-id="upp8dKuNFLSAVpaaENwYCI">无风时最清楚。有风就换角度，不必等。</span></div></li>
+              <li data-page-node-id="iCcf1WFqK3FzqeGRyKSIUw"><i data-page-node-id="k2jeWZHjZXhloV34f7LwKl">2</i><div data-page-node-id="89dvTBPD81kodU2K5zNJpr"><b data-page-node-id="rC29Oh0vvrOCuR2HaeIKt6">走上桥面转身拍村子</b><span data-page-node-id="f0ArhoYcbAPIJxjkx2FJXS">白墙和湖在同一条线上。</span></div></li>
+              <li data-page-node-id="MaJhws4i9HQVPGSKCh1LNp"><i data-page-node-id="Fip1ZyGQ2uulzoFdqQvlE8">3</i><div data-page-node-id="an7fXO9rOnDgCWxJCdCvCd"><b data-page-node-id="Mlxj9ZfFnGFo5plBgL31nB">接着走双廊岸线</b><span data-page-node-id="rdCZ6DdqoeRJNbXl0xCBAs">这是双廊的一站，不是独立景点。</span></div></li>
+            </ol>
+          </section>
+          <section class="spot-block" data-page-node-id="xXIl6HHxrRZnJH1oRjxVM2">
+            <h2 data-page-node-id="KDEytxn27bPQu7O7xMxdsm">接下来去</h2>
+            <div class="related" data-page-node-id="hZjutfUeHA2lgjLk54TvlC">
+              <button type="button" data-go="spot-shuanglang" data-page-node-id="XRBKj8PK9IVY8VWFOEH9Gh"><img src="./assets/spot-shuanglang.jpg" alt="" data-page-node-id="KSDptFt9Ax46O2bjfBkFVo" /><b data-page-node-id="L3qkNDVsImYPbCfOlGxtUz">双廊</b><small data-page-node-id="J3Crqx1KhTMYFNeyrgioVs">把岸线走完</small></button>
+              <button type="button" data-go="spot-erhai" data-page-node-id="RwXrCDnsXZODN5nczj1xi3"><img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="6Ok3rE4pYGsOtyTSiwMkO8" /><b data-page-node-id="apAII6651Iff3jyXlZv8K3">洱海</b><small data-page-node-id="QSkYYBEFgN0evz3CzH3o3w">回程看西岸</small></button>
+            </div>
+          </section>
+        </div>
+        <div class="spot-dock" data-page-node-id="hxL1Twf6NN9zgomOhkDSiZ">
+          <button class="btn-primary add-fav" type="button" data-fav="湖上拱桥" data-page-node-id="Vb5Kb13tUe5BaPUFH2rOOA">加入想去</button>
+        </div>
+      </section>
+      <!-- S05 文化 -->
+      <section class="screen" id="culture" data-name="S05 文化列表" data-page-node-id="SSDa9XXaCKOmHOcGEwKLpM">
+        <div class="status" data-page-node-id="0KxB85vufE0PdFPrSZzq8I">9:41<span data-page-node-id="27GpKgGX2D0X1fk8owaVnu">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="kWVkVW7hReudcbuDDrPHcw">
+          <button class="back" type="button" data-go="home" data-page-node-id="NUSW0RPjthwFX09RXHYSJW"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="xc7XzkxEwqg0YkETNX4hBM"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="RqrVdr01sYDDdcVBBe3sRT"/><path d="M8 12h10" opacity=".35" data-page-node-id="r7s1JnzqNtoB9k6Vq3PJF6"/></svg></button>
+          <div class="nav-title" data-page-node-id="S8R5qK0gsGTZBReA5if85j"><b data-page-node-id="jZJ2gXNyd3KLP6AyPV47zz">文化</b></div>
+          <span class="nav-slot" data-page-node-id="8ikcUrdNjI8c1zssLqSg4Z"></span>
+        </header>
+        <button class="search" type="button" data-go="search" data-page-node-id="UDrDLYE9UoMPK0B3yCws2S">搜扎染、白族、节庆</button>
+        <button class="spot-promo cult-promo" type="button" data-go="culture-dye" data-page-node-id="v6SGkw7fvn251VaLrtqKrb">
+          <img src="./assets/craft-dye.jpg" alt="扎染布面" class="pos-r" data-page-node-id="PFV1KbxwFMMqnwwLOxHLIp" />
+          <div data-page-node-id="MWF05fxy6rAeumX6DOBSYi">
+            <small data-page-node-id="vBydV7GW8oDCLLZzrxDZCu">先看懂一件</small>
+            <b data-page-node-id="ye7cScpHVylyvEKCBuc11v">扎染</b>
+            <span data-page-node-id="GrY7wAUUQhV0TRQJ6tTLHP">蓝白是浸出来的，一小时能遇见</span>
+          </div>
+          <em data-page-node-id="ZU8BNBjbpexpmHRA48gRWZ">去看</em>
+        </button>
+        <div class="meet" data-page-node-id="Vy0XR17FtinvXWrzF54yeW">
+          <div class="zone-head" data-page-node-id="BYB3XVhpdZrLH8ymtXg5Gv">
+            <b data-page-node-id="GSoyHSxXoMNKnwpCAnJ373">在哪遇见</b>
+          </div>
+          <div class="zone-row" data-page-node-id="oeihwCfXuTaTmwACxhgtZE">
+            <button class="zone-card" type="button" data-go="spot-xizhou" style="--zone:#c4b08f" data-page-node-id="f8N1ZXzd37e5wKJv5lk1qc">
+              <img src="./assets/spot-xizhou.jpg" alt="喜洲" data-page-node-id="EGc09GFl87o49p6BnADVWt" />
+              <b data-page-node-id="j9MOaNdLjBKCOuTm5HAtkH">喜洲</b>
+            </button>
+            <button class="zone-card" type="button" data-go="culture-dye" style="--zone:#6d82a8" data-page-node-id="WdnFlpc8BzG5apK10X1dNk">
+              <img src="./assets/craft-cloth.jpg" alt="周城扎染" data-page-node-id="VbFPq1xryemEbLixHSW8fi" />
+              <b data-page-node-id="3H6V3ABAnu6X5hIaBmTl4H">周城</b>
+            </button>
+            <button class="zone-card" type="button" data-go="culture-tower" style="--zone:#a3b59a" data-page-node-id="kEr8zL5gNgZS7aRLSoAPpZ">
+              <img src="./assets/culture-temple.jpg" alt="大理古城" data-page-node-id="tbMGYeMrcNzeH0eAAK4DcR" />
+              <b data-page-node-id="r52V9MK5V5PCgEAYrk5DOg">古城</b>
+            </button>
+          </div>
+        </div>
+        <div class="tags" data-filter="culture" data-page-node-id="0qYdoggSLa7eRZM2d7UYUm">
+          <button class="on" type="button" data-tag="all" data-page-node-id="dIYJ772l1USG3kTHRDzkiA">全部</button>
+          <button type="button" data-tag="工艺" data-page-node-id="Vex1y01JouAV69pmaZdptT">工艺</button>
+          <button type="button" data-tag="民俗" data-page-node-id="DTJ0avQrlASlHiylTscsSH">民俗</button>
+          <button type="button" data-tag="饮食" data-page-node-id="4CwaeLwvxkA6pgdmad8P67">饮食</button>
+        </div>
+        <p class="list-note" data-page-node-id="jxagZWU74kxuHfeFaqVbae">点加号收进体验单，再按地点排</p>
+        <div class="cult-list" data-page-node-id="3FEEfP8p7GXPPK4mAF7VUk">
+          <article class="cult" data-kind="craft" data-tags="工艺" data-page-node-id="qdlhwl55XcgWqGwUc8HBMj">
+            <button class="cult-go" type="button" data-go="culture-dye" data-page-node-id="ZkXPSEDm6qijJDRQwKf9Kp">
+              <span class="cult-thumb" data-page-node-id="Vyhsd4Psb2nN99XDKF3f1M"><img src="./assets/craft-dye.jpg" alt="扎染" data-page-node-id="NobJ8EYpzXSyLK5HnQVcPM" /></span>
+              <div data-page-node-id="C7QBXZ9IIil2s1qxhGQtE5">
+                <header data-page-node-id="5sAjWnjh9Q8P2KGc632It7"><b data-page-node-id="QChv0DYAp83S4tJ2UhBhGI">扎染</b></header>
+                <p data-page-node-id="1LDl4OE1zvvEyXVkgPVs2N">蓝从板蓝根里浸出来。喜洲或周城，一小时够。</p>
+                <div class="place-meta" data-page-node-id="jPYyxX9FXAQDr8nYNLX7G4"><span data-page-node-id="jOlL8lAg62zOGTpkpItqPl">1 小时</span><span data-page-node-id="qOtQ3lQ3ZGW45ktrSf9ZLk">喜洲、周城</span></div>
+              </div>
+            </button>
+            <button class="cult-add" type="button" data-cult-add="culture-dye" aria-label="把扎染加入体验" data-page-node-id="04nu8VnuEgxuHf7s6KPiUl">+</button>
+          </article>
+          <article class="cult" data-kind="folk" data-tags="民俗" data-page-node-id="MGpULxQJkddbhu0h2l3dYM">
+            <button class="cult-go" type="button" data-go="culture-wamao" data-page-node-id="KH3pKQ5Uhr6MmqkmT9Fu0w">
+              <span class="cult-thumb" data-page-node-id="8abV3YKfZNjOoWclymSkmo"><img src="./assets/craft-shelf.jpg" alt="瓦猫" data-page-node-id="6Jrar84WnhMRVHiWoEmLIW" /></span>
+              <div data-page-node-id="fDKMKFkHf7sOPC0cWdfZ2z">
+                <header data-page-node-id="rc5al0HDqtz76xlHKxQOwj"><b data-page-node-id="hqgBgQ7zdZCDedoLbeNfPL">瓦猫</b></header>
+                <p data-page-node-id="03vZKykhrB1hti6EbrOCo9">蹲在屋脊上。路过抬头就能看见。</p>
+                <div class="place-meta" data-page-node-id="jRQHe2UsoLIQ5fGG3vaK7s"><span data-page-node-id="e3Bk9hKsC9SFZ6Y9bkj38t">路过</span><span data-page-node-id="abJe0nZ6pR2xGezo6Zw8dm">喜洲、古城</span></div>
+              </div>
+            </button>
+            <button class="cult-add" type="button" data-cult-add="culture-wamao" aria-label="把瓦猫加入体验" data-page-node-id="KdDmGlq41eiFTqrptPF55H">+</button>
+          </article>
+          <article class="cult" data-kind="folk" data-tags="民俗" data-page-node-id="rgMjZRy9iwVQAlLCVyNRxe">
+            <button class="cult-go" type="button" data-go="culture-house" data-page-node-id="D9RC7vB5nvj0c01f6Qnwis">
+              <span class="cult-thumb" data-page-node-id="wYzVEbGBF233ZmfubJRrdx"><img src="./assets/culture-town.jpg" alt="白族民居" data-page-node-id="tYGRmV2LKmnLXBnQXgw9QN" /></span>
+              <div data-page-node-id="AGb2TVPSdv4BZF1UKZ3tup">
+                <header data-page-node-id="ZCIzHT9e0WYr12jSfhv0Yy"><b data-page-node-id="ElBUHd6vK4J9wZIWBS2dag">白族民居</b></header>
+                <p data-page-node-id="oKG1WqGvE4Ko7ijTa9VkdE">三坊一照壁。喜洲严家大院最完整。</p>
+                <div class="place-meta" data-page-node-id="4uV2MIFCvTaolXETHKoetO"><span data-page-node-id="nPjTGzOZEXIEzu2TTZBmjI">2 小时</span><span data-page-node-id="cRDFKB9PGHw6bPJpzzoEFe">喜洲</span></div>
+              </div>
+            </button>
+            <button class="cult-add" type="button" data-cult-add="culture-house" aria-label="把民居加入体验" data-page-node-id="KUtBFPuXOcBYljxhqIDRQF">+</button>
+          </article>
+          <article class="cult" data-kind="food" data-tags="饮食" data-page-node-id="JxspgyH8UPvIARHPnPz5xp">
+            <button class="cult-go" type="button" data-go="culture-tea" data-page-node-id="QCISLkQLCIfaed1VVaXioR">
+              <span class="cult-thumb" data-page-node-id="IhxAw6l8hk6XVPasT8Xj3e"><img src="./assets/craft-tea.jpg" alt="三道茶" data-page-node-id="qytRJdQ6LQ31XlQEAGDsL9" /></span>
+              <div data-page-node-id="GDYvxNcN63Qjzp3XTNqRdK">
+                <header data-page-node-id="H2ctBUJ7GtBzKMYOEzCXRF"><b data-page-node-id="lNQ3utsm2AXZoMwXRCsiLj">三道茶</b></header>
+                <p data-page-node-id="osjsAmAu2EBpCqPL54zujx">苦、甜、回味三杯。坐下来喝完即可。</p>
+                <div class="place-meta" data-page-node-id="MmLaTGnONCwhGxPJHCVVc4"><span data-page-node-id="3E01WedHgjikstHOW7k4GR">40 分钟</span><span data-page-node-id="wj2F9ICDi1wR5EO7dlKv3X">喜洲、古城</span></div>
+              </div>
+            </button>
+            <button class="cult-add" type="button" data-cult-add="culture-tea" aria-label="把三道茶加入体验" data-page-node-id="4HQhMl3TEVY7MUxdjWscTA">+</button>
+          </article>
+          <article class="cult" data-kind="feast" data-tags="民俗" data-page-node-id="IT24dB7419UVq8gkBE0z9N">
+            <button class="cult-go" type="button" data-go="culture-fire" data-page-node-id="PyXvR5CdkhPYHbDi80eEob">
+              <span class="cult-thumb" data-page-node-id="tSXpLPr0zc8fB2YBC0q16O"><img src="./assets/craft-fire.jpg" alt="火把节" data-page-node-id="ptZceGEV3KxTVfswus1CUV" /></span>
+              <div data-page-node-id="yy1LbiG3C5N0x3mbWU7F0a">
+                <header data-page-node-id="McJhtCyLnI0tjlwfku7NBU"><b data-page-node-id="oqNVYEHQgRtbx6ZFX6AFdF">火把节</b></header>
+                <p data-page-node-id="8RLT04gM8UrMfEngKU7yYR">夜里围着火走一圈。古城和喜洲都有。</p>
+                <div class="place-meta" data-page-node-id="AM6DpcEt3id9DOUewXwCtT"><span data-page-node-id="jai3stsY0tt2Qq0sLJ18P8">晚上</span><span data-page-node-id="p3SHIzIe3DkqnpuvfHaN42">古城、喜洲</span></div>
+              </div>
+            </button>
+            <button class="cult-add" type="button" data-cult-add="culture-fire" aria-label="把火把节加入体验" data-page-node-id="4S0LiRd0FVWgQYRYFfxwwJ">+</button>
+          </article>
+          <article class="cult" data-kind="folk" data-tags="民俗" data-page-node-id="9zKcqOkvrSNZUFu0b6vUxt">
+            <button class="cult-go" type="button" data-go="culture-tower" data-page-node-id="96MVzxvYEcNC28ee5R7qUV">
+              <span class="cult-thumb" data-page-node-id="plkkuDsUz4F1Dd8olXGESf"><img src="./assets/culture-temple.jpg" alt="古城楼阁" data-page-node-id="oolEnISvcmAGXLRV6wsBKT" /></span>
+              <div data-page-node-id="oB1OV55to5TsUzTqcb7opM">
+                <header data-page-node-id="knZJBwZMbicoEbIcyDGg2I"><b data-page-node-id="ENBV89ZAWYLmgQ370BXOXQ">古城楼阁</b></header>
+                <p data-page-node-id="VXzmGi63iZ3nCjjEKEpGy1">先看飞檐和远山的比例，不必认全名字。</p>
+                <div class="place-meta" data-page-node-id="vGJA1bwzNCcrHSdRwidN43"><span data-page-node-id="9Vc0claRlBnSOnqqzY9nkq">路过</span><span data-page-node-id="kJ9TYOij6jcuQfqaoyML9R">古城</span></div>
+              </div>
+            </button>
+            <button class="cult-add" type="button" data-cult-add="culture-tower" aria-label="把楼阁加入体验" data-page-node-id="iXmoVt1JJjpV3l27ep2abM">+</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- S06 扎染详情 -->
+      <section class="screen no-tab culture-page dye-page" id="culture-dye" data-name="S06 扎染详情" data-page-node-id="u6SEnIlUUE9r60lQ2z5CRJ">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="0kdBtam5zLS1mkCe7OmrPu">9:41<span data-page-node-id="n57OrxrCHUUb5oXh7fdZdx">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="AcSRVCY0HnTMiqDfnUDfCY">
+          <button class="back" type="button" data-go="culture" data-page-node-id="Dr72j6thXUDhF7zRlP3dUA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="cNrDvVOErJhLfZuoWN7q9e"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="Bi0s3ZOeaB7T76O1YOhxYa"/><path d="M8 12h10" opacity=".35" data-page-node-id="GT2aUwTbXsrN7Kt3kIxoFn"/></svg></button>
+          <span class="nav-slot" data-page-node-id="FnjBMjeHhTr1GKfzMLVUUS"></span>
+          <span class="nav-slot" data-page-node-id="k4WC1JEGXOBLVF1iWKCuaN"></span>
+        </header>
+        <div class="cover" data-page-node-id="cD6ioCaPdGuFnxpbSdm3tS">
+          <img src="./assets/craft-dye.jpg" alt="扎染布面" data-page-node-id="d2GEOTemXMYmR3Ma0Vuvfn" />
+          <div class="cover-copy" data-page-node-id="bX6UlskXm6llQEqTRQxv6U"><em data-page-node-id="4G43IBfF5ayBubQ7BDtrkD">ZHOU CHENG</em><strong data-page-node-id="IjMQn8hBIET1IWcpRWOtEF">扎染</strong></div>
+        </div>
+        <div class="sheet" data-page-node-id="eJxTApNF3JZaly4lQvSPbI">
+          <div class="mini" data-page-node-id="qB7lusD5qv4AF6CwGVVyvv"><em data-page-node-id="PStOMZ4Q5XoJFEMHqAggZI">工艺</em><em data-page-node-id="Wq6ufyPqaZS6DSs0xzzRlA">可体验</em><em data-page-node-id="NE6oavM6rcQWgQ9WuLn497">周城</em></div>
+          <p class="intro" data-page-node-id="aSJKp88p7A2rGfaWqAIBA6">大理扎染以周城最完整。白不是画剩的空，是线缝死、靛泥浸不进去的地方；蓝也不是涂上去，是板蓝根缸里一遍遍浸、提出来氧化变深。</p>
+          <p class="cult-quote" data-page-node-id="977rFWYsKT1YHGGT6Yc94T">看布先找白，再数蓝有几层。</p>
+          <div class="pics" data-page-node-id="UBTqgBcIUhjRS0VSC8rTGp">
+            <img src="./assets/craft-dye.jpg" alt="架上的扎染布" data-page-node-id="hcuCsx4uky3eP3nt7SvgyL" />
+            <img src="./assets/craft-cloth.jpg" alt="风里的蓝布" data-page-node-id="bIZd3zBKQ3zdUSqzjUXJtG" />
+            <img src="./assets/hero-tiedye.jpg" alt="扎染纹样特写" data-page-node-id="eAhv6ZiuI7lll3vQTHNNjP" />
+          </div>
+          <div class="cells inset" data-page-node-id="qq5Ueqd8wUfI28ep5Aa0x3">
+            <div data-page-node-id="oRRuC3IhR2XWu4GJAn14j5"><span data-page-node-id="KJQKmt2o0r6UarV4NtuEDS">看过程</span><b data-page-node-id="uifB8fufUXISl7rAPW9qG2">周城作坊、染缸</b></div>
+            <div data-page-node-id="P0HkYumzAbrV319wmn5Sz3"><span data-page-node-id="MufKvYEHgHa1aktijhnAqV">上手做</span><b data-page-node-id="fEbBO7zB8yXlINDjxMlNU2">喜洲手作店更方便</b></div>
+            <div data-page-node-id="DFfsqMcKWmoscAhXaMNzCo"><span data-page-node-id="hJkZcoqud1qNHnDVAqa726">停留</span><b data-page-node-id="ur7oFujnxYPYFcyQqqmq5v">看 20 分钟 · 做一块约 1 小时</b></div>
+          </div>
+          <h4 data-page-node-id="oDdsK6GrvgHZLBcGrCrXmW">一块布认这三处</h4>
+          <div class="keys dye-keys" data-page-node-id="f7Q46NE8ZZYKKYCng6Bd9u">
+            <article data-page-node-id="GMJV2MZGW8I25FP1FH6L02"><b data-page-node-id="NQcNefngBxQItKIKtoBOpp">白</b><p data-page-node-id="YFGY37yLMXwnMETADftCuJ">缝、绑、结挡住的位置。拆线后才露出来，不是颜料留白。</p></article>
+            <article data-page-node-id="ZHGLDoOY6kive3rFh3lXlK"><b data-page-node-id="5os0dzaSMYwhg1cKAD8gq4">层</b><p data-page-node-id="XxeNvajvvHv0MhfzIUqDFQ">浅蓝到深蓝是浸的次数。提出来见空气，才会慢慢变蓝。</p></article>
+            <article data-page-node-id="45RwCwAM0rRSJQEfoZmboy"><b data-page-node-id="ED4fPmCtnxBICMefIauBrV">形</b><p data-page-node-id="3RF1CMCk8QU5vaDjSQzIVn">蝴蝶、几何、山水纹，都从折叠来。先看折痕，再看图案。</p></article>
+          </div>
+          <h4 data-page-node-id="GFw2dG7ryXhINy7z6cAFnI">一小时可以做什么</h4>
+          <ol class="route" data-page-node-id="gGBajkGiS0VfdDuj1ZQ9Hl">
+            <li data-page-node-id="gCNX3015BAocXbwJvlvaUa"><i data-page-node-id="mCqxbEBFGspUFxVeQYDumJ">1</i><div data-page-node-id="QoGErkfIGw7IS99U9iBnqi"><b data-page-node-id="pwR8i3k4uCAGoEfE4uMBoY">只做方巾或手帕</b><span data-page-node-id="BBGdfeFkjdGGLUCqhkEKGZ">不要一上来做桌布。小块才能在一小时里浸完、拆线。</span></div></li>
+            <li data-page-node-id="xRtIOoAuHShhr1DvDHT4oq"><i data-page-node-id="R461O5qgViIvCzomfkbLLn">2</i><div data-page-node-id="OiZrkYjKMMgDNiCwKA5e9o"><b data-page-node-id="mPjXSxC5UzCQtHtOqYD0V7">跟师傅走一遍针法</b><span data-page-node-id="wguekBVcrmznaxTruTzys8">常见是缝、绑两种。缝住的地方浸不进色，这就是白。</span></div></li>
+            <li data-page-node-id="THLh2GMyq5VeFhHs0xRISs"><i data-page-node-id="L0YWJddxuGWdqeKqros4ep">3</i><div data-page-node-id="7QmjfV6VLtkD08a1X51i8m"><b data-page-node-id="hj84FHyMTaidtFvIDGIFNq">浸靛、提出、见空气</b><span data-page-node-id="4vvqtbOznIOLlo8Jcc2BzO">出缸时往往还是绿黄，挂着氧化才转蓝。湿着带走也行，回家阴干。</span></div></li>
+          </ol>
+          <h4 data-page-node-id="e1EqfqRQr9I6zwQPpvE4Xh">去周城还是喜洲</h4>
+          <div class="where-two" data-page-node-id="Vt4efrlciKpRlEp8llDscl">
+            <button type="button" data-go="culture-dye" data-page-node-id="fvxIibX44uGlVr1jLdOgNW">
+              <img src="./assets/craft-cloth.jpg" alt="周城" data-page-node-id="jpDJkY1tgUGd33JJ7TYxaq" />
+              <b data-page-node-id="SKAEb0FkSxjXHiBGllTcpr">周城</b>
+              <span data-page-node-id="9NCwwWtSHqJvvcZDGvoIyQ">作坊密，能看到整匹布和染缸。想看过程来这里。</span>
+            </button>
+            <button type="button" data-go="spot-xizhou" data-page-node-id="a5slTW79LntjoVtoyiuRli">
+              <img src="./assets/spot-xizhou.jpg" alt="喜洲" data-page-node-id="orT4NqteaB4MUJ6DdyJ9vT" />
+              <b data-page-node-id="jj5qxGePu4tbKfBVmtnlGm">喜洲</b>
+              <span data-page-node-id="BZsUwLoHlPWBMOpK8jTNoK">跟民居、三道茶同一条线。第一次、时间紧更合适。</span>
+            </button>
+          </div>
+          <h4 data-page-node-id="awtTSctDvABq4rTTnLEXpk">怎么带走</h4>
+          <ol class="route" data-page-node-id="Fu4iy54nos1iAdAlQXHAXW">
+            <li data-page-node-id="mVa7oEDsISGsvs5RhSpGWU"><i data-page-node-id="kUH9zAF2SqGv1nHnN9v4f0">1</i><div data-page-node-id="HWTLEMEDthWJqJobzqOOtK"><b data-page-node-id="e4UWRRwhVyvdKFeezJQ9mZ">只叠方巾或手帕</b><span data-page-node-id="6HsUMEO9u4q5vuSvjy2DgV">对光能看见针眼，才是手作。湿着阴干，不要暴晒。</span></div></li>
+          </ol>
+          <h4 data-page-node-id="MZWwPiCzqlwPftjWXusQcE">看完可以继续</h4>
+          <div class="related" data-page-node-id="tKpPjnnBA5zuDmyuff0lwc">
+            <button type="button" data-go="spot-xizhou" data-page-node-id="9YOPjOXWhqwXp4pOfJVBfO">
+              <img src="./assets/spot-xizhou.jpg" alt="" data-page-node-id="gDzzdto7v7vLcRp22Z2JOU" /><b data-page-node-id="sMT0QQLof9L38Pd8luXwCD">喜洲古镇</b>
+            </button>
+            <button type="button" data-go="culture-house" data-page-node-id="YFfb5H6N8UXlNx770Z8SVs">
+              <img src="./assets/culture-town.jpg" alt="" data-page-node-id="Cha80CbJ8TWixs0uymhEUX" /><b data-page-node-id="eaSgP7agFKscvPmwH5C4u7">白族民居</b>
+            </button>
+          </div>
+          <div class="spot-dock" data-page-node-id="6lsHhY1wK8FQxwBnvimNUA">
+            <button class="btn-light" type="button" data-go="spot-xizhou" data-page-node-id="h2PCI9B8vUx2cAXurSXxMk">去喜洲</button>
+            <button class="btn-primary" type="button" data-cult-add="culture-dye" data-page-node-id="OEGEg3NsD6tFP1WkWWTwyx">加入体验</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen no-tab culture-page" id="culture-wamao" data-name="瓦猫详情" data-page-node-id="1QwtBCc4vMSJEtW5DFHCEn">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="7zTgk1KdO51NrdekgGnKWV">9:41<span data-page-node-id="uBTjsbZgIStYmhIoKfnyvv">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="3CAMpYbwRow4Mh3tzAxY8P">
+          <button class="back" type="button" data-go="culture" data-page-node-id="ZHBARRzuEVPw4q2PwVR7k5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="YbJGh31ZoCA1x7R3InYxQc"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="Q56TohVS0IqurmtNo80HWl"/><path d="M8 12h10" opacity=".35" data-page-node-id="ueSFYb0Og2ApY9H9xl9Eoq"/></svg></button>
+          <span class="nav-slot" data-page-node-id="akAmB6uSvOq1aRmksXnBnC"></span>
+          <span class="nav-slot" data-page-node-id="ILCpmC09QDqlPETHgeZgnA"></span>
+        </header>
+        <div class="cover" data-page-node-id="8LvKf5WsnToz6fckJDzI9G">
+          <img src="./assets/craft-shelf.jpg" alt="瓦猫小偶" data-page-node-id="HuI0zTEgaho3fHM10bxB5G" />
+          <div class="cover-copy" data-page-node-id="79plw1NiAOSkr3kkAlTxHW"><em data-page-node-id="B7U0Hj3H05ERMFbebb9gwG">ROOF</em><strong data-page-node-id="y0D5F63ot5DYNTbQEO2l78">瓦猫</strong></div>
+        </div>
+        <div class="sheet" data-page-node-id="1d7CvOqii1JBHhlycHfcyh">
+          <div class="mini" data-page-node-id="30b0p4Dx6xpx0VNfTrUOwz"><em data-page-node-id="AXpMxZmjbCj34dEwJJfgPL">民俗</em><em data-page-node-id="K6jCiPSTnHIlct0akfw8C6">路过即可</em></div>
+          <p class="intro" data-page-node-id="szjABc6Rm6QSeEQGGxUHNc">瓦猫蹲在白族房子的正脊上，开口朝外。不是院子里的摆件，是屋脊上的守护。没有屋脊实拍时，用货架小偶对图，不拿别的兽形来冒充。</p>
+          <p class="cult-quote" data-page-node-id="aGpVGjAehzISCZ15f6QUMb">先抬头看脊，再进店里认小偶。</p>
+          <div class="pics" data-page-node-id="wqvvaoeRuvSG9dSk1oOyHQ">
+            <img src="./assets/craft-shelf.jpg" alt="瓦猫小偶" data-page-node-id="Ik5KGEsJHNdFfA8ppGuGPI" />
+            <img src="./assets/culture-temple.jpg" alt="屋脊与飞檐" data-page-node-id="3Nl1CV58YTcLWepFoo6zwb" />
+            <img src="./assets/culture-town.jpg" alt="古城街巷" data-page-node-id="lvppQsvV6nTmrsdecafa2s" />
+          </div>
+          <div class="cells inset" data-page-node-id="wOSxU33YmoC7nHEv0fVFZY">
+            <div data-page-node-id="S8H5Qxg3ONnAhUkUPrKWQp"><span data-page-node-id="TdcBzavhxijkQbtmGOqyiN">认它</span><b data-page-node-id="JhwDZ5Opizr4TOB0FlWCyL">正脊、开口、蹲姿</b></div>
+            <div data-page-node-id="Kdgdb0yRNcaXFd9NvbHEKD"><span data-page-node-id="M2UbR44zy7rbL9XxljetU0">在哪遇得到</span><b data-page-node-id="zueJnFOoc68QuSk5BioGed">喜洲民居、古城老屋</b></div>
+            <div data-page-node-id="71mvpbrLU0T7j7TWTRA2HH"><span data-page-node-id="QlRM70inpSXqiIBtMCipl8">停留</span><b data-page-node-id="nrJP8uV6S5dKxYGXlMdN3v">路过抬头 10 秒</b></div>
+          </div>
+          <h4 data-page-node-id="QeHSvGGHHjKdxuIRuQdI1a">路过认这三处</h4>
+          <div class="keys cult-keys" data-page-node-id="hG0UVyfmIfc3y7twI2HO8r">
+            <article data-page-node-id="lP0fAy9QNG3nv7Yo8CaOPa"><b data-page-node-id="T6BvZ0Ovyme9VoM4ZYswdj">脊</b><p data-page-node-id="OWsTM2ACBjVNg27RgnSQZV">在屋脊正中，不在门墩、不在院子。找不到脊，就还没看见它。</p></article>
+            <article data-page-node-id="xonHPD2hh3blTosWEz4d0L"><b data-page-node-id="iA9XGPckkjwoGDqUyiFH4Z">口</b><p data-page-node-id="t00htVTVLRQz9DgHPae9s8">嘴是张开的。民间说法是吞灾、镇火，不要把它当成装饰猫。</p></article>
+            <article data-page-node-id="LnafCXhpUmOGrcgarxFFV7"><b data-page-node-id="CVnlQob9thHTxSHMikqM4H">偶</b><p data-page-node-id="AYip3vfbW1A3KfnV412UuZ">店里的是缩小的手作。买之前先对照屋脊上的那一只。</p></article>
+          </div>
+          <h4 data-page-node-id="c5lANiGvSJml2T6BnG41Ne">怎么看</h4>
+          <ol class="route" data-page-node-id="jNTJdkckd4BrowFp0SfrcV">
+            <li data-page-node-id="JBBTb0G6KoYUB1ORfEitE7"><i data-page-node-id="EtnN5OgMuFj4GXlNuBZtNm">1</i><div data-page-node-id="DpTtMspwTjauLSOHbDaHvM"><b data-page-node-id="dOuvECABSIdGSqSkOhchgo">站在巷口抬头</b><span data-page-node-id="p7TL2owViPMB1gvn4UM6O7">喜洲老房子的正脊最容易碰上。不要爬屋顶、不要伸手摸。</span></div></li>
+            <li data-page-node-id="3V3gsPBec97oS1nAzZqu61"><i data-page-node-id="6wQgEXpD31kN9hOpB9q4h5">2</i><div data-page-node-id="SaOcNXoYiTYTNxFNGh9iwU"><b data-page-node-id="XHHYbTl4uKyXDPxxp6I3MB">看完再进店</b><span data-page-node-id="sGaJ3UYjcmUtcSzp3ai0Rx">小偶是记忆，不是替代。先有屋顶上的那一只，再决定带不带。</span></div></li>
+          </ol>
+          <div class="spot-dock" data-page-node-id="pzoVpNtbIa8qoGHfuGKxAz">
+            <button class="btn-light" type="button" data-go="spot-xizhou" data-page-node-id="jVFXrGAEwYkrHkJBHRmV8f">去喜洲</button>
+            <button class="btn-primary" type="button" data-cult-add="culture-wamao" data-page-node-id="6VJBnH360bVOeDc23HUdVq">加入体验</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen no-tab culture-page" id="culture-house" data-name="民居详情" data-page-node-id="0oBBkGEB8mv0PGAXFIzIFg">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="LgOBF8P64LFIrIso5ipVp4">9:41<span data-page-node-id="1NHDTUwTuyDuvVR91KoGSz">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="yAZJnBXKFtAyTwGW8EW99n">
+          <button class="back" type="button" data-go="culture" data-page-node-id="14mI2UWTma8kVV2HmhoLV7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="BNj5VngieLKfQ4fHG2OTyb"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="EEbNSMfKVuYEnZ7Gi5qR2J"/><path d="M8 12h10" opacity=".35" data-page-node-id="ALGbBuN2fM6VRCzXODi4uc"/></svg></button>
+          <span class="nav-slot" data-page-node-id="XbNM1iCEF7HXEsC49mPxtw"></span>
+          <span class="nav-slot" data-page-node-id="2SLpgZXKN4zUrvE4ZYEgFp"></span>
+        </header>
+        <div class="cover" data-page-node-id="GiyLQFJN83gh6bCT5wki5x">
+          <img src="./assets/culture-town.jpg" alt="白族民居街巷" data-page-node-id="tNseILJQoLzeWWkyny9hAu" />
+          <div class="cover-copy" data-page-node-id="PuNyEZaTyxk2c7k79S5oJI"><em data-page-node-id="s8THN1oPKB11CGNB9NqAa6">XIZHOU</em><strong data-page-node-id="vqhna1QMxZUlSdlucXh7e2">白族民居</strong></div>
+        </div>
+        <div class="sheet" data-page-node-id="xSIHRf4sWTuwczkn05HAdr">
+          <div class="mini" data-page-node-id="eYt08KFQH3sSoyXTLW53z3"><em data-page-node-id="LfK7vCScLWjuFJDdud908z">建筑</em><em data-page-node-id="sbm4OUjW9RzrNJrAYq3dJY">喜洲</em></div>
+          <p class="intro" data-page-node-id="aRcEZygnPymCtBIAYUUH8Q">常见格局是三坊一照壁：三面住房，正对大门一面照壁。照壁把光弹回院子，也把「家」的边界立住。喜洲的院子比古城完整，值得停下来进门看。</p>
+          <p class="cult-quote" data-page-node-id="ngeZOGokACOnfHnYI3BpTU">先看照壁，再走三坊。</p>
+          <div class="pics" data-page-node-id="L6lDh5DyArU5HLAKQWuN75">
+            <img src="./assets/culture-town.jpg" alt="街巷与照壁" data-page-node-id="7FVDwxWyZ0eT4EjcLBNeJX" />
+            <img src="./assets/culture-room.jpg" alt="院落里坐下" data-page-node-id="9R7ACsJXEqEJHAQitLvCNc" />
+            <img src="./assets/craft-box.jpg" alt="树荫台阶与湖" data-page-node-id="FYdQ5G36ZO3JpIdfBbbtom" />
+          </div>
+          <div class="cells inset" data-page-node-id="RmptU8B35GMfulmSrUWKQ1">
+            <div data-page-node-id="G8P4TTPQuD0edGSzs8blGK"><span data-page-node-id="ACLtuKpg3vWNTQXgljxIJN">最完整</span><b data-page-node-id="qOH9AC6UfgkeAis1MrgdUE">喜洲严家大院一带</b></div>
+            <div data-page-node-id="vjOb6RUCgSEBOEJZDp9p7i"><span data-page-node-id="orx7yzIpmwHSHjzs30uuUG">看什么</span><b data-page-node-id="83wU7F2a2GlLvmAbBhdFen">照壁、天井、门头彩绘</b></div>
+            <div data-page-node-id="OhjhKdUOLFmzoLedyuwvXj"><span data-page-node-id="YGVwxbqeyPImvnaEpryNIy">停留</span><b data-page-node-id="LotpIGMQYH6CBmT6m1a9E0">进院 1–2 小时</b></div>
+          </div>
+          <h4 data-page-node-id="4mWvlbQz3I0JGWMFQSNnOA">进院认这三处</h4>
+          <div class="keys cult-keys" data-page-node-id="rN8F4qGHiV5Ytqfuyk4LdQ">
+            <article data-page-node-id="rE53jhnCkjoTj92Igk3reA"><b data-page-node-id="kSjO8WR0ke2xD9D9Dx9vov">壁</b><p data-page-node-id="acfnxuIL5SOVj13ZgqDQs4">大门对面那面墙。看它如何挡视线、把光送回天井。</p></article>
+            <article data-page-node-id="bWjkCDCQN1iVCxjgNe4Ft3"><b data-page-node-id="zmcdSCXb71s0SJsBgcN59J">坊</b><p data-page-node-id="espvy6WCaCiFEEELWNWVyE">三面住房围成「坊」。走一圈，比只在门口拍照有用。</p></article>
+            <article data-page-node-id="Qwt1Cqqi9ZqJTB1uIB2zO5"><b data-page-node-id="06Fqs0fuEK8HdRKwIh8bIU">绘</b><p data-page-node-id="tGbWihDfEQjFZeifYGDGt6">门头、梁枋上的彩绘。近看笔触，远看和白墙的对比。</p></article>
+          </div>
+          <h4 data-page-node-id="Q5yvwDLJ5qAL897FIUB0Sf">可以这样走</h4>
+          <ol class="route" data-page-node-id="LvzgTNk81Hl9vq5BLZOZdx">
+            <li data-page-node-id="h6N08uyuWU9IcVJTYQ9gNd"><i data-page-node-id="I8E36bCsYfkHgy1XbLG4pd">1</i><div data-page-node-id="Yb5zCkDOIPkIlp3gujPDSd"><b data-page-node-id="3lymCFgceSk22lxnFbxJEG">从大门对到照壁</b><span data-page-node-id="8fulGtddJgMrRZM8Kwywqn">先站在门槛上看整面壁，不要一进门就左右拍。</span></div></li>
+            <li data-page-node-id="uXBeTEcgJq5XAE5coPszaQ"><i data-page-node-id="dZMZswXkci7PaOmVDoB1nM">2</i><div data-page-node-id="AUcmz8jaNucQHjiX1AJENd"><b data-page-node-id="i1RqCuahTuEBd4ayGWCPCn">顺三坊走一圈</b><span data-page-node-id="QTrn2URzpGAOsVOWwG4qEw">正房、厢房的高低和开间，比装饰更说明格局。</span></div></li>
+            <li data-page-node-id="vqdeQ67tsUV4HQwJD6YAuP"><i data-page-node-id="gS4el2JEh39GF8PBXXzK1j">3</i><div data-page-node-id="gxTyKNxkjNWju0QsbeAFGY"><b data-page-node-id="ssng9MVsdyC4Ae2qoxvrR0">中午可坐下来</b><span data-page-node-id="q11z1hsI404isxdb5ZGDCZ">选有树荫、能看见水的台阶。院子里喝茶或看扎染，不必另开一天。</span></div></li>
+          </ol>
+          <div class="where-two" data-page-node-id="P68JsXHuIPRGpWs2YhstRq">
+            <button type="button" data-go="spot-xizhou" data-page-node-id="6Y74QmbfaABlrFoqfdk4SD">
+              <img src="./assets/spot-xizhou.jpg" alt="喜洲" data-page-node-id="Y1krjZEBS8mJJzgeNq0BGJ" />
+              <b data-page-node-id="MpSAnconhItF6gWt3ObfmO">喜洲</b>
+              <span data-page-node-id="dGzBrqYRkqkt0ivRtOLwWP">院子完整，适合进门慢看。</span>
+            </button>
+            <button type="button" data-go="culture-tower" data-page-node-id="d9QKA2Lmx1uMs4Wuc6xAE6">
+              <img src="./assets/culture-temple.jpg" alt="古城" data-page-node-id="Ad7CfXf6U62QGcMze5eVup" />
+              <b data-page-node-id="Kxdq7atKqssCNpeteuafW2">古城</b>
+              <span data-page-node-id="Z2hzm4so2Yr01o7gmh2HAI">街上好看，完整天井更少。当对照即可。</span>
+            </button>
+          </div>
+          <div class="spot-dock" data-page-node-id="SjqBgTT4gKUHvcXXi3L4m9">
+            <button class="btn-light" type="button" data-go="spot-xizhou" data-page-node-id="GAzWXskUxwkXXGLTCIi3rd">去喜洲</button>
+            <button class="btn-primary" type="button" data-cult-add="culture-house" data-page-node-id="NCqNyRnavl4Fs5UiuWIcth">加入体验</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen no-tab culture-page" id="culture-tea" data-name="三道茶详情" data-page-node-id="T82uJSU6hWqmWeslohfm06">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="URY7rQK8GOBxo0z05Rd0PV">9:41<span data-page-node-id="uLoD7bHkw8fc6qVdnByqIU">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="sEJF6vxqVCEYMTbBRKQy7u">
+          <button class="back" type="button" data-go="culture" data-page-node-id="X6JZIzBvYKIJmzKOpMVYXd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="GL5C33SNJyhn66PwP48Esl"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="DedIPj0scEcR9SxXHoHaPF"/><path d="M8 12h10" opacity=".35" data-page-node-id="FQE2LyJ7M10VwRogIY51uM"/></svg></button>
+          <span class="nav-slot" data-page-node-id="pEFc16JGOzmhJYCIOpCdmB"></span>
+          <span class="nav-slot" data-page-node-id="sU2Hs2NLAeppm5sPryoYTY"></span>
+        </header>
+        <div class="cover" data-page-node-id="55Piir1ykHhAtHsP7NGLRo">
+          <img src="./assets/craft-tea.jpg" alt="烤茶与茶盏" data-page-node-id="fy6IfFGE5MtwhZ5Sp2M79P" />
+          <div class="cover-copy" data-page-node-id="mPSR0mSQfsKjkTvptIfsiV"><em data-page-node-id="2xsoYH2nu351SB7mHGRRgG">SAN DAO</em><strong data-page-node-id="f7uav7vYSTjQR1DKQI0gyv">三道茶</strong></div>
+        </div>
+        <div class="sheet" data-page-node-id="l9UnGvslvs36hAovKtONKc">
+          <div class="mini" data-page-node-id="rE8T2jbGmbEKUDRWASDQm1"><em data-page-node-id="I166DSECWqqIfFpug1pwHp">待客</em><em data-page-node-id="3S4c3CiCVwCs1pTrHUh4TH">饮食</em></div>
+          <p class="intro" data-page-node-id="S9IgNct55ZzcQ0YB4n91XQ">白族待客是三杯，不是菜单上的套餐名。第一道烤茶偏苦，第二道加糖或乳扇变甜，第三道姜、桂一类走回味。三杯都坐下喝完，才算遇见。</p>
+          <p class="cult-quote" data-page-node-id="l3Vm9qAOimSx6X34dCkxVL">一苦二甜三回味，顺序不要打乱。</p>
+          <div class="pics" data-page-node-id="Njdy46icJp4vaODCoFs28H">
+            <img src="./assets/craft-tea.jpg" alt="茶盏与壶" data-page-node-id="U5XJm0TTCTbA4acWCz4Fyf" />
+            <img src="./assets/craft-set.jpg" alt="茶盘" data-page-node-id="WwxdjB1XhPAI15dM7pCNce" />
+            <img src="./assets/culture-room.jpg" alt="院子里坐" data-page-node-id="cVIbcWtKQTGDMd55pPKo6s" />
+          </div>
+          <div class="cells inset" data-page-node-id="sPt5UqJ3GE8qDyxLyS2Usj">
+            <div data-page-node-id="Ei7uhIq4AmFA7FxeTWDmY4"><span data-page-node-id="1gumBSt8KkoeF4NsLyGRxH">在哪喝得到</span><b data-page-node-id="pbMhtEw0SMTvB1l2BQikoS">喜洲院子、古城茶馆</b></div>
+            <div data-page-node-id="gDTELZcWDGKqzmOQvT1RnI"><span data-page-node-id="YbX8ztuY6pjrzPD9tOkhnq">停留</span><b data-page-node-id="bT6Zy6Wb8z4gF083Uzf4Sx">三杯约 40 分钟</b></div>
+            <div data-page-node-id="UYuJRt8FOfebkcQ6Ivf3AN"><span data-page-node-id="uzbwg0Of9YwOQneCXBTR1J">适合</span><b data-page-node-id="g4QgA4Sv2VnzgW2yMVAGYz">走累了想坐下</b></div>
+          </div>
+          <h4 data-page-node-id="FdG72X02sBJX0g5ml3AZjC">三杯分别是什么</h4>
+          <div class="keys cult-keys" data-page-node-id="sctBsWOvnwp4P6a8WygUsf">
+            <article data-page-node-id="4rIE8YuvYqDtDHRSTHa2ab"><b data-page-node-id="zRC86rR9gXNUgk8z6ZxiVa">苦</b><p data-page-node-id="0cuzid9tURPgVo4Q1puEtR">烤茶。焦香、入口涩。第一杯小口，不要兑糖。</p></article>
+            <article data-page-node-id="seOBYcwjEYiioFohm40huH"><b data-page-node-id="U4SiAlvCfcVNGNb4ZCiA4z">甜</b><p data-page-node-id="u5H3FYd7s4khmNYziZv8e1">红糖或乳扇一类。甜是压过苦，不是另外一道点心。</p></article>
+            <article data-page-node-id="7DMTpi0UdKCLt1PQQNHfIc"><b data-page-node-id="fTG01tHQNqCHuKTmtApi7j">回</b><p data-page-node-id="zHRM8WKJieRKna9ywWGM5c">姜、桂、花椒一类走喉。喝完停 10 秒，回味才出来。</p></article>
+          </div>
+          <h4 data-page-node-id="rT7uYM6ZQQVJVtyeVNMfgC">怎么坐</h4>
+          <ol class="route" data-page-node-id="Q78FBTKdzPIEUjL9Y70UQP">
+            <li data-page-node-id="gnDsH9bkUjIhUjZFA4N7iZ"><i data-page-node-id="BellIHUS6naBZx2Evbb1Hx">1</i><div data-page-node-id="YkycnaGxudpVHIHgPQe6yd"><b data-page-node-id="9YNC1qSMj2fPnxakP2yDiV">按顺序接杯</b><span data-page-node-id="C1VJ8mjFMAU9aKGmwmDCEX">不要三杯同时要。每道之间留一点空，才喝得出差别。</span></div></li>
+            <li data-page-node-id="PdHdCKjbJ74932F0i6Bo8D"><i data-page-node-id="1Z4BlmjCfuGgdh5jUsfhas">2</i><div data-page-node-id="zOWJEeEfGCk72brfHK1VIg"><b data-page-node-id="VYNjCJfU7xA7hoxy3GHRJg">别当成表演</b><span data-page-node-id="SfRz8BLSFo5SSxPT14ezB1">有人会讲解，也可以不听。关键是把三杯喝完。</span></div></li>
+            <li data-page-node-id="W8RAIFPQOCwTY7ATwLDrLG"><i data-page-node-id="ntKkhoImMuJb87CZmiLaO5">3</i><div data-page-node-id="7LGdGbsBF1wN1VpqAnDPlZ"><b data-page-node-id="IQqdrPF8yXDNA0CXpKi7F4">和民居同一条线</b><span data-page-node-id="qelXnBZKIS3n8ozuehzZhP">喜洲看完院子再坐，比单独跑一趟茶馆顺。带回去要三份分开，混成一包茶泡不出三道。</span></div></li>
+          </ol>
+          <div class="spot-dock" data-page-node-id="wmIvgRqPgFNPs0yWMuTYSK">
+            <button class="btn-light" type="button" data-go="spot-xizhou" data-page-node-id="eQv6whwXAHZE6LQKjCV0PY">去喜洲</button>
+            <button class="btn-primary" type="button" data-cult-add="culture-tea" data-page-node-id="lBWzrbs1ZO2gRjLC6sDlSV">加入体验</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen no-tab culture-page" id="culture-tower" data-name="楼阁详情" data-page-node-id="NHZoDeBnfvdt6j1vKftx5d">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="hbLQ8u6oZODkHTOWEKqka2">9:41<span data-page-node-id="wM9jpvOgFneKJoLThFadXY">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="UDQRBXB0GSio3CdU3FgOMq">
+          <button class="back" type="button" data-go="culture" data-page-node-id="AnuBdtV3W96EVRqBSOQT4f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="07frq5KmHyitVxGA75YY1W"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="PiW3pKORbBhCS6BIldFNgM"/><path d="M8 12h10" opacity=".35" data-page-node-id="itqAcOlk5qa5XysIXRoC8s"/></svg></button>
+          <span class="nav-slot" data-page-node-id="mgFAr88VCWe7CwFcGR1Ozt"></span>
+          <span class="nav-slot" data-page-node-id="UfWwW4VtdBUsmi6x1c6E81"></span>
+        </header>
+        <div class="cover" data-page-node-id="qHK6gZhUVcE2CuJUm0bHrz">
+          <img src="./assets/culture-temple.jpg" alt="古城楼阁" data-page-node-id="rdmiTTPvbYv9jRPWE5yNp3" />
+          <div class="cover-copy" data-page-node-id="0Db0WUznw9JOG6P8V33WWN"><em data-page-node-id="yUlx3IU9vNazmfCOxgMdha">EAVES</em><strong data-page-node-id="FUaA85RKm9WLBPqvp0hBml">古城楼阁</strong></div>
+        </div>
+        <div class="sheet" data-page-node-id="wJ7nrsGoj8G9CRiSGQCqsH">
+          <div class="mini" data-page-node-id="nn0ZLtTnj2SSAkpGXGJrHZ"><em data-page-node-id="0ok5yszO2mEzHWhTL7VEjm">建筑</em><em data-page-node-id="CWpV8ZMYdHDjVFqOmEZeZw">路过</em></div>
+          <p class="intro" data-page-node-id="rPjNTKffja0wLhaF1jgxL1">先看比例，再问名字。飞檐、屋脊、背后的苍山叠成一层，站远比贴着牌坊拍更清楚。崇圣寺三塔是把这条天际线钉住的那三座。</p>
+          <p class="cult-quote" data-page-node-id="lazxcLrA5xMvLtudmAdRBF">退一步，让山进画面。</p>
+          <div class="pics" data-page-node-id="OGKPSDAgbVYgB1zK5hOf2D">
+            <img src="./assets/culture-temple.jpg" alt="楼阁飞檐" data-page-node-id="11zW2sAHzfN4Pdwkc0CagP" />
+            <img src="./assets/spot-pagoda.jpg" alt="崇圣寺三塔" data-page-node-id="Aw5QEn5nHpEhleygk8NVPX" />
+            <img src="./assets/culture-town.jpg" alt="古城街巷" data-page-node-id="wepCLxZplLRP2yyq9QyQEp" />
+          </div>
+          <div class="cells inset" data-page-node-id="v7ET6vv2ptGPLVFG2LcUlm">
+            <div data-page-node-id="Kq44TUGTrCZYD0FpeJKFW6"><span data-page-node-id="flZsf9y9wCDLtnr6FtLlt6">看天际线</span><b data-page-node-id="cLAqQRvubmRJRyKBD2SFoh">飞檐、正脊、远山</b></div>
+            <div data-page-node-id="ds9DBHa823ILqzmMRFjqw7"><span data-page-node-id="AWgXn2Vi2ybImmdXFQSHm6">在哪遇得到</span><b data-page-node-id="Kz07zvNQglap7CAFuBwCBk">古城城楼、崇圣寺一带</b></div>
+            <div data-page-node-id="zqm2CBK7FfAcX67n1yaeGo"><span data-page-node-id="AOus9EWtmbtQZYubyIJ7Ne">停留</span><b data-page-node-id="TSdl3Hn3OmklTJkPfqi0nv">路过 5–15 分钟</b></div>
+          </div>
+          <h4 data-page-node-id="CjbEkiGxZeuocxRo8vwlnl">抬眼认这三层</h4>
+          <div class="keys cult-keys" data-page-node-id="c92D4yYuqCFQVzfxORZHad">
+            <article data-page-node-id="GjpdHPvx5MRkQVCZ5FWdNg"><b data-page-node-id="fYa3CN5fxNwUUJhDfM2UYG">檐</b><p data-page-node-id="h9I4HeZ7cG55ZAYTHUilRP">飞檐的起翘和出挑。近看构件，远看它如何压住墙面。</p></article>
+            <article data-page-node-id="YeX4mUb1YeMTPO82BpjAKI"><b data-page-node-id="JrJWcrDXDDJfILGio0MPKU">脊</b><p data-page-node-id="nducW7G72Fb5akHmiblNeO">正脊是一条线。有瓦猫就在这条线上，和楼阁是同一套屋顶语言。</p></article>
+            <article data-page-node-id="VweqFnCFWRZAyjinTjfcE0"><b data-page-node-id="KYuxihV3NjblKixHalJ00g">山</b><p data-page-node-id="iJt0EZx6zhdGAnWJjL58xs">苍山在北。楼阁把山留在身后，才有「叠一层」的感觉。</p></article>
+          </div>
+          <h4 data-page-node-id="HmrnPM3nlST7Gomu4L8qbg">怎么看</h4>
+          <ol class="route" data-page-node-id="TJrLBEmU4oTYU0SEQgAS62">
+            <li data-page-node-id="gucDLdDgggpahSGDD8wzny"><i data-page-node-id="BNacQYqzBfoTsZBOMITP2q">1</i><div data-page-node-id="ABupL6WZUP6nGq4NLAAYFX"><b data-page-node-id="CakAscEyJmdY3FXE953i4l">先退到能看见整座</b><span data-page-node-id="nmGMPN50KC02bpYxBbu7rL">贴着墙只看彩绘。退到巷口或空地，檐和山才会同时进画面。</span></div></li>
+            <li data-page-node-id="0ioGaVWU7y0JUF5hkSQH4T"><i data-page-node-id="vjuYomZHSXo4dWAtQmqO6y">2</i><div data-page-node-id="71OllnLbeYfhSgtvLAcRAJ"><b data-page-node-id="lPkbRR8fMxWtJpuHWguKM7">要看塔，去崇圣寺</b><span data-page-node-id="wGmLlk6dO2vMvg98Y3d21L">三座塔把天际线钉住。不必走完全寺，站在远处把比例看清即可。</span></div></li>
+          </ol>
+          <div class="spot-dock" data-page-node-id="zTRBDOmzWxdhSf39ZJlfWJ">
+            <button class="btn-light" type="button" data-go="spot-pagoda" data-page-node-id="hcA2To8AGeVV1oNP4u45p4">去看三塔</button>
+            <button class="btn-primary" type="button" data-cult-add="culture-tower" data-page-node-id="ZwJlHkbC0CQ5VStpLry3NI">加入体验</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen no-tab culture-page" id="culture-fire" data-name="火把节详情" data-page-node-id="bO1PDqwmnU1eLSzJY9sMo8">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="hydgZxj947BGAnlmLClzqD">9:41<span data-page-node-id="b6yTNgAaaXp4Uihsl4ITiu">▮▮▮</span></div>
+        <header class="nav overlay spot-nav" data-page-node-id="MrerBBObMxfBSBrPIGCRBx">
+          <button class="back" type="button" data-go="culture" data-page-node-id="wH13vbnYwW4z9gJZWa8MWM"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="POjGjEYQW9AaUrcNe0eft5"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="2iEvk4g52LQEhsJBBLDN10"/><path d="M8 12h10" opacity=".35" data-page-node-id="Vtb28c42ZzuxM1z0NXfNFX"/></svg></button>
+          <span class="nav-slot" data-page-node-id="LFBu7cFOb8VH7J1wJGlMwE"></span>
+          <span class="nav-slot" data-page-node-id="0LxeY52ghfQRmibkjgj9DS"></span>
+        </header>
+        <div class="cover" data-page-node-id="0R8eqZzMShY0buKKLZ3wzv">
+          <img src="./assets/craft-fire.jpg" alt="火把节" data-page-node-id="Otm1sAQUlOcR6dd457OHml" />
+          <div class="cover-copy" data-page-node-id="IaKJFVCUfW7eHQLJeLtsKe"><em data-page-node-id="zvFA1GeI3llMCkgZKpZCKd">JUNE</em><strong data-page-node-id="3mskmNPD994BmpXhiZYjJc">火把节</strong></div>
+        </div>
+        <div class="sheet" data-page-node-id="KW1SjPvMFgHKoOH4CZmRrS">
+          <div class="mini" data-page-node-id="18wgrpnbcapJi4QyLJbiiM"><em data-page-node-id="I0BUTFkMt4CpPqnNO537W6">节庆</em><em data-page-node-id="RO7GsYH03IXoscnZv7XyEE">不是每天都有</em></div>
+          <p class="intro" data-page-node-id="E9akbfPsR6I41B9fD8GO22">大理一带多在农历六月下旬。夜里围着火堆走，不是景区固定场次。赶不上，不要把它写成必须打卡；赶上了，停下来看完一圈再走。</p>
+          <p class="cult-quote" data-page-node-id="9onlS3mp7AKQH1EEw7LOAq">遇到就停，没遇到就看别的。</p>
+          <div class="pics" data-page-node-id="N09R4hP6FOfTgXGcYkMJzi">
+            <img src="./assets/craft-fire.jpg" alt="火堆" data-page-node-id="8hnsKXNxGxJIJVZ8tPw3Z1" />
+            <img src="./assets/culture-town.jpg" alt="夜里的街" data-page-node-id="BXJFtaCUGlL0kWHZZUS1iW" />
+            <img src="./assets/culture-temple.jpg" alt="夜里的屋脊" data-page-node-id="OtCd08Hu9UutUYEADTR1Rj" />
+          </div>
+          <div class="cells inset" data-page-node-id="ZdbbAJCu1Afmts3BxSaCEe">
+            <div data-page-node-id="ciTOE74HaTDqPGMXBlFCPy"><span data-page-node-id="RarMhTKCumHX8PNPq6wi6W">时节</span><b data-page-node-id="N60oQzSozxWVgDkjbm9OUL">农历六月，看当年告示</b></div>
+            <div data-page-node-id="eQoASL6aMjA4ogKmXlKvAa"><span data-page-node-id="d9GE66fwEGIL1ACZSGV5YA">常见地点</span><b data-page-node-id="dEIirhqAnh6GJrTi8VxP5H">古城、喜洲附近</b></div>
+            <div data-page-node-id="D7IrXp2Uw7GSzNkGrYgeAM"><span data-page-node-id="4DGCFb6K0xpjVDhPaOIWIh">停留</span><b data-page-node-id="ZIFRikixQclqQxBBPNsNxh">一圈即可，不必跟完全程</b></div>
+          </div>
+          <h4 data-page-node-id="aIGsCKljvENhCPJtxDG03f">夜场认这三处</h4>
+          <div class="keys cult-keys" data-page-node-id="gHisHetUQtMsFPvVsyRr4b">
+            <article data-page-node-id="iIolT4EgMPti5FpBlFNdgh"><b data-page-node-id="6Paw7it0FJAaxEFGhvbipm">火</b><p data-page-node-id="bGtDxTEUUU39Rg8vDAHB4q">主火堆在空地中央。先站在外圈，看人怎么走，再决定靠不靠近。</p></article>
+            <article data-page-node-id="rEHw2G50NxiwGleWiWWxo3"><b data-page-node-id="nEAfMsDQVky03Gf1YOwA6N">圈</b><p data-page-node-id="aPk4ZAtg1337e1DPUcs9Ja">人是围着走，不是排队打卡。插进圈里拍照会挡路。</p></article>
+            <article data-page-node-id="kobRtsFEhKFIUZ9tvITGRg"><b data-page-node-id="wPQzNFEvn053bTws6AW0pu">夜</b><p data-page-node-id="KCeZeK5ngvzCq28WMBmnEy">亮处只有火。路不熟就站在灯亮的一侧，看完再回住的地方。</p></article>
+          </div>
+          <h4 data-page-node-id="tVdaF0DwEkLNmsFXZezySw">赶上了怎么走</h4>
+          <ol class="route" data-page-node-id="dbce4YdF6SlOQzLmZ9OTki">
+            <li data-page-node-id="S2NQJQXGfaCzutM1xAB3Ma"><i data-page-node-id="rWiyzomy6HzLT9ayy2eoRi">1</i><div data-page-node-id="KxULdpfBLZz1DgpBfb9hc0"><b data-page-node-id="yWiEhj2idZJfXgmX7XahSt">先问当天有没有</b><span data-page-node-id="4qyj3rQzbNJRYYGQblQYTN">客栈或村里会贴。没有就改看民居、扎染，不要空等。</span></div></li>
+            <li data-page-node-id="9SfbtHSevTNMgnFssTnRpJ"><i data-page-node-id="7ylDcBMr5vwIoFMi7h7qbC">2</i><div data-page-node-id="lUuTxsfz6bIFZ0WYq4ISGH"><b data-page-node-id="fRoCbZaF6GRgviWKnOi2u7">站外圈看完一轮</b><span data-page-node-id="0YkbYihTJs5ptmwvNRLX1J">火把、人、烟是一起的。看懂方向再走近。</span></div></li>
+            <li data-page-node-id="3kXp0EbIwH4XYAiLbQ0FIj"><i data-page-node-id="xOCgyErmF02CB9aMg4gPkQ">3</i><div data-page-node-id="TL8NCBsPfJSbPdCGj27JIY"><b data-page-node-id="fvbs1cwb7L5x0C4VBNTGR1">别把它当表演</b><span data-page-node-id="pXFvPVY5DpI7fRRvpwVNz1">没有固定谢幕。觉得够了就离开，把路留给还在转的人。</span></div></li>
+          </ol>
+          <div class="spot-dock solo" data-page-node-id="1cPsz5CMQyAhUVrJjcGdPj">
+            <button class="btn-primary" type="button" data-cult-add="culture-fire" data-page-node-id="tnUkeC8vODvzrKSbt8Hq5E">加入体验</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 云上特展 -->
+      <section class="screen no-tab" id="exhibit" data-name="云上特展" data-page-node-id="803jPiTvdOODmMCa9sXsXf">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="v1DpdL0w1qbFAeBFPA7tUR">9:41<span data-page-node-id="EhTDmlJt10KI4z5mypoMBn">▮▮▮</span></div>
+        <header class="nav overlay" data-page-node-id="B4OUVu5QFtGDCAZOBdUGhB">
+          <button class="back" type="button" data-go="home" data-page-node-id="4UgyXbWx930zTvklPNt69F"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="RXSBRoXVHNf2sALFCMMey5"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="UVjwhurt9ToJwbpHGfWqj7"/><path d="M8 12h10" opacity=".35" data-page-node-id="2tp4fESfFAAMz8XjdHijER"/></svg></button>
+          <strong data-page-node-id="khvGfSBxa5smGwS24OFipX"></strong>
+          <span data-page-node-id="oawtgCVCjcmV8FEKReuL9o"></span>
+        </header>
+        <div class="exhibit-hero" data-page-node-id="PlV9QNAv4EMFvzYxmg2IHm">
+          <img src="./assets/hero-erhai-aerial.jpg" alt="云上大理城" data-page-node-id="kNZ997x5T9Nz78fCaCs5hE" />
+          <div class="exhibit-copy" data-page-node-id="6BeZpSn6MibfrNBtMO6EZc">
+            <em data-page-node-id="XgV9SOlY5Lt2wUP0ZHrjyp">YUNSHANG</em>
+            <h3 data-page-node-id="piCFftN0ShlGGYRRpcP19z">云上大理城</h3>
+            <p data-page-node-id="DLaMfbqc0dHep4N8UkD2se">从空中先看见苍洱。看完再决定去岸上还是进古镇。</p>
+          </div>
+        </div>
+        <div class="sheet" data-page-node-id="lYkFAbboWyttt3xhot9bW1">
+          <p class="intro" data-page-node-id="6dPHUmsNOQhGkCWCs9k7SQ">特展只做沉浸，不塞攻略。看完从这里回到景点或文化，继续逛。</p>
+          <div class="pics" data-page-node-id="oIymacUDqI61OQ0PxFvoG7">
+            <img src="./assets/hero-boat.jpg" alt="" data-page-node-id="6RaTlMGJs2We70HCL8tG9I" />
+            <img src="./assets/hero-wave.jpg" alt="" data-page-node-id="TTkPg2UZojkeM72mWkY3qp" />
+            <img src="./assets/hero-erhai.jpg" alt="" data-page-node-id="sGEs2CRHToAPB17YI2dIzd" />
+          </div>
+          <div class="cells inset" data-page-node-id="pRGKy8BzmyWzHSDQPS6ZUV">
+            <div data-page-node-id="9XrrD9WhdNHrJNGuBf1R2f"><span data-page-node-id="T6Xa96j8OtkSL853xXtBT0">气质</span><b data-page-node-id="7fyi5fwjJebK2pxMOhOHfe">风花雪月</b></div>
+            <div data-page-node-id="EZiwH1Dq7M6G2mT9u4QBHN"><span data-page-node-id="VToIvnYUVp1N68CuVF802e">接下来</span><b data-page-node-id="VVC3wdWxU5od0ktnd6kY35">去洱海或扎染</b></div>
+          </div>
+          <div class="related" data-page-node-id="BdjHkD8J2MVOC5NcW3s2ae">
+            <button type="button" data-go="spot-erhai" data-page-node-id="H7KVASjIddI8UYmo11a55B">
+              <img src="./assets/hero-erhai.jpg" alt="" data-page-node-id="XUVtgn4jpZF8Djhh8GvJNG" /><b data-page-node-id="UQjqR8Dpf9TuGjFg8cZl5D">洱海航拍</b>
+            </button>
+            <button type="button" data-go="spot-bridge" data-page-node-id="A8OcpEVVijQxjcLZZ5C9sc">
+              <img src="./assets/spot-bridge.jpg" alt="" data-page-node-id="OJ6QncfMdqaxW9G2sToAV3" /><b data-page-node-id="jv5azKFjPiT4HbAZvDNCkp">湖上拱桥</b>
+            </button>
+            <button type="button" data-go="culture-dye" data-page-node-id="zibhaJxcBnma0ocUm4P5jz">
+              <img src="./assets/craft-dye.jpg" alt="" data-page-node-id="domKJHmOP18uRpfysxA7Zd" /><b data-page-node-id="5JFAp3njGdL3Ow2DOtLkRZ">扎染</b>
+            </button>
+          </div>
+          <div class="btn-row" data-page-node-id="pIwwtxHHf6KBQLkvBL2ymK">
+            <button class="btn-light" type="button" data-go="spot-erhai" data-page-node-id="MOad344liDo8dfpBWko76h">去看洱海</button>
+            <button class="btn-primary" type="button" data-go="culture-dye" style="margin-top:20px" data-page-node-id="EFlmv1HhhVHRIQ4Cj4FTeE">去看扎染</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- S08 我的 -->
+      <section class="screen" id="mine" data-name="S08 我的" data-page-node-id="2knriH1tnHry0ooDgTMjt3">
+        <div class="status light" style="position:absolute;left:0;right:0;z-index:6;color:#fff" data-page-node-id="ACEERfkOrdRZ7EZ1QpKXju">9:41<span data-page-node-id="tkJmtkhRGxEpqBg1bcnfBG">▮▮▮</span></div>
+        <div class="mine-hero" data-page-node-id="4dWFKuD85dtVhj6MqnAFFD">
+          <img src="./assets/hero-erhai-aerial.jpg" alt="" data-page-node-id="raNiRt9C3V8yTtCCglRiDB" />
+          <div class="cover-copy" style="bottom:auto;top:92px" data-page-node-id="5Hw7ImwdFZuwa0XbYlGIlC">
+            <em data-page-node-id="JLuDhxHjxzo0Hr96zFnwwa">MINE</em>
+            <strong data-page-node-id="WXO9HBblkWLXWoCHVYY8cu">我的</strong>
+          </div>
+          <div class="profile" data-page-node-id="pH0wlq03nS9CgDXUFfKb3V">
+            <div class="logo sm" data-page-node-id="JEEUAFbiTMdlgJqC48h61M"><img src="./assets/wamao.svg" alt="" data-page-node-id="0eon9SEFZ1pM6imF99CbjA" /></div>
+            <div data-page-node-id="0osscp9bTEBJ4gq87HmZgZ">
+              <b data-page-node-id="1gqqGJwWGFDL54oOL5a6lS">旅人</b>
+              <p data-page-node-id="uyMgmypEgu2IwChwsJ0a9W">记录你想去的大理</p>
+            </div>
+          </div>
+        </div>
+        <div class="cells pad" data-page-node-id="mrkexUsuKFq4eCDgwSUKK8">
+          <button type="button" id="open-fav-list" data-page-node-id="WWW4w4mLbHKgPpoGh61NTc">
+            <span data-page-node-id="H9DOCELIdhC9M6aPRoQD7p">想去的地方</span><b id="fav-count" data-page-node-id="ZrNyGcpECuCIeahFtFeCi5">还没有 ›</b>
+          </button>
+          <button type="button" data-go="history" data-page-node-id="aJ0B8wCAYjtSEfHA2HgtHF">
+            <span data-page-node-id="uGnHjsozan4kAsMws2bXom">浏览记录</span><b data-page-node-id="4M1gqKTWyhhxFNCS5VOjfn">›</b>
+          </button>
+        </div>
+        <div class="block" data-page-node-id="Q7UABJPswkn8BTbTir8WVY">
+          <div class="block-head" data-page-node-id="ofMCoqYzcQCTJyaNYtiBt6">
+            <div data-page-node-id="CBJuq6kExBc1TGiAfX9QZC"><b data-page-node-id="cYbfhvCu6xyA6JgQtSUWJf">最近看过</b></div>
+          </div>
+          <div class="related" data-page-node-id="VpO5wBwd1pggSpDh1FwqFd">
+            <button type="button" data-go="spot-erhai" data-page-node-id="tJHuoOb3GG65E5lUEDYYML">
+              <img src="./assets/spot-erhai.jpg" alt="" data-page-node-id="Q23qZbZ7cRB4FFgkq0wYLf" /><b data-page-node-id="JAgVNDPuKxsI4MZ9Y1wXoL">洱海</b>
+            </button>
+            <button type="button" data-go="culture-dye" data-page-node-id="CkU6szCYKAUoRwkqDucaku">
+              <img src="./assets/craft-dye.jpg" alt="" data-page-node-id="vUcosLUBopddCETWFzniyZ" /><b data-page-node-id="XGx7ybBK3yHzF8CAHJqEKL">扎染</b>
+            </button>
+            <button type="button" data-go="spot-shuanglang" data-page-node-id="alFJnsWEntUZ4OUGyBv2T4">
+              <img src="./assets/spot-shuanglang.jpg" alt="" data-page-node-id="OTvAEfauDdQBtrBNUFbb2X" /><b data-page-node-id="To8MOnRAo3eYIK399E2xS2">双廊</b>
+            </button>
+          </div>
+        </div>
+        <div class="cells pad" data-page-node-id="LvYgBjoyes2vhgHFFm3092">
+          <button type="button" data-go="about" data-page-node-id="gpVuX26TSJmbDPi8RtuGZG"><span data-page-node-id="K2PTGoNTcdz5NAtorzpjzy">关于小程序</span><b data-page-node-id="YX0j8wh27swQOPB2HzVwxz">›</b></button>
+        </div>
+      </section>
+
+      <!-- S09 空状态 -->
+      <section class="screen no-tab" id="empty" data-name="S09 想去·空" data-page-node-id="1dtdIObKPjqlOR07KLHnOy">
+        <div class="status" data-page-node-id="8CXzqW0aO6I6HWxqtqOzfw">9:41<span data-page-node-id="9yHEw0Xog60bibXmI46WDQ">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="0ecA6pLGj1BsgEQhBq5rlD">
+          <button class="back" type="button" data-go="mine" data-page-node-id="0d3sWftdgD9AMD9UMtHlrt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="IEYcT9NE1qWDCUhmWki2mr"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="AmoAv28uult9POfkPUCh1r"/><path d="M8 12h10" opacity=".35" data-page-node-id="IeEBSMIKIos1dQLZJpFwOp"/></svg></button>
+          <div class="nav-title" data-page-node-id="CSi17V8F9Vj3JAHYUcr912"><em data-page-node-id="A6bBlvQmLIbYTrU1qh24CL">Saved</em><b data-page-node-id="dYUWwd71PjL6dotssbyEBq">想去</b></div>
+          <span class="nav-slot" data-page-node-id="WiNKDu68pnLiw9Q7BE8BBS"></span>
+        </header>
+        <div class="empty" data-page-node-id="7H6LvShn7BPEcPCVfbEv3E">
+          <div class="logo" data-page-node-id="fKjXg1CMkavWVaJxC9jiIy"><img src="./assets/wamao.svg" alt="" data-page-node-id="ToryrZWfiHcsQDwcxBQsLB" /></div>
+          <p data-page-node-id="3TZiEHnay4Ih7ZxdxGLSSk">还没有想去的地方</p>
+          <i class="rule" data-page-node-id="63lQZ7opC3zlmOcJ2BYGTV"></i>
+          <span class="desc" data-page-node-id="P3CHSv1OLCqBLUV2D7YuFz">去首页逛逛，看中了再收进来</span>
+          <button class="btn-primary" type="button" data-go="home" data-page-node-id="2KLVfmrDEYNkTsMTACWa1A">去首页逛逛</button>
+        </div>
+      </section>
+
+      <section class="screen no-tab" id="fav-list" data-name="想去·有数据" data-page-node-id="Gsrl08yri45aBSLXCX6PbK">
+        <div class="status" data-page-node-id="6SwFwBhwFX2zUbOtoDf4IQ">9:41<span data-page-node-id="Tc5eva2aE3SDjBO5jPEMrD">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="sDlhxGCtQptnhAAss2hQLb">
+          <button class="back" type="button" data-go="mine" data-page-node-id="4fTp5uz9tBbguz6BMHTxri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="fofjKHF8RULkS1qB9rWtq4"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="u5cgCr8QGMbAsq6YWBVix8"/><path d="M8 12h10" opacity=".35" data-page-node-id="6gNngjHTc2wMaTxUxtjJow"/></svg></button>
+          <div class="nav-title" data-page-node-id="B6AaHbW1lenwjoyPS9v6TE"><em data-page-node-id="vnF0X1AJ4qwBxSHpXmXRP1">Saved</em><b data-page-node-id="gjwydLxkPC9Mne1Q16CGRD">想去</b></div>
+          <span class="nav-slot" data-page-node-id="7gx8aVAudyhlc4sGCT9B0W"></span>
+        </header>
+        <div class="list" id="fav-items" data-page-node-id="yfhwnRcfL7Ak2G3Bqnymca"></div>
+      </section>
+
+      <section class="screen no-tab" id="history" data-name="浏览记录" data-page-node-id="Ci2TG6hYiK4iCNfWsRwXX2">
+        <div class="status" data-page-node-id="GpdyLfqEOmxYaDb6CSXVar">9:41<span data-page-node-id="dJQYABYukCRkmX6jzFnVSu">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="tC1gRxQM3D4bfwZPCHrCZD">
+          <button class="back" type="button" data-go="mine" data-page-node-id="mUOAwBOzrABvMutDfVntDv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="XyBCqs3GZYuTrZvJhcwcOM"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="C74Pl5xjHc0iMzgP6jYx88"/><path d="M8 12h10" opacity=".35" data-page-node-id="oXsNZHLGtaegIi7IQdRVda"/></svg></button>
+          <div class="nav-title" data-page-node-id="wYTGtrtCohqI7GIOgRk78w"><em data-page-node-id="AlmcDgXDpGS8ke6oFTIdzf">Trace</em><b data-page-node-id="64uLS4qoCH3qRe3P2YWi6E">足迹</b></div>
+          <span class="nav-slot" data-page-node-id="WsarRepge9HmbzV2Tet7u4"></span>
+        </header>
+        <div class="list" data-page-node-id="yQUQdBzSk1vA16Xt6IV4wI">
+          <button class="row" type="button" data-go="spot-erhai" data-page-node-id="dYT9nXT4EwTVbgTqE19FwR">
+            <img src="./assets/spot-erhai.jpg" alt="" data-page-node-id="SgxFLu5rrRlIxczg6uwMqN" />
+            <div class="grow" data-page-node-id="FEmrkXqeporMDVZusiCdf9"><b data-page-node-id="hB7SuLTZBUf7h5kDOLSj9C">洱海</b><p data-page-node-id="zbdD8PuxajYtvcFvAlH42x">今天看过</p></div>
+          </button>
+          <button class="row" type="button" data-go="culture-dye" data-page-node-id="DIbAIT3BUyIHRxAwj05f26">
+            <img src="./assets/craft-dye.jpg" alt="" data-page-node-id="tArioWvIQkHzuSdItIhOaT" />
+            <div class="grow" data-page-node-id="ScjJMdDsAsr1YjWvCOMihn"><b data-page-node-id="gH21KhUvkPWxC9rgr7VilU">扎染</b><p data-page-node-id="GgADNaCY7nPQ1hHnu0lAsh">今天看过</p></div>
+          </button>
+          <button class="row" type="button" data-go="spot-shuanglang" data-page-node-id="bRPTJT6Nq9ACeapq4FCydL">
+            <img src="./assets/spot-shuanglang.jpg" alt="" data-page-node-id="AbqRyirqAwDujDGiGhjIOG" />
+            <div class="grow" data-page-node-id="PX27AHkW9eosHgrDe0MIcQ"><b data-page-node-id="kAFFroUJpCKUo4wY4EtQgz">双廊</b><p data-page-node-id="a7VmILySXaSZToXto4SYNf">今天看过</p></div>
+          </button>
+          <button class="row" type="button" data-go="culture-wamao" data-page-node-id="tJd9BlACrkVe3ncJxvazZF">
+            <img src="./assets/craft-shelf.jpg" alt="" data-page-node-id="7GuIw5ehTgAWy9XjC4hGZx" />
+            <div class="grow" data-page-node-id="jgykbdYabTuIrOiuwCH6NV"><b data-page-node-id="ij85C4VFGoW6hsH8yFi54o">瓦猫</b><p data-page-node-id="sFrEZGOh7r8V4YCXkbNLfa">昨天看过</p></div>
+          </button>
+        </div>
+      </section>
+
+      <section class="screen no-tab" id="about" data-name="关于" data-page-node-id="FLU4Ffv5Pniew5wmXf82iw">
+        <div class="status" data-page-node-id="ijeA3gNO7YKOHkIOJMF90I">9:41<span data-page-node-id="8o5awCG5eP71aPset5anuY">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="upJyW5voF0iUqItXDfv78t">
+          <button class="back" type="button" data-go="mine" data-page-node-id="ggqcvKe3HldZIbgZ6driUN"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="NSc8EDb1DerlboAykzbiKc"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="wMnehjV4ERuF8A9BG4idfd"/><path d="M8 12h10" opacity=".35" data-page-node-id="Wv2Gs9Ms7YtpprQMqi4TGx"/></svg></button>
+          <div class="nav-title" data-page-node-id="BP1HXoO90Xeg0KHCKRmZaC"><em data-page-node-id="KE4uMCj2xLN9pcqbA2IzHJ">About</em><b data-page-node-id="TvtR0CP0Bey7a8FVanEBDU">关于</b></div>
+          <span class="nav-slot" data-page-node-id="BBmxNNu4g25dxBnW1dAe6C"></span>
+        </header>
+        <div class="about-card" data-page-node-id="jTaCqs9Z1XkgoRDevXCEND">
+          <div class="logo" style="margin:0 auto" data-page-node-id="ffD6zLvd6A5ZyaklEHemTR"><img src="./assets/wamao.svg" alt="" data-page-node-id="Dgv3NQS9ketfWA8Vk9dB5N" /></div>
+          <h3 style="margin-top:12px" data-page-node-id="jfx6LKX4Xyn3VidEsiliVn">大理</h3>
+          <p data-page-node-id="DhRAHrE5T7ebEMgOE2zt92">把分散的文旅信息，收成可逛的一条路。瓦猫只出现在启动、空状态和这里。</p>
+          <div class="about-pics" data-page-node-id="IJkWGRlwmDDDNpVHwRnsof">
+            <img src="./assets/hero-erhai.jpg" alt="" data-page-node-id="a4VV0AEOFbD6wNEf9jY4lL" />
+            <img src="./assets/hero-boat.jpg" alt="" data-page-node-id="Arm4hbb6MOiLomp2QSaP8F" />
+            <img src="./assets/hero-tiedye.jpg" alt="" data-page-node-id="SYKBXP50OPiqDQtclmw6rH" />
+          </div>
+          <p data-page-node-id="0TuxqGFQZdEEbMXU7KiS6C">课程项目 · 界面设计练习<br  data-page-node-id="iS8StVKqavTQ5SY1neLlES"/>TDesign 主题化 · 非官方导览</p>
+        </div>
+      </section>
+
+      <!-- S10 加载 -->
+      <section class="screen" id="loading" data-name="S10 加载" data-page-node-id="1wCRhs4V913aXVcciDkGwG">
+        <div class="status" data-page-node-id="TOufyw3EDls1gK0iNxeeGz">9:41<span data-page-node-id="mJIodsLZLgfa3JL1ThjAwm">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="MJA0cX3C8ZKXf6gVZpg7H9">
+          <button class="back" type="button" data-go="home" data-page-node-id="SeAkweDeCIEk0UZuyBvjru"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="EMZjFUjnSzVt6Rlt4LpdG1"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="pbS84GavmWs02W4pdwDObG"/><path d="M8 12h10" opacity=".35" data-page-node-id="T5VDGekrcd7H49pvt44Adb"/></svg></button>
+          <div class="nav-title" data-page-node-id="nvCQT4pMNS41aCGFP3eczM"><em data-page-node-id="HzXr8ugs5oNlnZviYBWJFj">Spots</em><b data-page-node-id="tDccSAjrrxGQbuh4jD1qpW">景点</b></div>
+          <span class="nav-slot" data-page-node-id="J83qeqmh8GmgXGYYDVarHj"></span>
+        </header>
+        <div class="search" data-page-node-id="DLlljYBsTerSKTvtm8zRg4">搜洱海、喜洲、双廊</div>
+        <div class="tags" data-page-node-id="kBS5iYe4MfsZGwkwfS69xk">
+          <button class="on" type="button" data-page-node-id="zoAqxvIBkBAPLfxhfaJq5O">全部</button>
+          <button type="button" data-page-node-id="MxDb7nEmAStk8cKSI4J9oo">洱海</button>
+          <button type="button" data-page-node-id="hwZOYJFwBj7c9EH7QmfMQ2">古城</button>
+        </div>
+        <div class="list" data-page-node-id="970UDoF7v3c6LCYeCElE0P">
+          <div class="skel" data-page-node-id="ABzWKwyfmF2LVjFPAohw88"><i data-page-node-id="bMmsURcE1baGQqBPcGoB2D"></i><div class="grow" data-page-node-id="gDdlQ4SaBIJYRFUGK5843k"><b data-page-node-id="KU8zFde5ucZTNAWCiWnhkJ"></b><em data-page-node-id="NBf6HN6xpPrwFD9cOxxiNx"></em></div></div>
+          <div class="skel" data-page-node-id="CTJhvoOkF1SpYTQ6E4wqug"><i data-page-node-id="eQ9Ppw2gaNT8WJ6KLZ5DoR"></i><div class="grow" data-page-node-id="93EahZQxPcHaRiJay3ZW77"><b data-page-node-id="mYyUO0pNehIyvepE0TGEk2"></b><em data-page-node-id="I7C9CsCDYmr7cOJZlnPOCF"></em></div></div>
+          <div class="skel" data-page-node-id="P1hS9D8T9UwByjB42iV1aa"><i data-page-node-id="mwlECjYpwkJljkCdbC7XmS"></i><div class="grow" data-page-node-id="zsfoEBGfNkNxZZ5CErx8oN"><b data-page-node-id="LxeaJqTy3poqI2t3HKKM00"></b><em data-page-node-id="GQYZR7CWz0FFSh6UHsfQHn"></em></div></div>
+        </div>
+      </section>
+
+      <section class="screen" id="fail" data-name="S10 失败" data-page-node-id="YGmXvv6QOKGMuRcazD8Pwf">
+        <div class="status" data-page-node-id="QZz0Vd9sgYLU53H4UpyKre">9:41<span data-page-node-id="ex6OFEFsVCuo1aMl94EyiJ">▮▮▮</span></div>
+        <header class="nav" data-page-node-id="F1cBnC8shVWMJRHYlGD4SI">
+          <button class="back" type="button" data-go="home" data-page-node-id="H4ZuiSOHMlvyX3bJXwhbiC"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="1146PltvAV6Hs0DuUd0EpY"><path d="M14.5 5.5 7 12l7.5 6.5" data-page-node-id="GKZfIJdtu7dFsJX41GY6bX"/><path d="M8 12h10" opacity=".35" data-page-node-id="01soPHbyEjlBxCmZCikunn"/></svg></button>
+          <div class="nav-title" data-page-node-id="DhKYJQvJPoBSIl5tGlHvYY"><em data-page-node-id="wwffNz8HyCU3FKB0piKp7u">Spots</em><b data-page-node-id="wJVtOXRERNEjgyc6najtYY">景点</b></div>
+          <span class="nav-slot" data-page-node-id="DhkN7aulTrsGFa7pYyt7hj"></span>
+        </header>
+        <div class="empty" data-page-node-id="EvI6TpxOQ88LKk82a9UL3P">
+          <div class="logo" data-page-node-id="Asp1CTeo8wrfsi8kkH57mi"><img src="./assets/wamao.svg" alt="" data-page-node-id="PGkyb7iNdmYwEXCZtg3Aju" /></div>
+          <p style="color:var(--error);font-size:16px" data-page-node-id="s6arEeF6XkjpohztSaxzXo">加载失败</p>
+          <span class="desc" data-page-node-id="5hQL7zcZyGT273u4yAmCIJ">过一会再试试</span>
+          <button class="btn-primary" type="button" data-go="spots" data-page-node-id="AogQMNZbRBcaoaGFrVFb2M">重新加载</button>
+        </div>
+      </section>
+
+      <button class="trip-fab" id="trip-fab" type="button" hidden data-page-node-id="0wyvbKzgF01Dk6ClzvWLhQ">
+        <b id="trip-count" data-page-node-id="2k24Ci6lEE2B7zQXxiajsz">0</b>
+        <span data-page-node-id="9pR6TXVENZaa3CCAgVjkuW">行程</span>
+      </button>
+      <button class="trip-fab cult-fab" id="cult-fab" type="button" hidden data-page-node-id="GjLbeOZjMAoxT61g0G0SCg">
+        <b id="cult-count" data-page-node-id="Yx4H9GKsQuupKOea35jJE2">0</b>
+        <span data-page-node-id="tKTZ4l1ele0T6BqNbkUmqE">体验</span>
+      </button>
+      <div class="trip-mask" id="trip-mask" hidden data-page-node-id="0WcaYE911DJkSu9I8IF3Kg"></div>
+      <aside class="trip-sheet" id="trip-sheet" hidden data-page-node-id="B1dJUMYj0w54Q8ty0kEBY0">
+        <div class="trip-view" id="trip-main" data-page-node-id="kAVNYjDZwYqyVa3a0N7BoR">
+          <i class="sheet-grab" data-page-node-id="yFRpW5shnTbIfDGuQK3oqO"></i>
+          <header data-page-node-id="tCRNxWHNCE3mo4ARii24tB">
+            <b data-page-node-id="2CpEaAQfig1o48ZTH1fnGd">想去的景点</b>
+            <button type="button" id="trip-close" data-page-node-id="V7H0ckCJMPiVYrv1qeNGyC">关闭</button>
+          </header>
+          <div class="trip-picks" id="trip-picks" data-page-node-id="cx9BGvwkHnSLQ6dN1vyTJl"></div>
+          <button class="trip-field" id="trip-open-date" type="button" data-page-node-id="2iUKEft1lNiVTTKsRcnKSE">
+            <span data-page-node-id="qKrwyruDYTCBPpcxkkhhR3">出发日期</span>
+            <b id="trip-date-label" data-page-node-id="Rjwlzi0YoVsFGzjcJ9pmaO">10月5日 周一</b>
+          </button>
+          <button class="trip-field" id="trip-open-loc" type="button" data-page-node-id="OTxn0BGRVKhwDuGSFVrUXf">
+            <span data-page-node-id="vmK6MHWPuG2kYNmp3d4kzd">出发点</span>
+            <b id="trip-loc-label" data-page-node-id="52za4GPNFfRhFdmsL6Fuia">大理古城</b>
+            <small id="trip-loc-addr" data-page-node-id="lDEgvco0Xyb9roXgzHoYeo">一塔路南城门</small>
+          </button>
+          <div class="trip-span" data-page-node-id="6PoaPSLOvS25aMnkjALksP">
+            <div class="trip-span-head" data-page-node-id="AhjcJUCWH2yOSusBVPLxAf">
+              <span data-page-node-id="yaCLwiBXpDyEYKsrx0f4I6">可用时间</span>
+              <b id="trip-days-label" data-page-node-id="LN0EtEkbEEp5vOccwMm9d2">1 天</b>
+            </div>
+            <input class="trip-days" id="trip-days" type="range" min="1" max="30" value="1" aria-label="可用天数，一个月以内" data-page-node-id="We0MJCbyQKh90jRQdRx9YJ" />
+            <div class="trip-span-scale" data-page-node-id="S5GRUS4WcvhskmaCj7Fgah"><i data-page-node-id="sbRj02XNuXVRF5I51TdMwU">1天</i><i data-page-node-id="7tBGwXnqaIxblk3EwfYIsB">7天</i><i data-page-node-id="iznw9OJNP2e2O59g04UfLu">14天</i><i data-page-node-id="TUtL6G1VFcfaPYGnSVBgEb">30天</i></div>
+          </div>
+          <button class="btn-primary" id="trip-plan" type="button" data-page-node-id="knCNN3omBEvPUAWPtGV8Uj">AI 推荐行程</button>
+          <div class="trip-result" id="trip-result" data-page-node-id="QcpjwtYd1Nq4P434XRImD9"></div>
+        </div>
+        <div class="trip-view" id="trip-cal" hidden data-page-node-id="h4A61wHWnGahGObeFpVe1i">
+          <i class="sheet-grab" data-page-node-id="hbIGuitNMLcAmrSVHWNjsn"></i>
+          <header data-page-node-id="MfqEHRI56KdvEe8cmD9K6i">
+            <button type="button" data-trip-back data-page-node-id="8B4vMn5fFIXuHoyG5zBEJJ">返回</button>
+            <b data-page-node-id="U3lSSgi5RLPbTmeMpF0VX1">出发日期</b>
+            <span data-page-node-id="c3hiX3ckmF5lCp3DtN20JU"></span>
+          </header>
+          <div class="cal-head" data-page-node-id="aAdUqKFXy3VRteFAottGN4">
+            <button type="button" id="cal-prev" aria-label="上个月" data-page-node-id="MKO672iNB9hhJuBykR2ZJw">‹</button>
+            <b id="cal-title" data-page-node-id="OyQuYFefax3P8UvdBvCCrr">2026年10月</b>
+            <button type="button" id="cal-next" aria-label="下个月" data-page-node-id="ts7nXPIm559J9XJJLv6BBM">›</button>
+          </div>
+          <div class="cal-week" data-page-node-id="FjBMck0A2o8yEciP80jSL7"><i data-page-node-id="iiYVgBmogh1jifGC9IpdKL">日</i><i data-page-node-id="eQbxakcB9DwMGwJBQLxHba">一</i><i data-page-node-id="1SdS9oCc52lhpxF2S7FCHG">二</i><i data-page-node-id="IEh9ujXAev6jnZuWTY7HzE">三</i><i data-page-node-id="W0LoECbWC4bouwRsTKOnIL">四</i><i data-page-node-id="Wo3PI6GCDIjyiUUVDoob1R">五</i><i data-page-node-id="dMSxQBwHICSSw4QsgzmmeF">六</i></div>
+          <div class="cal-grid" id="cal-grid" data-page-node-id="wKVGPv25ykCoBwBI9L0Hyh"></div>
+        </div>
+        <div class="trip-view" id="trip-loc" hidden data-page-node-id="RqWFNrof5U323AXQBdiyG6">
+          <i class="sheet-grab" data-page-node-id="J7yjVCFTNkC4QGUA4nHrkk"></i>
+          <header data-page-node-id="WOOzfpuFYp3cnPKoPzy0bH">
+            <button type="button" data-trip-back data-page-node-id="BB7a6IEQa295gO1B5xBa5S">返回</button>
+            <b data-page-node-id="aFKjJ2zpomS99SVewlkbh0">出发点</b>
+            <span data-page-node-id="LLXgn2MbrCmwHxZBxCpZfO"></span>
+          </header>
+          <label class="loc-search" data-page-node-id="xyMG6cjQJPxgKmBUu7lRDE">
+            <input id="loc-q" type="search" placeholder="搜索大理的地点" autocomplete="off" data-page-node-id="L965fk0cB5FqL8IhgXhdPF" />
+          </label>
+          <div class="loc-map" aria-hidden="true" data-page-node-id="aeFL1mgYXfYIfRbh0mqZXw">
+            <i class="loc-pin" id="loc-pin" data-zone="west" data-page-node-id="DgfwyDbqL2qvMGNkmqyDSQ"></i>
+            <b id="loc-pin-name" data-page-node-id="eBamrSQ7R8zAMMkAlhKQbN">大理古城</b>
+          </div>
+          <p class="loc-kicker" data-page-node-id="SXiHLH7pHtBBVdTCzi2GYs">附近与常用出发地</p>
+          <div class="loc-list" id="loc-list" data-page-node-id="m1hu3rQDQ3hlPV9MZJHBts"></div>
+        </div>
+      </aside>
+      <div class="trip-mask" id="cult-mask" hidden data-page-node-id="GtP5xQlPm9MZPyggq5GfCn"></div>
+      <aside class="trip-sheet" id="cult-sheet" hidden data-page-node-id="aknCNZuFIk3pcB1fwagQ55">
+        <div class="trip-view" data-page-node-id="AF8fXVXthQoD0PWA8kETD1">
+          <i class="sheet-grab" data-page-node-id="B21dCSRwg7LUbX3tSqZqOx"></i>
+          <header data-page-node-id="7fKnXdg55FEXj3IIBcQUXH">
+            <b data-page-node-id="OPp41todGqOuYjocyRUKSV">想体验的</b>
+            <button type="button" id="cult-close" data-page-node-id="zJnQhMSnumHjpqIjaZWfDW">关闭</button>
+          </header>
+          <div class="trip-picks" id="cult-picks" data-page-node-id="USuNwywzMO3SF6vHBHS2wB"></div>
+          <button class="btn-primary" id="cult-plan" type="button" data-page-node-id="FmALrYk5AqLiKiLyiWe3Fi">AI 智能编排</button>
+          <div class="trip-result" id="cult-result" data-page-node-id="KXN1OvZWSbhHV11jBD025E"></div>
+        </div>
+      </aside>
+
+      <nav class="tabbar" id="tabbar" data-page-node-id="OcDvE0A1V7jU8M9YoGPlRt">
+        <button class="on" type="button" data-go="home" data-page-node-id="kRF24uOWm5sGW0f1lMCe8e"><i data-page-node-id="0uAkffQXBhssUpkbYlOcfS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="Z5Dg7DTBPxEpNWY2nZekbt"><path d="M3.5 13.2 12 5.6l8.5 7.6" data-page-node-id="VNWPYA5116AY0I6meecOYk"/><path d="M6.6 13.2V19h10.8v-5.8" data-page-node-id="CoZGDIvB1AZK6ADDJBSN1M"/><path d="m10.2 6.2 1.8-2.8 1.8 2.8" data-page-node-id="WvB0Lh1Z4V7QyykCZw0VPF"/></svg></i><b data-page-node-id="nmtgVI0ERYMY3SdJaNeOnn">首页</b></button>
+        <button type="button" data-go="spots" data-page-node-id="lLnms1PyJ98u0GvGeP8GOI"><i data-page-node-id="S0MQzy3dYNU85Dlgpmt1HO"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="6mJgzzPBnlabPyhWAD0Afa"><path d="m2.8 15.6 4.8-7.4 3.2 4.2 3.8-6.2 6.6 9.4" data-page-node-id="sSooOvX5INWrAOGJwHYGof"/><path d="M3.2 18.6c2.4-1.5 5-1 8.8-1s6.4-.5 8.8 1" data-page-node-id="6Aw0czKkwQOAHuvabb2Hot"/><circle cx="17.2" cy="8.2" r="1.1" data-page-node-id="sGht78QPhINPPfTWCV65ty"/></svg></i><b data-page-node-id="F1ELye4bnUWcY1V4Qhy3fY">景点</b></button>
+        <button type="button" data-go="culture" data-page-node-id="lEC8UOj33llBHMEg7ZFZQ6"><i data-page-node-id="yDirEXgY4oWR5V7OSb8g81"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="BlacQjhTqWplH43XHof7yQ"><path d="M16.8 7.2a6.6 6.6 0 1 1-3.2 11.4 4.6 4.6 0 0 1-1.4-7.6 2.6 2.6 0 0 1 1.8 3.8" data-page-node-id="mBSCGnP1it1RyCfBD1hErD"/><path d="M9.2 8.4c1.6-1.2 3.6-1.5 5.2-.6" data-page-node-id="rWIwuth5EV9FWHYgd1w4Oo"/></svg></i><b data-page-node-id="CC51JhnQdSNzJf1bBDZTHB">文化</b></button>
+        <button type="button" data-go="mine" data-page-node-id="kJ9vyo8pK2ezTwGYLDL1rJ"><i data-page-node-id="dLhNhBLG2LZOZ9MUxCOziD"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" data-page-node-id="4v3y9f7IjINStdfhgSTD9h"><circle cx="12" cy="7.2" r="2.3" data-page-node-id="COLeUsmEtKRpc8NNgNw4XA"/><path d="M8 19.2c.6-4 2.2-6 4-6s3.4 2 4 6" data-page-node-id="93a27j3juoZV8EArRnVDDN"/><path d="M4.5 20.4c2.6-2 5.4-2.6 7.5-2.6s4.9.6 7.5 2.6" data-page-node-id="294pJqGBANEwX4VJjhOBJa"/></svg></i><b data-page-node-id="h4S0H43RoLULRHBAUmtNF8">我的</b></button>
+      </nav>
+
+      <div class="toast" id="toast" data-page-node-id="KAcipdF6jr3nRbqJ8ZTPg0">已加入想去</div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
